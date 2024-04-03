@@ -72,6 +72,25 @@ MonoBehaviour:
   dirtIntensity:
     m_OverrideState: 0
     m_Value: 0
+--- !u!114 &-544941573988772767
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8728aaba74d25674187636706d335320, type: 3}
+  m_Name: VolumeLightParameter
+  m_EditorClassIdentifier: 
+  active: 1
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.9
+  volumeLightParameter:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88,6 +107,7 @@ MonoBehaviour:
   - {fileID: -698577404971465013}
   - {fileID: -2115367957576574875}
   - {fileID: 923473656721682535}
+  - {fileID: -544941573988772767}
 --- !u!114 &923473656721682535
 MonoBehaviour:
   m_ObjectHideFlags: 3
