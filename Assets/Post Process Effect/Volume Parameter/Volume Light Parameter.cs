@@ -5,21 +5,34 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
-[System.Serializable, VolumeComponentMenu("Custom/VolumeLight")]
-public class VolumeLightParameter : VolumeComponent, IPostProcessComponent
-{
-    [Header("BLoom Settings")]
-    //定义shader要用的参数
-    public FloatParameter intensity = new FloatParameter(0.9f, true);
-    public MaterialParameter volumeLightParameter = new MaterialParameter(default, false);
+[System.Serializable, VolumeComponentMenu( "Custom/VolumeLight" )]
+public class VolumeLightParameter : VolumeComponent, IPostProcessComponent {
+	[Header("RT setting")]
+	public ClampedIntParameter DownSampleTimes = new ClampedIntParameter( 1, 0, 3, true );
+	[Header( "March setting" )]
+	//定义shader要用的参数
+	public ClampedFloatParameter MarchSteps = new ClampedFloatParameter( 25, 0, 50, true );
+	public FloatParameter MaxStepDistance = new FloatParameter( 500, true );
+	public ClampedFloatParameter NearPlaneDistance = new ClampedFloatParameter( 2, 0, 10, true );
+	public ClampedFloatParameter FarPointDistance = new ClampedFloatParameter( 0.25f, 0, 3, true );
+	[Tooltip("Control the scattering direction")]
+	public ClampedFloatParameter HG_g = new ClampedFloatParameter( 0.7f, 0, 0.999f, true );
+	[Tooltip("Control beer's law") ]
+	public ClampedFloatParameter ExtinctionFactor = new ClampedFloatParameter( 1f, 0, 5, true );
+	public ClampedFloatParameter Density = new ClampedFloatParameter( 0.012f, 0, 0.8f, true );
+	public ColorParameter LightColor = new ColorParameter( Color.white, hdr:true, showAlpha:false, showEyeDropper:true );
+	
+	[Header("Blur")]
+	public BoolParameter EnableBlur = new BoolParameter(true , true );
+	public IntParameter BlurStepMultiple = new IntParameter( 15 , true );
+	public ClampedFloatParameter ColorSigma = new ClampedFloatParameter( 0.1f, 0.1f, 5f, true );
+	public ClampedFloatParameter SpacialSigma = new ClampedFloatParameter( 1f, 0.5f, 5f, true );
+	
+	public bool IsActive() {
+		return true;
+	}
 
-    public bool IsActive()
-    {
-        return true;
-    }
-
-    public bool IsTileCompatible()
-    {
-        return false;
-    }
+	public bool IsTileCompatible() {
+		return false;
+	}
 }

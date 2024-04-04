@@ -645,12 +645,33 @@ MonoBehaviour:
   m_Name: VolumeLightParameter
   m_EditorClassIdentifier: 
   active: 1
-  intensity:
+  MarchSteps:
     m_OverrideState: 1
-    m_Value: 0.9
-  volumeLightParameter:
+    m_Value: 20
+  MaxStepDistance:
     m_OverrideState: 1
-    m_Value: {fileID: 0}
+    m_Value: 10
+  NearPlaneDistance:
+    m_OverrideState: 1
+    m_Value: 3
+  FarPointPlaneDistance:
+    m_OverrideState: 1
+    m_Value: 1
+  HG_g:
+    m_OverrideState: 1
+    m_Value: 0.5
+  LightRange:
+    m_OverrideState: 1
+    m_Value: 0.5
+  ExtictionFactor:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Density:
+    m_OverrideState: 1
+    m_Value: 0.8
+  LightColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &5568732050536019525
 MonoBehaviour:
   m_ObjectHideFlags: 3
