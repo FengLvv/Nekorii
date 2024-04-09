@@ -350,6 +350,27 @@ MonoBehaviour:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
+--- !u!114 &-971276872692296277
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b19964304a7f6b1469e90bd2f030f81e, type: 3}
+  m_Name: SSRarameter
+  m_EditorClassIdentifier: 
+  active: 1
+  DownSampleTimes:
+    m_OverrideState: 1
+    m_Value: 1
+  LayerMask:
+    m_OverrideState: 1
+    m_Value:
+      serializedVersion: 2
+      m_Bits: 0
 --- !u!114 &-168207288196035743
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -445,6 +466,8 @@ MonoBehaviour:
   - {fileID: -1909948792790023093}
   - {fileID: 120538904873199281}
   - {fileID: 5510777752207825948}
+  - {fileID: 7131603226997731086}
+  - {fileID: -971276872692296277}
 --- !u!114 &18808884076286222
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -645,33 +668,48 @@ MonoBehaviour:
   m_Name: VolumeLightParameter
   m_EditorClassIdentifier: 
   active: 1
-  MarchSteps:
-    m_OverrideState: 1
-    m_Value: 20
-  MaxStepDistance:
-    m_OverrideState: 1
-    m_Value: 10
-  NearPlaneDistance:
-    m_OverrideState: 1
-    m_Value: 3
-  FarPointPlaneDistance:
+  DownSampleTimes:
     m_OverrideState: 1
     m_Value: 1
-  HG_g:
+  EnableBlur:
     m_OverrideState: 1
-    m_Value: 0.5
-  LightRange:
+    m_Value: 1
+  BlurStepMultiple:
     m_OverrideState: 1
-    m_Value: 0.5
-  ExtictionFactor:
+    m_Value: 15
+  ColorSigma:
     m_OverrideState: 1
-    m_Value: 0.5
-  Density:
+    m_Value: 0.1
+  SpacialSigma:
     m_OverrideState: 1
-    m_Value: 0.8
+    m_Value: 1
   LightColor:
     m_OverrideState: 1
     m_Value: {r: 1, g: 1, b: 1, a: 1}
+  MarchStepsAtmosphere:
+    m_OverrideState: 1
+    m_Value: 15
+  MarchStepsSun:
+    m_OverrideState: 1
+    m_Value: 15
+  PlanetRadius:
+    m_OverrideState: 1
+    m_Value: 6371000
+  AtmosphereHeight:
+    m_OverrideState: 1
+    m_Value: 80000
+  GroundStepScale:
+    m_OverrideState: 1
+    m_Value: 15
+  HG_g:
+    m_OverrideState: 1
+    m_Value: 0.5
+  RayleighWeight:
+    m_OverrideState: 1
+    m_Value: 1
+  MieWeight:
+    m_OverrideState: 1
+    m_Value: 1
 --- !u!114 &5568732050536019525
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -777,6 +815,58 @@ MonoBehaviour:
   bladeRotation:
     m_OverrideState: 1
     m_Value: 0
+--- !u!114 &7131603226997731086
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a43c284e4e49646478fc5b44ff354c08, type: 3}
+  m_Name: ShaftParameter
+  m_EditorClassIdentifier: 
+  active: 1
+  DownSampleTimes:
+    m_OverrideState: 1
+    m_Value: 1
+  MarchSteps:
+    m_OverrideState: 1
+    m_Value: 0
+  MaxStepDistance:
+    m_OverrideState: 1
+    m_Value: 500
+  NearPlaneDistance:
+    m_OverrideState: 1
+    m_Value: 2
+  FarPointDistance:
+    m_OverrideState: 1
+    m_Value: 0.25
+  ExtinctionFactor:
+    m_OverrideState: 1
+    m_Value: 1
+  Density:
+    m_OverrideState: 1
+    m_Value: 0.012
+  LightColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  EnableBlur:
+    m_OverrideState: 1
+    m_Value: 1
+  BlurStepMultiple:
+    m_OverrideState: 1
+    m_Value: 15
+  ColorSigma:
+    m_OverrideState: 1
+    m_Value: 0.1
+  SpacialSigma:
+    m_OverrideState: 1
+    m_Value: 1
+  HG_g:
+    m_OverrideState: 1
+    m_Value: 0.75
 --- !u!114 &7830197268519212388
 MonoBehaviour:
   m_ObjectHideFlags: 3

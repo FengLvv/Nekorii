@@ -46,14 +46,23 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Post Process Effect\Volume Parameter\SSR Parameter.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
-    <Compile Include="Assets\Post Process Effect\Volume Parameter\Volume Light Parameter.cs" />
-    <Compile Include="Assets\Post Process Effect\Render Feature\Volume Light.cs" />
-    <None Include="Assets\Post Process Effect\Resources\Volume Light\Volume Light.hlsl" />
-    <None Include="Assets\Post Process Effect\Resources\Blur\Postprocess Blur.hlsl" />
-    <None Include="Assets\Post Process Effect\Resources\Volume Light\Volume Calculation Function.hlsl" />
-    <None Include="Assets\Post Process Effect\Resources\Blur\Blur.shader" />
-    <None Include="Assets\Post Process Effect\Resources\Volume Light\VolumeLight.shader" />
+    <Compile Include="Assets\Post Process Effect\Volume Parameter\Shaft Parameter.cs" />
+    <Compile Include="Assets\Post Process Effect\Render Feature\Atmosphere.cs" />
+    <Compile Include="Assets\Post Process Effect\Render Feature\SSR.cs" />
+    <Compile Include="Assets\Post Process Effect\Volume Parameter\Atmosphere Parameter.cs" />
+    <Compile Include="Assets\Post Process Effect\Render Feature\Shaft.cs" />
+    <None Include="Assets\Post Process Effect\Resources\Include\Volume Light.hlsl" />
+    <None Include="Assets\Post Process Effect\Resources\Shader\Atmosphere.shader" />
+    <None Include="Assets\Post Process Effect\Resources\Include\SSR.hlsl" />
+    <None Include="Assets\Post Process Effect\Resources\Include\Postprocess Blur.hlsl" />
+    <None Include="Assets\Post Process Effect\Resources\Include\Atmosphere.hlsl" />
+    <None Include="Assets\Post Process Effect\Resources\Shader\ProcedualSkyBox.shader" />
+    <None Include="Assets\Post Process Effect\Resources\Shader\SSR.shader" />
+    <None Include="Assets\Post Process Effect\Resources\Include\Volume Calculation Function.hlsl" />
+    <None Include="Assets\Post Process Effect\Resources\Shader\Blur.shader" />
+    <None Include="Assets\Post Process Effect\Resources\Shader\VolumeLight.shader" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
