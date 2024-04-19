@@ -2,6 +2,9 @@ Shader "URP/Sky"
 {
     Properties //着色器的输入 
     {
+        _SkyHeight("Sky Height", Range(-1, 1)) = 0.1
+        _SkyHorizonRange("Sky Horizon Range", Range(0, 1)) = 0.2
+
         _DayBottomColor("Day Bottom Color", Color) = (0.5,0.5,0.5,1)
         _DayMidColor("Day Mid Color", Color) = (0.5,0.5,0.5,1)
         _DayTopColor("Day Top Color", Color) = (0.5,0.5,0.5,1)
@@ -25,6 +28,11 @@ Shader "URP/Sky"
     #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/DeclareDepthTexture.hlsl"
 
     CBUFFER_START(UnityPerMaterial)
+        float _SkyHeight;
+        float _SkyHorizonRange;
+
+        float4 _LightPosition;
+
         float4 _DayBottomColor;
         float4 _DayMidColor;
         float4 _DayTopColor;
@@ -75,21 +83,34 @@ Shader "URP/Sky"
         float3 lightDir = mainLight.direction;
         float verticalPos = i.uv.x * 0.5 + 0.5;
 
-        float sunNightStep = smoothstep(-0.3, 0.25, lightDir.x);
+        float sunNightStep = smoothstep(-0.3, 0.25, lightDir.y);
         //DAY NIGHT
-        float3 gradientDay = lerp(_DayBottomColor, _DayMidColor, saturate(i.uv.y)) * step(0, -i.uv.y)
-                             + lerp(_DayMidColor, _DayTopColor, saturate(i.uv.y)) * step(0, i.uv.y);
-        float3 gradientNight = lerp(_NightBottomColor, _NightTopColor, verticalPos);
-        float3 skyGradients = lerp(gradientNight, gradientDay, sunNightStep);
+        float horizonTop = _SkyHeight + _SkyHorizonRange;
+        float horizonBottom = _SkyHeight - _SkyHorizonRange;
+
+        float horizonMask = step(horizonTop, i.uv.y);
+        float horizonBottomMask = smoothstep(horizonBottom, horizonTop, i.uv.y);
+        float horizonTopMask = smoothstep(horizonTop, 1, i.uv.y);
+        
+        float3 dayBottomColor = lerp(_DayBottomColor, _DayMidColor, horizonBottomMask);
+        float3 dayTopColor = lerp(_DayMidColor, _DayTopColor, horizonTopMask);
+        float3 dayColor = lerp(dayBottomColor, dayTopColor, horizonMask);
+
+         float3 nightBottomColor = lerp(_NightBottomColor, _NightTopColor, horizonBottomMask);
+        float3 nightTopColor = lerp(_NightTopColor, _NightTopColor, horizonTopMask);
+        float3 nightColor = lerp(nightBottomColor, nightTopColor, horizonMask);
+
+        float3 skyColor = lerp( nightColor,dayColor, sunNightStep);
 
         //HORIZONTAL
         float horWidth = lerp(_NightHorWidth, _DayHorWidth, sunNightStep);
         float horStrenth = lerp(_NightHorStrenth, _DayHorStrenth, sunNightStep);
         float horLineMask = smoothstep(-horWidth, 0, i.uv.y) * smoothstep(-horWidth, 0, -i.uv.y);
-        float3 horLineGradients = lerp(skyGradients, _DayHorColor, sunNightStep);
+        float3 horLineGradients = lerp(_NightHorColor, _DayHorColor, sunNightStep);
+        float4 a = lerp(_DayBottomColor, _DayMidColor, saturate(i.uv.y));
 
-        return half4(horLineGradients, 1.0);
-        return half4(horLineGradients, 1.0);
+         // return horizonTopMask;
+        return half4(skyColor, 1.0);
     }
     ENDHLSL
 
@@ -105,7 +126,7 @@ Shader "URP/Sky"
             "ShaderGraphTargetId" = "UniversalUnlitSubTarget"
             "PreviewType" = "Skybox"
         }
- 
+
 
         Pass
         {

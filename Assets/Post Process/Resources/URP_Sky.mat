@@ -29,13 +29,17 @@ Material:
     - _DayHorWidth: 0.295
     - _NightHorStrenth: 0.5
     - _NightHorWidth: 0.5
+    - _SkyHeight: 0
+    - _SkyHorizonRange: 0.25
     m_Colors:
-    - _DayBottomColor: {r: 0.40272337, g: 0.851762, b: 0.8537736, a: 1}
+    - _DayBottomColor: {r: 0.2392157, g: 0.43921572, b: 0.4784314, a: 1}
     - _DayHorColor: {r: 0.7075472, g: 0.6660288, b: 0.59407264, a: 1}
-    - _DayMidColor: {r: 0.21293165, g: 0.5490535, b: 0.7783019, a: 1}
-    - _DayTopColor: {r: 0, g: 1, b: 0.083333254, a: 1}
-    - _NightBottomColor: {r: 0.15379138, g: 0.1925856, b: 0.4528302, a: 1}
+    - _DayMidColor: {r: 0.43537915, g: 0.6810894, b: 0.7056604, a: 1}
+    - _DayTopColor: {r: 0.7490196, g: 0.8196079, b: 0.8313726, a: 1}
+    - _NightBottomColor: {r: 0.0894339, g: 0.22784357, b: 0.2981131, a: 1}
     - _NightHorColor: {r: 0.6179246, g: 0.4751024, b: 0.4751024, a: 1}
-    - _NightTopColor: {r: 0.21461563, g: 0.20478816, b: 0.3679245, a: 1}
+    - _NightTopColor: {r: 0.14792156, g: 0.22453056, b: 0.32156864, a: 1}
+    - _SunPos: {r: 0, g: 0, b: 0, a: 0}
+    - _WorldSpaceLightPos0: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

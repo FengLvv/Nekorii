@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2023.2/staging' branch; Version is '2023.2.15f1 (c5cbb0b314fa) revision 12962736'; Using compiler version '193431935'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22621) 64bit Education' Language: 'en' Physical Memory: 32604 MB
+OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'zh' Physical Memory: 16164 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,19 +11,19 @@ C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-E:/Study/Chalmers/Nekorii
+C:/Users/12603/Documents/Unity/Nekorii
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64661
+50743
 -job-worker-count
-9
+5
 -background-job-worker-count
 8
 -asset-garbage-collectors
 1
-Successfully changed project path to: E:/Study/Chalmers/Nekorii
-E:/Study/Chalmers/Nekorii
+Successfully changed project path to: C:/Users/12603/Documents/Unity/Nekorii
+C:/Users/12603/Documents/Unity/Nekorii
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -58,28 +58,28 @@ E:/Study/Chalmers/Nekorii
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [35040] Host "[IP] 192.168.5.111 [Port] 0 [Flags] 2 [Guid] 4183429394 [EditorId] 4183429394 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6E4HN7O) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
-Player connection [35040] Host "[IP] 192.168.5.111 [Port] 0 [Flags] 2 [Guid] 4183429394 [EditorId] 4183429394 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6E4HN7O) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
-JobSystem: Creating JobQueue using job-worker-count value 9
-[Physics::Module] Initialized MultithreadedJobDispatcher with 9 workers.
+Player connection [3120] Host "[IP] 10.0.2.96 [Port] 0 [Flags] 2 [Guid] 3213192576 [EditorId] 3213192576 [Version] 1048832 [Id] WindowsEditor(7,FengLvv) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [3120] Host "[IP] 10.0.2.96 [Port] 0 [Flags] 2 [Guid] 3213192576 [EditorId] 3213192576 [Version] 1048832 [Id] WindowsEditor(7,FengLvv) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 5
+[Physics::Module] Initialized MultithreadedJobDispatcher with 5 workers.
 Library Redirect Path: Library/
-Refreshing native plugins compatible for Editor in 0.37 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.17 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.2.15f1 (c5cbb0b314fa)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.2.15f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path E:/Study/Chalmers/Nekorii/Assets
+[Subsystems] Discovering subsystems at path C:/Users/12603/Documents/Unity/Nekorii/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 4070 Ti (ID=0x2782)
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f91)
     Vendor:   NVIDIA
-    VRAM:     11996 MB
-    Driver:   31.0.15.5212
+    VRAM:     3952 MB
+    Driver:   31.0.15.3114
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.2.15f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.2.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.2.15f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56880
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56364
 Begin MonoManager ReloadAssembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
@@ -92,42 +92,44 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.15f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001873 seconds.
-- Loaded All Assemblies, in  0.309 seconds
+Registered in 0.004526 seconds.
+- Loaded All Assemblies, in  0.535 seconds
 Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
 Mono: successfully reloaded assembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-- Finished resetting the current domain, in  0.192 seconds
-Domain Reload Profiling: 500ms
-	BeginReloadAssembly (131ms)
+- Finished resetting the current domain, in  0.403 seconds
+Domain Reload Profiling: 935ms
+	BeginReloadAssembly (168ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (30ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (39ms)
-	LoadAllAssembliesAndSetupDomain (100ms)
-		LoadAssemblies (128ms)
+	RebuildCommonClasses (52ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (60ms)
+	LoadAllAssembliesAndSetupDomain (235ms)
+		LoadAssemblies (165ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (99ms)
-			TypeCache.Refresh (98ms)
-				TypeCache.ScanAssembly (88ms)
+		AnalyzeDomain (233ms)
+			TypeCache.Refresh (231ms)
+				TypeCache.ScanAssembly (213ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (192ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (403ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (156ms)
+		SetupLoadedEditorAssemblies (330ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (4ms)
-			ProcessInitializeOnLoadAttributes (113ms)
-			ProcessInitializeOnLoadMethodAttributes (30ms)
+			InitializePlatformSupportModulesInManaged (39ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (7ms)
+			ProcessInitializeOnLoadAttributes (215ms)
+			ProcessInitializeOnLoadMethodAttributes (65ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -148,71 +150,213 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Asset path could not be found for script compilation file '/Assets/Post Process Effect/Render Feature/Atmosphere.cs'
-Asset path could not be found for script compilation file '/Assets/Post Process Effect/Render Feature/Shaft.cs'
-Asset path could not be found for script compilation file '/Assets/Post Process Effect/Render Feature/SSR.cs'
-Asset path could not be found for script compilation file '/Assets/Post Process Effect/Volume Parameter/Atmosphere Parameter.cs'
-Asset path could not be found for script compilation file '/Assets/Post Process Effect/Volume Parameter/Shaft Parameter.cs'
-Asset path could not be found for script compilation file '/Assets/Post Process Effect/Volume Parameter/SSR Parameter.cs'
-- Loaded All Assemblies, in  0.620 seconds
-Refreshing native plugins compatible for Editor in 0.28 ms, found 3 plugins.
-URP-HighFidelity-Renderer is missing RendererFeatures
-This could be due to missing scripts or compile error.
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
-UnityEngine.Debug:LogError (object,UnityEngine.Object)
-UnityEngine.Rendering.Universal.ScriptableRendererData:ValidateRendererFeatures () (at ./Library/PackageCache/com.unity.render-pipelines.universal@16.0.5/Runtime/ScriptableRendererData.cs:257)
-UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at ./Library/PackageCache/com.unity.render-pipelines.universal@16.0.5/Runtime/ScriptableRendererData.cs:145)
-
-(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@16.0.5/Runtime/ScriptableRendererData.cs Line: 257)
-
+Symbol file LoadedFromMemory doesn't match image C:\Users\12603\Documents\Unity\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\12603\Documents\Unity\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.090 seconds
+Refreshing native plugins compatible for Editor in 0.99 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.574 seconds
-Domain Reload Profiling: 1193ms
-	BeginReloadAssembly (251ms)
+- Finished resetting the current domain, in  0.872 seconds
+Domain Reload Profiling: 1959ms
+	BeginReloadAssembly (419ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (24ms)
-	RebuildCommonClasses (24ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (24ms)
-	LoadAllAssembliesAndSetupDomain (311ms)
-		LoadAssemblies (246ms)
+		CreateAndSetChildDomain (35ms)
+	RebuildCommonClasses (46ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (51ms)
+	LoadAllAssembliesAndSetupDomain (553ms)
+		LoadAssemblies (389ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (149ms)
-			TypeCache.Refresh (118ms)
-				TypeCache.ScanAssembly (102ms)
-			BuildScriptInfoCaches (18ms)
-			ResolveRequiredComponents (11ms)
-	FinalizeReload (574ms)
+		AnalyzeDomain (292ms)
+			TypeCache.Refresh (234ms)
+				TypeCache.ScanAssembly (216ms)
+			BuildScriptInfoCaches (41ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (873ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (402ms)
+		SetupLoadedEditorAssemblies (567ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (2ms)
-			BeforeProcessingInitializeOnLoad (25ms)
-			ProcessInitializeOnLoadAttributes (348ms)
-			ProcessInitializeOnLoadMethodAttributes (22ms)
-			AfterProcessingInitializeOnLoad (2ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (60ms)
+			ProcessInitializeOnLoadAttributes (446ms)
+			ProcessInitializeOnLoadMethodAttributes (46ms)
+			AfterProcessingInitializeOnLoad (7ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 0.35 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.31 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 171 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5220 unused Assets / (4.7 MB). Loaded Objects now: 5914.
-Memory consumption went from 178.5 MB to 173.8 MB.
-Total: 7.648400 ms (FindLiveObjects: 0.914300 ms CreateObjectMapping: 0.325700 ms MarkObjects: 4.394800 ms  DeleteObjects: 2.010600 ms)
+Unloading 174 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5227 unused Assets / (6.0 MB). Loaded Objects now: 5896.
+Memory consumption went from 173.2 MB to 167.2 MB.
+Total: 14.941100 ms (FindLiveObjects: 1.071100 ms CreateObjectMapping: 1.283300 ms MarkObjects: 8.438900 ms  DeleteObjects: 4.146300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 269417.031368 seconds.
+  path: Assets/Settings/URP-HighFidelity-Renderer.asset
+  artifactKey: Guid(c40be3174f62c4acf8c1216858c64956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/URP-HighFidelity-Renderer.asset using Guid(c40be3174f62c4acf8c1216858c64956) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1c13096ed7a70ef22a20ce7918cbbf9c') in 0.0379623 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/Settings/URP-Balanced.asset
+  artifactKey: Guid(e1260c1148f6143b28bae5ace5e9c5d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/URP-Balanced.asset using Guid(e1260c1148f6143b28bae5ace5e9c5d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6b1bdcaedf0e0602a4a355b5f0ace056') in 0.0194735 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.997595 seconds.
+  path: Assets/Scenes/Post Process Test/New Scene.unity
+  artifactKey: Guid(fefed71b2ac2e454bb3a032418602051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Post Process Test/New Scene.unity using Guid(fefed71b2ac2e454bb3a032418602051) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2e7c8002c8b678996e96256cee63b374') in 0.0006573 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.096460 seconds.
+  path: Assets/Scenes/Post Process Test/Volume Test/Global Volume Profile.asset
+  artifactKey: Guid(85475748aaa52b74080b3bf1b5062491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Post Process Test/Volume Test/Global Volume Profile.asset using Guid(85475748aaa52b74080b3bf1b5062491) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '67ad6737999772a58d7ac13ad9353dbe') in 0.0013932 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 463.689279 seconds.
+  path: Assets/Post Process/Resources/Shader
+  artifactKey: Guid(d4c14affa9f51d44f86de9241cd28be9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Post Process/Resources/Shader using Guid(d4c14affa9f51d44f86de9241cd28be9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6f0471d5e563cfd99a4eb518347a574b') in 0.0008619 seconds
+Number of updated asset objects reloaded before import = 11Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1239.939737 seconds.
+  path: Assets/Post Process/Resources/Toon sky.shader
+  artifactKey: Guid(9d5a67babea66a14abff04152b5c981d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Post Process/Resources/Toon sky.shader using Guid(9d5a67babea66a14abff04152b5c981d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8b850b65c55d1ca1875e38925f304ee2') in 0.0013412 seconds
+Number of updated asset objects reloaded before import = 8Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2132.923243 seconds.
+  path: Assets/Scenes/Post Process Test/Volume Test.unity
+  artifactKey: Guid(2ed07ab76a4814041a114f0741c763d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Post Process Test/Volume Test.unity using Guid(2ed07ab76a4814041a114f0741c763d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ec3f072620aefff3dca694bc47cdfa23') in 0.0018463 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.040090 seconds.
+  path: Assets/Settings/URP-HighFidelity-Renderer.asset
+  artifactKey: Guid(c40be3174f62c4acf8c1216858c64956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/URP-HighFidelity-Renderer.asset using Guid(c40be3174f62c4acf8c1216858c64956) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '006986c2b8fc6738734022d6adf55f1b') in 0.0036847 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 49.722437 seconds.
+  path: Assets/Scenes/Post Process Test/New Scene.unity
+  artifactKey: Guid(fefed71b2ac2e454bb3a032418602051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Post Process Test/New Scene.unity using Guid(fefed71b2ac2e454bb3a032418602051) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '38064a9607acd39cb60882e1ffecde00') in 0.0012402 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 162.253686 seconds.
+  path: Assets/Post Process/Volume Parameter
+  artifactKey: Guid(b95100d04c6e5754e92aadfa325eb3dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Post Process/Volume Parameter using Guid(b95100d04c6e5754e92aadfa325eb3dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0a0b8347e62f5ff8442e237485ef30b6') in 0.0006886 seconds
+Number of updated asset objects reloaded before import = 6Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.301185 seconds.
+  path: Assets/Post Process/Resources/Include
+  artifactKey: Guid(16e0f2094c168234694f45ef121d9035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Post Process/Resources/Include using Guid(16e0f2094c168234694f45ef121d9035) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cc8df95be871adde4139c49c10e0407e') in 0.0009354 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.031639 seconds.
+  path: Assets/Material
+  artifactKey: Guid(4fae2f940a3128047a4bf6bb4371e3ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material using Guid(4fae2f940a3128047a4bf6bb4371e3ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a55a5c212db915db456fd8445ec1e3d5') in 0.0034866 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 80.899793 seconds.
+  path: Assets/Shader/Sea.shader
+  artifactKey: Guid(cbe49d3baaaadd34183b385f865ecafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader/Sea.shader using Guid(cbe49d3baaaadd34183b385f865ecafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6e023785fd2e8884df55ef5be2994107') in 0.0040347 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.135070 seconds.
+  path: Assets/Shader/Sea.shader
+  artifactKey: Guid(cbe49d3baaaadd34183b385f865ecafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader/Sea.shader using Guid(cbe49d3baaaadd34183b385f865ecafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '952ce8170a77e46118670e0bc48a50cc') in 0.0028597 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.253728 seconds.
+  path: Assets/Shader/Sea.shader
+  artifactKey: Guid(cbe49d3baaaadd34183b385f865ecafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader/Sea.shader using Guid(cbe49d3baaaadd34183b385f865ecafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2e7cfe1dea8228846b616401e24bd6c3') in 0.0029253 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 120.676553 seconds.
+  path: Assets/Shader/Sea.shader
+  artifactKey: Guid(cbe49d3baaaadd34183b385f865ecafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader/Sea.shader using Guid(cbe49d3baaaadd34183b385f865ecafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ad41f35a04da119d5e6e237db7f04b34') in 0.0022868 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.252351 seconds.
+  path: Assets/Shader/Sea.shader
+  artifactKey: Guid(cbe49d3baaaadd34183b385f865ecafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader/Sea.shader using Guid(cbe49d3baaaadd34183b385f865ecafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '63226eea3b6bb4162493e72d0c5efcdc') in 0.0026825 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 50.340153 seconds.
+  path: Assets/Shader/Sea.shader
+  artifactKey: Guid(cbe49d3baaaadd34183b385f865ecafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader/Sea.shader using Guid(cbe49d3baaaadd34183b385f865ecafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b002947a7d43e3cb2c5430c9c12c9e6c') in 0.0029811 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.983334 seconds.
+  path: Assets/Shader/Sea.shader
+  artifactKey: Guid(cbe49d3baaaadd34183b385f865ecafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader/Sea.shader using Guid(cbe49d3baaaadd34183b385f865ecafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '30f7824c59108089fa1aa9ca8ce8fc6f') in 0.00265 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.444179 seconds.
+  path: Assets/Shader/Sea.shader
+  artifactKey: Guid(cbe49d3baaaadd34183b385f865ecafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader/Sea.shader using Guid(cbe49d3baaaadd34183b385f865ecafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '31cad243db6dc7e713496f164cf14139') in 0.0023152 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Prepare
@@ -229,162 +373,51 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.434 seconds
-Refreshing native plugins compatible for Editor in 0.20 ms, found 3 plugins.
+Symbol file LoadedFromMemory doesn't match image C:\Users\12603\Documents\Unity\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\12603\Documents\Unity\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.539 seconds
+Refreshing native plugins compatible for Editor in 0.95 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.483 seconds
-Domain Reload Profiling: 919ms
-	BeginReloadAssembly (141ms)
+- Finished resetting the current domain, in  1.177 seconds
+Domain Reload Profiling: 2720ms
+	BeginReloadAssembly (655ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (2ms)
+		DisableScriptedObjects (45ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (35ms)
-	RebuildCommonClasses (27ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (16ms)
-	LoadAllAssembliesAndSetupDomain (243ms)
-		LoadAssemblies (213ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (241ms)
+	RebuildCommonClasses (56ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (49ms)
+	LoadAllAssembliesAndSetupDomain (760ms)
+		LoadAssemblies (623ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (105ms)
-			TypeCache.Refresh (12ms)
-				TypeCache.ScanAssembly (1ms)
-			BuildScriptInfoCaches (83ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (484ms)
+		AnalyzeDomain (333ms)
+			TypeCache.Refresh (16ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (282ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (1178ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (347ms)
+		SetupLoadedEditorAssemblies (773ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (1ms)
-			SetLoadedEditorAssemblies (2ms)
-			BeforeProcessingInitializeOnLoad (26ms)
-			ProcessInitializeOnLoadAttributes (296ms)
-			ProcessInitializeOnLoadMethodAttributes (20ms)
-			AfterProcessingInitializeOnLoad (2ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (89ms)
+			ProcessInitializeOnLoadAttributes (595ms)
+			ProcessInitializeOnLoadMethodAttributes (68ms)
+			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (15ms)
-Refreshing native plugins compatible for Editor in 0.22 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (38ms)
+Refreshing native plugins compatible for Editor in 1.04 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5214 unused Assets / (4.1 MB). Loaded Objects now: 5921.
-Memory consumption went from 153.3 MB to 149.2 MB.
-Total: 4.711800 ms (FindLiveObjects: 0.375100 ms CreateObjectMapping: 0.175700 ms MarkObjects: 3.029700 ms  DeleteObjects: 1.130800 ms)
+Unloading 31 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5226 unused Assets / (5.0 MB). Loaded Objects now: 5902.
+Memory consumption went from 151.7 MB to 146.6 MB.
+Total: 12.132200 ms (FindLiveObjects: 0.752300 ms CreateObjectMapping: 1.096100 ms MarkObjects: 6.850100 ms  DeleteObjects: 3.432200 ms)
 
 Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 44814.508156 seconds.
-  path: Assets/Post Process/Resources/Shader/SSR.shader
-  artifactKey: Guid(d3c82ef4bfcc9354ab093b34ab7c1bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Post Process/Resources/Shader/SSR.shader using Guid(d3c82ef4bfcc9354ab093b34ab7c1bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '05ef447690efb30ecd852025103cdd74') in 0.0253668 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.785517 seconds.
-  path: Assets/Post Process/Resources/Shader/VolumeLight.shader
-  artifactKey: Guid(0d43b427825c35a4fa5542ce04da452a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Post Process/Resources/Shader/VolumeLight.shader using Guid(0d43b427825c35a4fa5542ce04da452a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '94c66412299eb4063e0ec9aded2c0894') in 0.0009054 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 29.825396 seconds.
-  path: Assets/Post Process/Resources/Shader/Atmosphere.shader
-  artifactKey: Guid(2138cbc81e9cb3b4887a7a16916287a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Post Process/Resources/Shader/Atmosphere.shader using Guid(2138cbc81e9cb3b4887a7a16916287a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9f8893ab45700af77a1dab47036477e1') in 0.0006707 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.402822 seconds.
-  path: Assets/Post Process/Resources/Shader/ProcedualSkyBox.shader
-  artifactKey: Guid(a34eb9340d7806d4e91c4007f258263f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Post Process/Resources/Shader/ProcedualSkyBox.shader using Guid(a34eb9340d7806d4e91c4007f258263f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1e565fa3f94f96154a060ced911a6502') in 0.0006286 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 69.184161 seconds.
-  path: Assets/Post Process/Resources/Toon sky.shader
-  artifactKey: Guid(9d5a67babea66a14abff04152b5c981d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Post Process/Resources/Toon sky.shader using Guid(9d5a67babea66a14abff04152b5c981d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '629cbc562864834f3f8794a03db0254e') in 0.0013464 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.821994 seconds.
-  path: Assets/Post Process/Resources/Toon sky.shader
-  artifactKey: Guid(9d5a67babea66a14abff04152b5c981d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Post Process/Resources/Toon sky.shader using Guid(9d5a67babea66a14abff04152b5c981d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1efb4bc5023b3036111cc548f6e6904e') in 0.001375 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 40.146221 seconds.
-  path: Assets/Post Process/Resources/Toon sky.shader
-  artifactKey: Guid(9d5a67babea66a14abff04152b5c981d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Post Process/Resources/Toon sky.shader using Guid(9d5a67babea66a14abff04152b5c981d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '72f724e77b89c81d214c6720981bdfc4') in 0.0022822 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 195.390030 seconds.
-  path: Assets/Post Process/Resources/Toon sky.shader
-  artifactKey: Guid(9d5a67babea66a14abff04152b5c981d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Post Process/Resources/Toon sky.shader using Guid(9d5a67babea66a14abff04152b5c981d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a17feca403465bcbc1e9a1cd6f4b54a7') in 0.0013334 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 111.875790 seconds.
-  path: Assets/Post Process/Resources/Toon sky.shader
-  artifactKey: Guid(9d5a67babea66a14abff04152b5c981d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Post Process/Resources/Toon sky.shader using Guid(9d5a67babea66a14abff04152b5c981d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dda45a73cb71b73f9ca60ac67806012d') in 0.0032331 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 99.566765 seconds.
-  path: Assets/Post Process/Resources/Toon sky.shader
-  artifactKey: Guid(9d5a67babea66a14abff04152b5c981d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Post Process/Resources/Toon sky.shader using Guid(9d5a67babea66a14abff04152b5c981d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '99b3c8b38bbec4241f335b1e1caafed0') in 0.002276 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 44.672989 seconds.
-  path: Assets/Post Process/Resources/Toon sky.shader
-  artifactKey: Guid(9d5a67babea66a14abff04152b5c981d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Post Process/Resources/Toon sky.shader using Guid(9d5a67babea66a14abff04152b5c981d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a8c1f526e89376ed3a516ba270d0f15a') in 0.0010762 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 112.944783 seconds.
-  path: Assets/Post Process/Resources/Toon sky.shader
-  artifactKey: Guid(9d5a67babea66a14abff04152b5c981d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Post Process/Resources/Toon sky.shader using Guid(9d5a67babea66a14abff04152b5c981d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fa73683591a6b70710a8da3882757381') in 0.0013092 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.525741 seconds.
-  path: Assets/Post Process/Resources/Toon sky.shader
-  artifactKey: Guid(9d5a67babea66a14abff04152b5c981d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Post Process/Resources/Toon sky.shader using Guid(9d5a67babea66a14abff04152b5c981d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '274e18ee69d8f9cdbaf12fc6b236477b') in 0.0028098 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.683795 seconds.
-  path: Assets/Post Process/Resources/Toon sky.shader
-  artifactKey: Guid(9d5a67babea66a14abff04152b5c981d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Post Process/Resources/Toon sky.shader using Guid(9d5a67babea66a14abff04152b5c981d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '15c5074db2da3e507d271526f3c84ebb') in 0.0015504 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-

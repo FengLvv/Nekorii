@@ -68,6 +68,58 @@ MonoBehaviour:
   maxNits:
     m_OverrideState: 0
     m_Value: 1000
+--- !u!114 &-2493535110030938318
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a43c284e4e49646478fc5b44ff354c08, type: 3}
+  m_Name: ShaftParameter
+  m_EditorClassIdentifier: 
+  active: 1
+  DownSampleTimes:
+    m_OverrideState: 1
+    m_Value: 0
+  MarchSteps:
+    m_OverrideState: 1
+    m_Value: 24.4
+  MaxStepDistance:
+    m_OverrideState: 1
+    m_Value: 500
+  NearPlaneDistance:
+    m_OverrideState: 1
+    m_Value: 0.53
+  FarPointDistance:
+    m_OverrideState: 1
+    m_Value: 0.25
+  ExtinctionFactor:
+    m_OverrideState: 1
+    m_Value: 0.84
+  Density:
+    m_OverrideState: 1
+    m_Value: 0.027
+  LightColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.7490196, g: 0.7490196, b: 0.7490196, a: 1}
+  EnableBlur:
+    m_OverrideState: 1
+    m_Value: 1
+  BlurStepMultiple:
+    m_OverrideState: 1
+    m_Value: 1
+  ColorSigma:
+    m_OverrideState: 1
+    m_Value: 0.1
+  SpacialSigma:
+    m_OverrideState: 1
+    m_Value: 1.08
+  HG_g:
+    m_OverrideState: 1
+    m_Value: 0.837
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,6 +138,7 @@ MonoBehaviour:
   - {fileID: -2836910487985875517}
   - {fileID: 3936850321319989917}
   - {fileID: 8329676798517855505}
+  - {fileID: -2493535110030938318}
 --- !u!114 &117353428541520204
 MonoBehaviour:
   m_ObjectHideFlags: 3

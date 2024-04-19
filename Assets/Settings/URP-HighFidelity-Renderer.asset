@@ -76,7 +76,8 @@ MonoBehaviour:
   - {fileID: -6048224212616751306}
   - {fileID: 4307916560080048069}
   - {fileID: -3144451238897219575}
-  m_RendererFeatureMap: 8b79fd1488072d3836d70f9d1f6410acc50f987d49cbc83b0988fe1b42aa5cd4
+  - {fileID: 2202087736872446425}
+  m_RendererFeatureMap: 8b79fd1488072d3836d70f9d1f6410acc50f987d49cbc83b0988fe1b42aa5cd4d9a9862821638f1e
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
@@ -119,6 +120,19 @@ MonoBehaviour:
   m_CopyDepthMode: 0
   m_AccurateGbufferNormals: 0
   m_IntermediateTextureMode: 0
+--- !u!114 &2202087736872446425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc12a265bdf71cd4eabd6c9256df7064, type: 3}
+  m_Name: Shaft
+  m_EditorClassIdentifier: 
+  m_Active: 0
 --- !u!114 &4047899921125046667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,4 +159,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07fdeab46466bf34fa1d4679fbfbdb0c, type: 3}
   m_Name: Atmosphere
   m_EditorClassIdentifier: 
-  m_Active: 1
+  m_Active: 0
