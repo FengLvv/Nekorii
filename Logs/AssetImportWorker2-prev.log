@@ -1,0 +1,2355 @@
+Using pre-set license
+Built from '2023.2/staging' branch; Version is '2023.2.15f1 (c5cbb0b314fa) revision 12962736'; Using compiler version '193431935'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Education' Language: 'en' Physical Memory: 32604 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+E:/Study/Chalmers/Nekorii
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+57662
+-job-worker-count
+9
+-background-job-worker-count
+8
+-asset-garbage-collectors
+1
+Successfully changed project path to: E:/Study/Chalmers/Nekorii
+E:/Study/Chalmers/Nekorii
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [2348] Host "[IP] 192.168.5.111 [Port] 0 [Flags] 2 [Guid] 2895701657 [EditorId] 2895701657 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6E4HN7O) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [2348] Host "[IP] 192.168.5.111 [Port] 0 [Flags] 2 [Guid] 2895701657 [EditorId] 2895701657 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6E4HN7O) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 9
+[Physics::Module] Initialized MultithreadedJobDispatcher with 9 workers.
+Library Redirect Path: Library/
+Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2023.2.15f1 (c5cbb0b314fa)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.2.15f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/Study/Chalmers/Nekorii/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4070 Ti (ID=0x2782)
+    Vendor:   NVIDIA
+    VRAM:     11996 MB
+    Driver:   31.0.15.5212
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.2.15f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.2.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.2.15f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56828
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001663 seconds.
+- Loaded All Assemblies, in  0.316 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Finished resetting the current domain, in  0.257 seconds
+Domain Reload Profiling: 572ms
+	BeginReloadAssembly (109ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (132ms)
+		LoadAssemblies (107ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (130ms)
+			TypeCache.Refresh (128ms)
+				TypeCache.ScanAssembly (115ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (257ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (211ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (5ms)
+			ProcessInitializeOnLoadAttributes (151ms)
+			ProcessInitializeOnLoadMethodAttributes (44ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.789 seconds
+Refreshing native plugins compatible for Editor in 0.34 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.675 seconds
+Domain Reload Profiling: 1463ms
+	BeginReloadAssembly (329ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (42ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (387ms)
+		LoadAssemblies (305ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (185ms)
+			TypeCache.Refresh (150ms)
+				TypeCache.ScanAssembly (134ms)
+			BuildScriptInfoCaches (24ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (675ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (455ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			BeforeProcessingInitializeOnLoad (35ms)
+			ProcessInitializeOnLoadAttributes (386ms)
+			ProcessInitializeOnLoadMethodAttributes (28ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 207 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5833 unused Assets / (6.9 MB). Loaded Objects now: 6564.
+Memory consumption went from 198.3 MB to 191.4 MB.
+Total: 9.803400 ms (FindLiveObjects: 1.077800 ms CreateObjectMapping: 0.222800 ms MarkObjects: 4.784000 ms  DeleteObjects: 3.716100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 7211.651145 seconds.
+  path: Packages/com.unity.shadergraph/Editor/Resources/Icons/SettingsIcons.png
+  artifactKey: Guid(53bf71ace226b574d88c828e8b631aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.shadergraph/Editor/Resources/Icons/SettingsIcons.png using Guid(53bf71ace226b574d88c828e8b631aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7d180cf6f48ac8ebe0ea2e00dbbdc946') in 0.0566245 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Packages/com.unity.shadergraph/Editor/Resources/GraphView/Nodes/NodeChevronRight.png
+  artifactKey: Guid(951848ba8b6205940a9bd1b8fdd4d796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.shadergraph/Editor/Resources/GraphView/Nodes/NodeChevronRight.png using Guid(951848ba8b6205940a9bd1b8fdd4d796) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1ec4bc3bc44a06e934d0b4e86a59a3f2') in 0.0056155 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Packages/com.unity.visualeffectgraph/Editor/Utilities/pCache/Importer/pCache-Icon.png
+  artifactKey: Guid(cf28868a0ab107e46b2d953f4f99fed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualeffectgraph/Editor/Utilities/pCache/Importer/pCache-Icon.png using Guid(cf28868a0ab107e46b2d953f4f99fed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '782bf31f9174786cc81ca3f8fca99c5e') in 0.0096304 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Packages/com.unity.ai.navigation/EditorResources/Overlay/NavigationOverlay@256.png
+  artifactKey: Guid(1497075210b6dcd4c8f31ecfc6c5c79c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ai.navigation/EditorResources/Overlay/NavigationOverlay@256.png using Guid(1497075210b6dcd4c8f31ecfc6c5c79c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c3a9a30704a3afc3db1138710d552caa') in 0.0078542 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/Icons/MipLevels/RenderPipelineResources@128.png
+  artifactKey: Guid(8a682daa78f03b64597ad91aefef3dab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/Icons/MipLevels/RenderPipelineResources@128.png using Guid(8a682daa78f03b64597ad91aefef3dab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'db496ff15645f631db1dfdae97d5d447') in 0.0060126 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Packages/com.unity.visualeffectgraph/Editor/UIResources/VFX/spaceworld_hovered.png
+  artifactKey: Guid(a493f7a6f6f341e44a691831d286a035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualeffectgraph/Editor/UIResources/VFX/spaceworld_hovered.png using Guid(a493f7a6f6f341e44a691831d286a035) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2dd0e89fd6dc3c03e9426de0992b5e7c') in 0.0052039 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/PostProcessing/LensFlareResource/PolygonFlareThumbnail@2x.png
+  artifactKey: Guid(0047263fa58f91d49a61936e94358829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/PostProcessing/LensFlareResource/PolygonFlareThumbnail@2x.png using Guid(0047263fa58f91d49a61936e94358829) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd086458bbdad61fe2599be6e554aad1c') in 0.0061904 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Textures/BlueNoise16/L/LDR_LLL1_26.png
+  artifactKey: Guid(d18a24d7b4ed50f4387993566d9d3ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Textures/BlueNoise16/L/LDR_LLL1_26.png using Guid(d18a24d7b4ed50f4387993566d9d3ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2895dc33ee1a83782fec4be74c2371ab') in 0.0096515 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Textures/BlueNoise16/L/LDR_LLL1_28.png
+  artifactKey: Guid(ff47e5a0f105eb34883b973e51f4db62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Textures/BlueNoise16/L/LDR_LLL1_28.png using Guid(ff47e5a0f105eb34883b973e51f4db62) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b04e159f10f46a4ea858bc4f97c5f54e') in 0.0057847 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Textures/BlueNoise16/L/LDR_LLL1_24.png
+  artifactKey: Guid(a2ec5cbf5a9b64345ad3fab0912ddf7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Textures/BlueNoise16/L/LDR_LLL1_24.png using Guid(a2ec5cbf5a9b64345ad3fab0912ddf7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '48b9b4ee76548af1accf663ed93f6cf1') in 0.0051442 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/LeftArrow@2x.png
+  artifactKey: Guid(f0106cef986be534181a8582cffd29da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/LeftArrow@2x.png using Guid(f0106cef986be534181a8582cffd29da) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ca451d7897c2b2f69f51777c0a26fd1f') in 0.0170205 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/Lighting/Icons/LightUnitIcons/Overcast.png
+  artifactKey: Guid(c0e6cc200fb1dda4388b13d9f5828d06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/Lighting/Icons/LightUnitIcons/Overcast.png using Guid(c0e6cc200fb1dda4388b13d9f5828d06) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1b6f2a381dfb5205d50ac9e7f294b61a') in 0.0040503 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/SearchSmallDownOff.png
+  artifactKey: Guid(e0f8b9d001b669a43b3c9f7b90891d96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/SearchSmallDownOff.png using Guid(e0f8b9d001b669a43b3c9f7b90891d96) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd594a06d70ea5e386c9aae6d041a48d7') in 0.0087396 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Packages/com.unity.visualeffectgraph/Editor/UIResources/VFX/marker_Single2x.png
+  artifactKey: Guid(c86c8b31aefee5d43a0bf392795d165e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualeffectgraph/Editor/UIResources/VFX/marker_Single2x.png using Guid(c86c8b31aefee5d43a0bf392795d165e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '682cc3586b55371befd1ad13e0f8fabd') in 0.0067896 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Packages/com.unity.ai.navigation/EditorResources/Overlay/NavigationOverlay@64.png
+  artifactKey: Guid(fc46fceb4d1516544b7f503337211f65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ai.navigation/EditorResources/Overlay/NavigationOverlay@64.png using Guid(fc46fceb4d1516544b7f503337211f65) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '30f7f5b69d6b3ba094b416837b385b4a') in 0.0042006 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Textures/BlueNoise16/L/LDR_LLL1_17.png
+  artifactKey: Guid(14381521ff11cb74abe3fe65401c23be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Textures/BlueNoise16/L/LDR_LLL1_17.png using Guid(14381521ff11cb74abe3fe65401c23be) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f8f65d5ab4614f61515d4af2fdff60ec') in 0.0043645 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Packages/com.unity.visualscripting/Graphics/Icons_32x_72dpi.psd
+  artifactKey: Guid(35a21b8c004950548af9fc81919e1aa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Graphics/Icons_32x_72dpi.psd using Guid(35a21b8c004950548af9fc81919e1aa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ff5487abdd0d34e7f57eaa39f123ec3e') in 0.0038956 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/Lighting/Icons/LightAnchor_Icon.png
+  artifactKey: Guid(df491817340312f439c32f95902ddee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/Lighting/Icons/LightAnchor_Icon.png using Guid(df491817340312f439c32f95902ddee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '98343e656a97c361014da2abf5ac5c5e') in 0.0048425 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Editor/2D/Resources/SceneViewIcons/ParametricLight.png
+  artifactKey: Guid(302e68dd45b9b2d4194ff0f7f454436f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Editor/2D/Resources/SceneViewIcons/ParametricLight.png using Guid(302e68dd45b9b2d4194ff0f7f454436f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0cddf3be77d44c35e99457d680600314') in 0.0073536 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/LayoutCustom@2x.png
+  artifactKey: Guid(2fffe801f98fb314484382ea4affcf94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/LayoutCustom@2x.png using Guid(2fffe801f98fb314484382ea4affcf94) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'afcbecf3f24ee070e48a21fc46421d07') in 0.0067521 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.040256 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Textures/2D/Sparkle.png
+  artifactKey: Guid(119f93d0bcbf1e743bf5fcf237507d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Textures/2D/Sparkle.png using Guid(119f93d0bcbf1e743bf5fcf237507d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4be007f0efe1304b9743b5a602b9e8e0') in 0.0103907 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Texture/Real Stars Skybox/StarSkybox04Named/StarSkybox04Named2.png
+  artifactKey: Guid(cc26d520115a6a547b7be689f90fb8f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture/Real Stars Skybox/StarSkybox04Named/StarSkybox04Named2.png using Guid(cc26d520115a6a547b7be689f90fb8f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e0309b77af95116920a6442b2861224a') in 0.0079225 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Editor/2D/Resources/InspectorIcons/SpriteLight.png
+  artifactKey: Guid(8839c54710da3374f994e12f39b6d65f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Editor/2D/Resources/InspectorIcons/SpriteLight.png using Guid(8839c54710da3374f994e12f39b6d65f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2fddde6486e2ef09cdc9eb9b7ce8c4a8') in 0.0047296 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Texture/Real Stars Skybox/StarSkybox04Named/StarSkybox04Named4.png
+  artifactKey: Guid(f479446fdaba63147be06b118936fde0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture/Real Stars Skybox/StarSkybox04Named/StarSkybox04Named4.png using Guid(f479446fdaba63147be06b118936fde0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '38ac06e29d41745d2704e0d061739f61') in 0.0071925 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006408 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/IconMap/State@32x.png
+  artifactKey: Guid(f02ed452c3e0d1e448429a89e1773fd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/IconMap/State@32x.png using Guid(f02ed452c3e0d1e448429a89e1773fd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2f30e8c4d5c12997846c4342a3a382ca') in 0.004262 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/step1.png
+  artifactKey: Guid(9ce84ff0fdeb13d4a83f077d075dd9a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/step1.png using Guid(9ce84ff0fdeb13d4a83f077d075dd9a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0fa1a7903e3572d4d2146a233a9c2ccf') in 0.0052725 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/step3@2x.png
+  artifactKey: Guid(36e6970b84831434a9eac79abd03700b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/step3@2x.png using Guid(36e6970b84831434a9eac79abd03700b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f90962d2cf1aa82e56fa2565785f8745') in 0.0057549 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000114 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/SunPosition@2x.png
+  artifactKey: Guid(2f75c34a5bc525545916fb8367422dd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/SunPosition@2x.png using Guid(2f75c34a5bc525545916fb8367422dd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '451f79dda1db25cacec88c18d0fb9cef') in 0.0090414 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Packages/com.unity.visualeffectgraph/Editor/SceneWindow/Textures/Stop.png
+  artifactKey: Guid(5f85611a83a49bb43aee8d670b460941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualeffectgraph/Editor/SceneWindow/Textures/Stop.png using Guid(5f85611a83a49bb43aee8d670b460941) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b175c08d11a865d46171771070fcbf08') in 0.0047158 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Editor/2D/ShapeEditor/Resources/TangentBroken.png
+  artifactKey: Guid(cdf84f3eb174395469aa10a6cf7b04a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Editor/2D/ShapeEditor/Resources/TangentBroken.png using Guid(cdf84f3eb174395469aa10a6cf7b04a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3aa7afa3d8dd2f0715285dbb0e968b3c') in 0.0055129 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Editor/2D/ShapeEditor/Resources/TangentLinear.png
+  artifactKey: Guid(4867cb38cc0872c45b205c593c4ce5c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Editor/2D/ShapeEditor/Resources/TangentLinear.png using Guid(4867cb38cc0872c45b205c593c4ce5c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1d168323b17ea08ce0f1993b61bc4dd4') in 0.0053416 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/Shared/Timeline-Marker-Multi-Overlay.png
+  artifactKey: Guid(75f26f1c549568c4e9950a368bd08cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/Shared/Timeline-Marker-Multi-Overlay.png using Guid(75f26f1c549568c4e9950a368bd08cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '89869be694b67ffbc7c19d374d901b44') in 0.0042722 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/Lighting/Icons/LightUnitIcons/SunriseSunset@2x.png
+  artifactKey: Guid(1ade1fa63a0a72f46be69e4ae5e83314) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/Lighting/Icons/LightUnitIcons/SunriseSunset@2x.png using Guid(1ade1fa63a0a72f46be69e4ae5e83314) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aef5ece661192597fcbd71b96d7806b3') in 0.0039078 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/DarkSkin/TimelineAutokey@2x.png
+  artifactKey: Guid(af24c542434a025448222d576f61a956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/DarkSkin/TimelineAutokey@2x.png using Guid(af24c542434a025448222d576f61a956) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bdc9de47dbe475c1318df91af98aa2e9') in 0.0041225 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/step3.png
+  artifactKey: Guid(69899ed144c8eea4baea48b858b37746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/step3.png using Guid(69899ed144c8eea4baea48b858b37746) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '46e5fcbddb4792ac8834dd63e6e0faea') in 0.0063419 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/step2.png
+  artifactKey: Guid(cd0b17b71a5c498428ee91dee8a78a88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/step2.png using Guid(cd0b17b71a5c498428ee91dee8a78a88) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '864ece222c02adb2e2c0f9327dfc4e21') in 0.0054008 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/step1@2x.png
+  artifactKey: Guid(affeade9874cf2347abb155e8d0db4d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/step1@2x.png using Guid(affeade9874cf2347abb155e8d0db4d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7a70a8a2b9e26b292214021c4b8b6b8e') in 0.0041876 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/Lighting/Icons/LightUnitIcons/SunriseSunset.png
+  artifactKey: Guid(d8ee4aa2fab810242a1ff465e662bc09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/Lighting/Icons/LightUnitIcons/SunriseSunset.png using Guid(d8ee4aa2fab810242a1ff465e662bc09) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '595fc6f225d90f65997d8f9406981adf') in 0.0067629 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.197480 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/LightSkin/TimelineAutokey_active.png
+  artifactKey: Guid(0a5e3e063c4e1ab45999cf6e40c13c07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/LightSkin/TimelineAutokey_active.png using Guid(0a5e3e063c4e1ab45999cf6e40c13c07) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1918f8a778a8d7f1c8869c19fa70856a') in 0.0052084 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/TimelineClipBG.png
+  artifactKey: Guid(d44fc8b11425e0043aa7c20a301ce707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/TimelineClipBG.png using Guid(d44fc8b11425e0043aa7c20a301ce707) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fb244f9e445b90c23432637ebaf11824') in 0.0056265 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/TimelineCollapseMarkerButtonEnabled.png
+  artifactKey: Guid(0367ce1ebbbb18940b79eed63a0315d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/TimelineCollapseMarkerButtonEnabled.png using Guid(0367ce1ebbbb18940b79eed63a0315d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '38ddf58f004c9a4df466a36d9f0163e7') in 0.0046635 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009235 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/LightSkin/TimelineContinue.png
+  artifactKey: Guid(61c21f74972ba8246b3ea400a9231841) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/LightSkin/TimelineContinue.png using Guid(61c21f74972ba8246b3ea400a9231841) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a54494917326964ba8cc79d407ac6b45') in 0.0321888 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/DarkSkin/TimelineKeyframe.png
+  artifactKey: Guid(8eba099eb091faf419fecdcd5cdabfd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/DarkSkin/TimelineKeyframe.png using Guid(8eba099eb091faf419fecdcd5cdabfd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3a886b48ad41455c04d98e3b7941b38b') in 0.0062667 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/DarkSkin/TimelineInfiniteTrackNoShadow.png
+  artifactKey: Guid(eae63adb172f1164db61a7f4bdfc3637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/DarkSkin/TimelineInfiniteTrackNoShadow.png using Guid(eae63adb172f1164db61a7f4bdfc3637) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3a8cefbef094c01389b2bb17479dc553') in 0.0044479 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/LightSkin/TimelineMarkerItemSelected.png
+  artifactKey: Guid(b6e9dc9aad5843748a0124b8925c3743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/LightSkin/TimelineMarkerItemSelected.png using Guid(b6e9dc9aad5843748a0124b8925c3743) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ab0e1f375064ce600f10ea463874f9a1') in 0.0052482 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/LightSkin/TimelineMarkerItemCollapsed.png
+  artifactKey: Guid(7d4691eba7565c34ab785c00fbc27ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/LightSkin/TimelineMarkerItemCollapsed.png using Guid(7d4691eba7565c34ab785c00fbc27ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eb07acebea5ac1b603fc6ccbedb3fcf2') in 0.0044355 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/LightSkin/TimelinePlayRange.png
+  artifactKey: Guid(70e3f118652b9094885689730ad3a47b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/LightSkin/TimelinePlayRange.png using Guid(70e3f118652b9094885689730ad3a47b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cbcf381303877dba21f922684da18b97') in 0.0039758 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/DarkSkin/TimelineMarkerItemCollapsed.png
+  artifactKey: Guid(f179d9a3cccffb04ba2e27f681e9b147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/DarkSkin/TimelineMarkerItemCollapsed.png using Guid(f179d9a3cccffb04ba2e27f681e9b147) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aeb9be5edd59e4914eae7f09d3a07cae') in 0.0049767 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/LightSkin/TimelineHold.png
+  artifactKey: Guid(a09fd8b5d9396c24a96a6de50cddc3b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/LightSkin/TimelineHold.png using Guid(a09fd8b5d9396c24a96a6de50cddc3b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '598800f08024795855058c9e03626bad') in 0.0037729 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/Shared/TimelineSwatch.png
+  artifactKey: Guid(e50018fd67fc156459e4014bdad3f5f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/Shared/TimelineSwatch.png using Guid(e50018fd67fc156459e4014bdad3f5f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd6657d51bd1183b09e340007a2ecaf8b') in 0.0050954 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/DarkSkin/TimelineTimeCursor.png
+  artifactKey: Guid(3b9e9b3d9ade166499e7a17109ca73bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/DarkSkin/TimelineTimeCursor.png using Guid(3b9e9b3d9ade166499e7a17109ca73bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '723974ac2825c4727e75ba72bebd39e2') in 0.0042063 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/TrackAvatarButtonDisabled.png
+  artifactKey: Guid(54623075676bd504d93243fb18745161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/TrackAvatarButtonDisabled.png using Guid(54623075676bd504d93243fb18745161) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f5243e8cc67f896f2580ac629364ac99') in 0.0053873 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Packages/com.unity.ugui/Editor Resources/Gizmos/TMP - Sprite Asset Icon.psd
+  artifactKey: Guid(ec7c645d93308c04d8840982af12101e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ugui/Editor Resources/Gizmos/TMP - Sprite Asset Icon.psd using Guid(ec7c645d93308c04d8840982af12101e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '696a47067e34f1e9cf4105df94069ff9') in 0.0067187 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/TimelineSelector.png
+  artifactKey: Guid(73f5ebb64da7b2a40ab6bffac80f1a61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/TimelineSelector.png using Guid(73f5ebb64da7b2a40ab6bffac80f1a61) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '10e064656f287c6b6b247ffe412c81a6') in 0.0073894 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/LightSkin/TimelineDisabledBackground.png
+  artifactKey: Guid(0304baf8d224f3e47b22d872c8dcd412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/LightSkin/TimelineDisabledBackground.png using Guid(0304baf8d224f3e47b22d872c8dcd412) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '339303dbe8122aa5e18e8245f6b66692') in 0.0063231 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Packages/com.unity.visualeffectgraph/Editor/UIResources/VFX/title-local.png
+  artifactKey: Guid(e1aade3d2d19bb14d997331051688744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualeffectgraph/Editor/UIResources/VFX/title-local.png using Guid(e1aade3d2d19bb14d997331051688744) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4caf9c374b93b5d9a78eb03f342fe694') in 0.0044792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Packages/com.unity.ugui/Editor Resources/Gizmos/TMP - Font Asset Icon.psd
+  artifactKey: Guid(ee148e281f3c41c5b4ff5f8a5afe5a6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ugui/Editor Resources/Gizmos/TMP - Font Asset Icon.psd using Guid(ee148e281f3c41c5b4ff5f8a5afe5a6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '616e97d2089812f2ee88603f83645095') in 0.0057703 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/DarkSkin/TimelinePingPong.png
+  artifactKey: Guid(d3b5c4f7d6b94f64085b3713bffa680e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/DarkSkin/TimelinePingPong.png using Guid(d3b5c4f7d6b94f64085b3713bffa680e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e98a8305ed7d29d22ffa407d3af3786f') in 0.005198 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/Shared/TimelineOutline.png
+  artifactKey: Guid(829511f8e35bf3a40be037a1050f801c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/Shared/TimelineOutline.png using Guid(829511f8e35bf3a40be037a1050f801c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4096084e55b2bb83914397a674bb5d0e') in 0.0046833 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/DarkSkin/TimelineIconClipOut.png
+  artifactKey: Guid(32f7e3598d6414c489127629e29af3f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/DarkSkin/TimelineIconClipOut.png using Guid(32f7e3598d6414c489127629e29af3f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e04000ea4d48b735137c5faa620648f2') in 0.0038836 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/DarkSkin/TimelineHold.png
+  artifactKey: Guid(ddbd45249a133a846b2f20e39b537565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/DarkSkin/TimelineHold.png using Guid(ddbd45249a133a846b2f20e39b537565) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6284957e0d87c28f3f7268f8176753c1') in 0.0036717 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/LightSkin/TimelineSignalSelected.png
+  artifactKey: Guid(1a7852b1b33b816498b6af1e739f5995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/LightSkin/TimelineSignalSelected.png using Guid(1a7852b1b33b816498b6af1e739f5995) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9e5d9cefb7fcc564123716c5d040dab3') in 0.0029545 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/TimelineEditModeMixON.png
+  artifactKey: Guid(a82846d41464fcf4b962ebdc815963f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/TimelineEditModeMixON.png using Guid(a82846d41464fcf4b962ebdc815963f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ca0dbd877348bc3a90aa7f66f2a810c3') in 0.0049338 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.146217 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/TrackAvatarButtonEnabled.png
+  artifactKey: Guid(4bf6507f1346b2746a35384f6a5fd5f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/TrackAvatarButtonEnabled.png using Guid(4bf6507f1346b2746a35384f6a5fd5f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b851912c3e7d44f7f80e6b6691353926') in 0.0056597 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/TrackCurvesButtonEnabled.png
+  artifactKey: Guid(9589d5d9eb09dec43b2ad51af4e78b1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/TrackCurvesButtonEnabled.png using Guid(9589d5d9eb09dec43b2ad51af4e78b1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a594a96dbda08b09327d76cd05307b84') in 0.0045034 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/TrackLockButtonDisabled.png
+  artifactKey: Guid(fef7487d8b06bba408f70354e2463ce4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/TrackLockButtonDisabled.png using Guid(fef7487d8b06bba408f70354e2463ce4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd2fc8672fcc95c26b9fcc5ffa80e961b') in 0.0062282 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006449 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/TrackLockButtonEnabled@2x.png
+  artifactKey: Guid(b8c531b4e51e4994a81837c4e9b0d649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/TrackLockButtonEnabled@2x.png using Guid(b8c531b4e51e4994a81837c4e9b0d649) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '19697a9571209082b714c3c9b4e84985') in 0.0068591 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/TrackMuteButtonDisabled@2x.png
+  artifactKey: Guid(db31466324572e740a431e4e0e03a016) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/TrackMuteButtonDisabled@2x.png using Guid(db31466324572e740a431e4e0e03a016) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '256204f7a7cbbaac5b85d04025574858') in 0.0039837 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/TrackRecordButtonDisabled@2x.png
+  artifactKey: Guid(6091f9516d23100479c03bca26138bc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/TrackRecordButtonDisabled@2x.png using Guid(6091f9516d23100479c03bca26138bc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7fd68d29fe8bcef4eeed9a08a1d58502') in 0.004615 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/TrackMarkerButtonEnabled@2x.png
+  artifactKey: Guid(c35a22ede3f5feb488bf69587ddc36ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/TrackMarkerButtonEnabled@2x.png using Guid(c35a22ede3f5feb488bf69587ddc36ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e9e77bace04ffc7fb1e8ececbfa0b721') in 0.0052368 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/Lighting/Icons/UpSnatchFocused.png
+  artifactKey: Guid(8a35aa5922ce5b746a734edf7de25ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/Lighting/Icons/UpSnatchFocused.png using Guid(8a35aa5922ce5b746a734edf7de25ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6797e5ed8696471af147286ba7ccea59') in 0.0045494 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/IconMap/VariablesAsset@32.png
+  artifactKey: Guid(562f2dd7647d95e499d958215476bbde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/IconMap/VariablesAsset@32.png using Guid(562f2dd7647d95e499d958215476bbde) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '63de6ab99ec09573002d95ae64ac08fd') in 0.0044147 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/Icons/MipLevels/Volume@32.png
+  artifactKey: Guid(d35462a3f88c67241b7b7cd6dc624ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/Icons/MipLevels/Volume@32.png using Guid(d35462a3f88c67241b7b7cd6dc624ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '441c9656076c620a44cedf579bd43ea4') in 0.003827 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Packages/com.unity.visualeffectgraph/Editor/UIResources/VFX/vfx_graph_icon_gray_light.png
+  artifactKey: Guid(613e0ccdaf11df041bdc23a5818cfa58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualeffectgraph/Editor/UIResources/VFX/vfx_graph_icon_gray_light.png using Guid(613e0ccdaf11df041bdc23a5818cfa58) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b6c7592970063df512299df891f4eb00') in 0.0038501 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Packages/com.unity.visualeffectgraph/Editor/UIResources/VFX/vfx_graph_icon_gray_dark.png
+  artifactKey: Guid(dbf0a247eda3c834b86a04d35558ba9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualeffectgraph/Editor/UIResources/VFX/vfx_graph_icon_gray_dark.png using Guid(dbf0a247eda3c834b86a04d35558ba9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3d76bfc995356ad47b7358dcba09e8fe') in 0.0058719 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/IconMap/Variables@32x.png
+  artifactKey: Guid(ba736aa67df8cee43b1b679c961d74f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/IconMap/Variables@32x.png using Guid(ba736aa67df8cee43b1b679c961d74f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3c454eeafd618cd322f7d417f0374bb6') in 0.0034861 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/Icons/MipLevels/Volume@128.png
+  artifactKey: Guid(bcac3edca050cd043be3942131c59be3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/Icons/MipLevels/Volume@128.png using Guid(bcac3edca050cd043be3942131c59be3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '32b5298daeff2b4d2753a81c0f3290f0') in 0.0061381 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/Icons/Processed/VolumeProfile Icon.asset
+  artifactKey: Guid(faa56264e2faf674c8be98efbfd8e2a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/Icons/Processed/VolumeProfile Icon.asset using Guid(faa56264e2faf674c8be98efbfd8e2a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fa76dfbacba66ab88bddd6661f57f0ee') in 0.0088229 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Textures/UICheckMark.png
+  artifactKey: Guid(b346b2a2df1d290438be3287b6419408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Textures/UICheckMark.png using Guid(b346b2a2df1d290438be3287b6419408) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd190e4692865f58759edc8b0145ee062') in 0.0095221 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Textures/UIElement8px.png
+  artifactKey: Guid(d49e78756811bfa4aafb8b6535417991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Textures/UIElement8px.png using Guid(d49e78756811bfa4aafb8b6535417991) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd6f2e8edbca4c1942b439cfd2e28eb91') in 0.0072435 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.888201 seconds.
+  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Textures/White1px.png
+  artifactKey: Guid(127279d577f25ac4ea17dae3782e5074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Textures/White1px.png using Guid(127279d577f25ac4ea17dae3782e5074) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'be26f1766bbb41bda98565cedd2ae37b') in 0.005881 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 79.715703 seconds.
+  path: Assets/Texture/Brush Long.png
+  artifactKey: Guid(74d8d1525e340774aaefc2ac897d630d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture/Brush Long.png using Guid(74d8d1525e340774aaefc2ac897d630d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '26937f5893c92ddfc435f08eeb678867') in 0.0038381 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.242924 seconds.
+  path: Assets/Texture/Real Stars Skybox/StarSkybox04Named/CubemapStarsNamed.cubemap
+  artifactKey: Guid(ec138a587ef5adc488cf01a681a9e4c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture/Real Stars Skybox/StarSkybox04Named/CubemapStarsNamed.cubemap using Guid(ec138a587ef5adc488cf01a681a9e4c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c64fbcf63d74ebecf14c60f11efe1214') in 0.7803544 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 35
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.040812 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f4fa5e5064007f6751bddb3e08fe3b98') in 0.0072042 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.773746 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '42d32600c2eff2a06e29ce5a589b119a') in 0.0037529 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 109.677573 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '48a72c60040444111359cea1d7c5cda9') in 0.0023556 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.802016 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0b7581f754b96879ea28a6b4ea516023') in 0.0025929 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.632789 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4455ec7032eaa3912c5387c381666bf7') in 0.0021167 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 64.250801 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2d57bb80ffe1218010999c72951bb9f7') in 0.0024212 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 203.783168 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '26e502c7058ca30f007063579b383a37') in 0.0034121 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.129461 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ee3e2b8b8afc8672a7ffdc0d1f999157') in 0.0021256 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 353.623086 seconds.
+  path: Assets/Texture/Brush Long2.png
+  artifactKey: Guid(13f758874fe69de42b9a75d91bb10537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture/Brush Long2.png using Guid(13f758874fe69de42b9a75d91bb10537) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2bb4ab3404d516b171828d106329830a') in 0.0050865 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 63.222138 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '49e61ccfb9a4a356904fc77380741fc9') in 0.0027598 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.638330 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '55c39d866c7f3f4b910bdc01310d5934') in 0.0021596 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.272798 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '100b7c9ea09c7fe97f6915823888c1c2') in 0.0016421 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.377667 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1d508102d83872f498809b468d6f9655') in 0.0027521 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.786549 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5e7ec9300e4f4319bf6af7cbe068f15b') in 0.0014105 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.447859 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bc5e9d3b3a99199c01e5d14a5937d689') in 0.002912 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 55.415558 seconds.
+  path: Assets/VFX/New VFX.vfx
+  artifactKey: Guid(a1e5bdda3615bda47b1169315d86cd5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/New VFX.vfx using Guid(a1e5bdda3615bda47b1169315d86cd5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ba0aace5ad799eff5bda6414a242cd28') in 0.0022582 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.889663 seconds.
+  path: Assets/VFX/New VFX.vfx
+  artifactKey: Guid(a1e5bdda3615bda47b1169315d86cd5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/New VFX.vfx using Guid(a1e5bdda3615bda47b1169315d86cd5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '537f503040cec3515e05d6fbe6db454d') in 0.0020457 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.536801 seconds.
+  path: Assets/VFX/New VFX.vfx
+  artifactKey: Guid(a1e5bdda3615bda47b1169315d86cd5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/New VFX.vfx using Guid(a1e5bdda3615bda47b1169315d86cd5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4256d3f93b6a10e0b478d21ce155811e') in 0.00379 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.482115 seconds.
+  path: Assets/VFX/New VFX.vfx
+  artifactKey: Guid(a1e5bdda3615bda47b1169315d86cd5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/New VFX.vfx using Guid(a1e5bdda3615bda47b1169315d86cd5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b6c5a71a38960516d1592051e527b18b') in 0.0027372 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.382771 seconds.
+  path: Assets/VFX/New VFX.vfx
+  artifactKey: Guid(a1e5bdda3615bda47b1169315d86cd5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/New VFX.vfx using Guid(a1e5bdda3615bda47b1169315d86cd5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e15afb9a02133bfd54af5c9730da89e1') in 0.0032911 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.165797 seconds.
+  path: Assets/VFX/New VFX.vfx
+  artifactKey: Guid(a1e5bdda3615bda47b1169315d86cd5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/New VFX.vfx using Guid(a1e5bdda3615bda47b1169315d86cd5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '39124930582ba82659ef72bf136fed66') in 0.0020709 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 60.695838 seconds.
+  path: Assets/VFX/New VFX.vfx
+  artifactKey: Guid(a1e5bdda3615bda47b1169315d86cd5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/New VFX.vfx using Guid(a1e5bdda3615bda47b1169315d86cd5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e7ec63659d775de5fc9e13c67dbc9d26') in 0.0029408 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.101323 seconds.
+  path: Assets/VFX/New VFX.vfx
+  artifactKey: Guid(a1e5bdda3615bda47b1169315d86cd5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/New VFX.vfx using Guid(a1e5bdda3615bda47b1169315d86cd5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '892e6e31d1862e65c74c243a10b93c5a') in 0.0021389 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.843326 seconds.
+  path: Assets/VFX/New VFX.vfx
+  artifactKey: Guid(a1e5bdda3615bda47b1169315d86cd5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/New VFX.vfx using Guid(a1e5bdda3615bda47b1169315d86cd5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e4d271b7cca6457e52b407d148a616e4') in 0.0024216 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.064177 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '143c59405147897d484064e648d0662f') in 0.0017374 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.539404 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5bd29f11e85cd6257c169b708ac6ec8d') in 0.0026061 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.381442 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a62ee69aa4589b0a4201b7af9059d745') in 0.0013879 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.578826 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '195061c0045665309bb15635e3e0753e') in 0.0021461 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.048967 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7c1d21e65af0c765733dc6a6556d248a') in 0.0018429 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.599887 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd7cda0729c6c836a9be9524010f1082c') in 0.0015151 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.011564 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6c3a3b98fb73887066bb95dec9d460d7') in 0.0017101 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.676741 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '059156eb18915da35038bc599611067f') in 0.0016819 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.857567 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '67f77ab7e7ae502f096c18daa8a9ec75') in 0.001593 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.286387 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ff9c985d1f210df742cdbf5791dd2347') in 0.0016858 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 68.711392 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f06b5a97b1ac4a6326fd7e2f2041e8de') in 0.0015722 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.454749 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ac618bf212437bd8a7eae1313965e933') in 0.0014579 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.596581 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9051ea8a997aca70d1de3ed5b5eaaae1') in 0.0016461 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.365724 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7e1c4087573a2ebcca2da7cffd6842d5') in 0.0014428 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.518405 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '53fc0635f28aa266d7a3841f7a31124c') in 0.0017924 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.413553 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c36d10457e0a7a48553154e7e89225c1') in 0.0015677 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.291517 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ae044fe29b55f3ecc1c16aa0b0f1a966') in 0.0015952 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.508801 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e7fcd4567ad288740fdb245f2afc076d') in 0.0021868 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.200034 seconds.
+  path: Assets/VFX/New VFX.vfx
+  artifactKey: Guid(a1e5bdda3615bda47b1169315d86cd5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/New VFX.vfx using Guid(a1e5bdda3615bda47b1169315d86cd5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '595954e4c66578ceccb3bfe2495579fa') in 0.0022133 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.816645 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e26cfd00359fff55c49e733622232143') in 0.002143 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.525840 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '24645032df06b2826a5652b5864f35f3') in 0.0015854 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.869344 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd07ed8c08fda2c022532c7649f5a366f') in 0.0026259 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.396493 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '64384b747cd0d9436503f2298eab3615') in 0.0018246 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.489338 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c32d4882bc3695e06d0a182eb4237aab') in 0.0031544 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.677072 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd21b044b822b00e337ec51eeb7318caf') in 0.0006843 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.564880 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1b67398d2064cd83b58a4b77eb369a0d') in 0.002694 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.062045 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '966d71570d0fdd9f004a61d8c6b33277') in 0.0023003 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.092088 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '058d3bcaa85b216728b5ea1b1c5d5721') in 0.0021049 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.391886 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ee46a914235acb9987973d3aeb98dc61') in 0.0025111 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.361780 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0528954723b5af6d207810c2f759828b') in 0.0025061 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.672716 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2f22d9bbf0be908b0b04061d83b69502') in 0.0021787 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.614913 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd7cd1a77504b7eca8d9e4f98a7f811fa') in 0.0019583 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.845895 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '69a25b73ee3b7b20985624cc0e9fd7f4') in 0.0020195 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.312783 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4f694d74c897906354c30f261eb426a0') in 0.0019955 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.317705 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6e3599cf74281d1cb339be489060684f') in 0.0038242 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.458213 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '93f7c1cf2d76df12e81355754e91902d') in 0.0020398 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.338246 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3fa48e97964c59a8641bdcb5da3baf2f') in 0.0018521 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.422187 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '12af67fc07d2e8c267438ed58974d303') in 0.001883 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.674966 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'adcca551803c92b248207e533d66b79d') in 0.0021296 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.198950 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7b2c1e2eb8678cef481c5e0d65a7423a') in 0.002009 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.386734 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5dc9065255e6397d0c1f7103c943bde2') in 0.0020631 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.649139 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2c132f90c01d486f5161ac281155ec6f') in 0.0020409 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.659692 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '085575c3de903e3737667df500c58329') in 0.0025297 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.372564 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '51e57913dd7fcd97cde7bc5b39c1852c') in 0.0024279 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.356454 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3a868ad533bb3e19733c124f7c037f09') in 0.0020358 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.681615 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e20d2b4da2fe3a1f4d70ce154bb503e9') in 0.0021012 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.692926 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '98eef94a2e1517e0638c41a28e5b92d7') in 0.0019696 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.739620 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '418c6992251eb2e573dd6b1feae1e5a6') in 0.0028483 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.306567 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7587d3ba5b72d77fa70ab3a97d474837') in 0.0026291 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.619466 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '64d66c47411f8b61363160d0ce7d441f') in 0.0029566 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.775820 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5612f16a77ce92f3ec2824bd6c463690') in 0.0029292 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.636480 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c0b8e3b1e5b46be279bfa81acfafd7bf') in 0.0042998 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.300925 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4967928bc7745b5793006a0c4ed7647d') in 0.0028421 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 75.483896 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e2223008fcd517524183311fff60f6ab') in 0.0050152 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.827851 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ddc2e0b239ae1ed9022776dd2f65e3a6') in 0.0025807 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 117.417087 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '736362eb059530ea6230d7b90e01db6d') in 0.00338 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.657026 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '131a2f482b0c87484ef1b52a2f6a5b81') in 0.0031395 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.225299 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '137d67f755c8e75c4f450cc02814f239') in 0.002791 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.885331 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0377b4eb0ae902ecfc4c640a42d11f2a') in 0.0033781 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.601704 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b7d50d32b770686a84f10d0756f063a6') in 0.0027398 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.339751 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4784bc7833e0da0ef72f8cc149ef4487') in 0.0028217 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 111.725808 seconds.
+  path: Assets/Texture/Brush Long2.png
+  artifactKey: Guid(13f758874fe69de42b9a75d91bb10537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Texture/Brush Long2.png using Guid(13f758874fe69de42b9a75d91bb10537) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '79fa535d50ac27be34dfa9fa519371d5') in 0.0136994 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 67.789631 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7738035d91df10fa6aa6d2ed42d42396') in 0.0035467 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.149719 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ccb2c31ac3f2b55db75d1607413b1664') in 0.0007543 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 50.634361 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bcfa0a2e5a877569672933dc344eb60d') in 0.0030066 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.522070 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cba4f8f306269aa9c2841511cb6b9461') in 0.0035356 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.940313 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ce957cc38d7664aec6448ac302f7a724') in 0.003336 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.211678 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dd9ace981ad1ebfb73619827ce73cf21') in 0.0031255 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.228789 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9127c95b6fca1d26d6d0853d3e8b7df3') in 0.003014 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.007363 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd94ae768119fdcb93234758dbdd16d13') in 0.0048552 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.495666 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6db9f8496a3f7aaad5a85ca7783173b5') in 0.0026408 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.950672 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dd1bdca3444ff0db9836334927ecf25c') in 0.0031859 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.551035 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f1411e14ee4589dd39b372daf801ac51') in 0.0029443 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.535833 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '121552dc2ba8a659e10b0fe27598b22f') in 0.0029939 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.746 seconds
+Refreshing native plugins compatible for Editor in 0.31 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.478 seconds
+Domain Reload Profiling: 1226ms
+	BeginReloadAssembly (298ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (47ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (94ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (396ms)
+		LoadAssemblies (370ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (121ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (102ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (479ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (320ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (1ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (29ms)
+			ProcessInitializeOnLoadAttributes (264ms)
+			ProcessInitializeOnLoadMethodAttributes (20ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 0.28 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 36 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5832 unused Assets / (6.0 MB). Loaded Objects now: 6666.
+Memory consumption went from 191.0 MB to 185.0 MB.
+Total: 5.724900 ms (FindLiveObjects: 0.448100 ms CreateObjectMapping: 0.201600 ms MarkObjects: 3.490000 ms  DeleteObjects: 1.584000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 1082.805070 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aa885b70e8a451916221c19c2d87dc17') in 0.0508685 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 61.758471 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6dc80a45626f8ef2bf715f9abe007034') in 0.0025738 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 140.684408 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4f87b275af2b4497cefbad5199375f5d') in 0.0033877 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.034658 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '70ea337d8684155c7521edca9c5d897f') in 0.0031413 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 123.149843 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5b901d353101c8c4990975a6135a9f50') in 0.0034328 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.484484 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ba0d5f8790c315b702e2f25afb07caf2') in 0.0027152 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.058759 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9b0de6bff9cfe5cfd4876c40c5d7f91f') in 0.0032826 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 83.162092 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '40fdeda353b5e5c54fe445fe5f82ba10') in 0.0041006 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.318531 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3751d56552d81ad1f9de4c73bfb4d439') in 0.0024611 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.828486 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4a321ba1c2e7db3f9ab0a67c6b4c0d7c') in 0.0035175 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.919816 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9bfe4a98317553fcfe277181bc221bc1') in 0.003835 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 56.317329 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7a8107a1ed5c3ce948db0666936624ec') in 0.0022612 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.923721 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '36845e963f6f7c336706fab700bcf959') in 0.002184 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.702176 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2f6a7d1d4a515974274f0af164bf1c7c') in 0.0024442 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.659107 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '95f54cc4c6ac7eb31341e040659c9d13') in 0.0024336 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 60.792027 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b87c5e006239a61e734ff3ac5f7c7516') in 0.0034781 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 73.168003 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8d64f8b8b9fe7897eb50bd860f483954') in 0.0033603 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.559072 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f4612b4fa14fa1dd878136c2b4327c16') in 0.002763 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 85.425211 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5f4de026b966ffd9851d6be7e81c5958') in 0.0037519 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.946970 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd393045e1b16268df4bc3680d3ec0129') in 0.0042309 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.074892 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'df02d46cd1532f75b7406c3731ea7116') in 0.0040355 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.411901 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9b1c3858cf6a40edd8583dd5f6fcc3b0') in 0.0047975 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.868106 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dc159aba4a2ce1fb784acc4bfe650838') in 0.0040006 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 137.006490 seconds.
+  path: Assets/VFX/New VFX.vfx
+  artifactKey: Guid(a1e5bdda3615bda47b1169315d86cd5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/New VFX.vfx using Guid(a1e5bdda3615bda47b1169315d86cd5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f05da28fad70bb8e5f9aac74319a47ca') in 0.0025156 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.886729 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a4eb78414f6422c7041e71852f602102') in 0.0039131 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.669100 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dd7d34073e2395d94c635ad3468a6dc6') in 0.0026124 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.925558 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ed01c00b741b21ab2767621770e07c91') in 0.0023035 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.292886 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e282224f3a598a048866b04ae8a2d67e') in 0.0025475 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.177213 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c9b7935be18841d7583e7b8a7d8e58c0') in 0.0022366 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.886747 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'db6222af4126e298e3818cd153a4d59d') in 0.0029614 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.944289 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5fb3a2417793dee104df1a7537572e03') in 0.0040807 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.769179 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '910fc13cda46f7a02f97400aa6425ac5') in 0.0033565 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 82.366511 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ce18924a2b564398dfd0c1216b99c5b6') in 0.0036041 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.878976 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f7de6b96a18511031de1d8bfb514872c') in 0.0029893 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.447601 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f8ebdc4021fd8035c932a063ff5bd103') in 0.0025667 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.518985 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e64bd4b6d9b095780bca66b3da998bea') in 0.0041201 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.319727 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cd8eaef06459783ffba15757777a9a43') in 0.0021487 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.149591 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eb36921f2e16c13417f815bc6aa727ec') in 0.0027551 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 359.380963 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '86dce9375de88f48d96d0801667dd0a2') in 0.0037063 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 150.391874 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a5267142de97fe2fdb631f1164612c77') in 0.0038394 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.307136 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '42f67f088970af0b7606fcef4fb7a292') in 0.0028461 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.630158 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5066e22d244541da81d3cfa53ebf447e') in 0.0027317 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.216237 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '950148adf8391890c8343aca0cd65d44') in 0.0029783 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.029861 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a2dc6367bf8878d25813456f326ded1a') in 0.0043828 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.618309 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '54c08338a3cf86992f2532beba905069') in 0.0032029 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.143329 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c1fe39abf62d15c3a14550ed59bfe5c6') in 0.0032209 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.559022 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a66353122240e3150f2c4d8ae7de627d') in 0.0027937 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.650407 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ed9b761381f71ed25836476243469550') in 0.0031223 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.442387 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fc2d41fd65260fec97bcb46b8f6d6c95') in 0.003077 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.805153 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'facd95f7d2720eafdf159de6ab585163') in 0.0027871 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.382685 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0774c680d0ee73934bcfc917876c9885') in 0.0030163 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.643185 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ff2104062cf8b787066d5d486511cb6e') in 0.0029945 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.021749 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '43ee9309dbc8869f5d9e753cd95560d5') in 0.0032203 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.046136 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0714db9a10451389d0a4b17209875b21') in 0.0041518 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.952198 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '46fcfc4e22036d5227f894c36716471f') in 0.0029477 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 93.823343 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8495b863d137d389374587e249b1c611') in 0.0035543 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.302400 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '831f8feb9e79d6c5ba6c76068dccb87b') in 0.0036476 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.413237 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a53baca7885b71aa3e4df9c7a7e9e7bc') in 0.0030792 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.477655 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '37da76482d57b48adb771167cdecbbb2') in 0.0035341 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 59.177767 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f95cab19e5102fceb20362142e9a08b9') in 0.0031308 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 49.761765 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ff19deee9f1b10e6e4486b443b91ff60') in 0.0031038 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.450984 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '15df80131a1a9ca021b2a7b8d06f73f4') in 0.0031906 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.290789 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8a74075ba3c85fcfc73c7d42aa05d100') in 0.003044 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.863531 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '160778686fbbb15881495b0f5761dc9c') in 0.0051773 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.573043 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7f801e0f11662bea2132dd78f1d015f2') in 0.0031898 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.799581 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7e30ce7aa81c5af228b23be3309f2c6f') in 0.002967 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.700800 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e2f2787dcf5a08c893b9590a99900d1e') in 0.0030682 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 87.931113 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '79f95b5658bcc7e8c53a445386f6535e') in 0.0029471 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.447773 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e9185baa2f4843ab0eb37ae4fb37e75c') in 0.003099 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.112864 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5c5314110e7601de0c4bb37e694eeaca') in 0.0030233 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.514542 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c226fa777d53fe7c727f8ff508bca706') in 0.003063 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 136.892013 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '48867ed2400fa6bc733cb6131c438b70') in 0.0049418 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.152379 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '898d149ac401e27da03425a71fe83929') in 0.0033459 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.532324 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5d498985141a455f2419593bf749c8b4') in 0.0039782 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.605181 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '329e090653fcb7fe17221e42864d06c5') in 0.0033259 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.296669 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9d12a1a37373ee23e008c0b9f786231a') in 0.0035936 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 111.266079 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '77b33eef4b810d8311bbfb2bc738388c') in 0.0036281 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.608568 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cf94d661da041b825a148cae25da9ca3') in 0.0035432 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.253626 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2647dfde7e8d43f1e0ebcc8b98fa25a6') in 0.0036183 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.320189 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '22638971b8e3c3501b579f091bcc76ac') in 0.0035968 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 712.245625 seconds.
+  path: Assets/VFX/Leaf.vfx
+  artifactKey: Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/Leaf.vfx using Guid(546c82db70a2a024fb8884b360167234) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '35d57e406d9b79c4d1bac45c473ab31c') in 0.0062983 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 13
+
