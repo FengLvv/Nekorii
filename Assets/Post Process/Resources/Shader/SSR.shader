@@ -22,6 +22,10 @@ Shader "Custom/PostProcess/SSR"
 
         Pass
         {
+            Tags
+            {
+                "LightMode" = "UniversalForward"
+            }
             HLSLPROGRAM
             #pragma vertex vertSSR
             #pragma fragment fragSSR
@@ -34,9 +38,9 @@ Shader "Custom/PostProcess/SSR"
             ZWrite On
             Tags
             {
-               "LightMode" = "DrawSSR"
+                "LightMode" = "DrawSSR"
             }
-Blend one one
+            Blend one one
             HLSLPROGRAM
             #pragma vertex vertDrawSSR
             #pragma fragment fragRenderReflection

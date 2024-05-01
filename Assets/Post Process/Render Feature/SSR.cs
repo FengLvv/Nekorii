@@ -17,6 +17,7 @@ namespace Post_Process_Effect.Render_Feature {
 		class CustomRenderPass : ScriptableRenderPass {
 			Material _ssrMaterial;
 			Material _blurMaterial;
+			
 
 			FilteringSettings filtering; //在之后设置
 			ShaderTagId shaderTag = new ShaderTagId( "UniversalForward" ); //执行带有这个tag的shader
@@ -118,7 +119,7 @@ namespace Post_Process_Effect.Render_Feature {
 					};
 					var rendererList = context.CreateRendererList( rendererListDesc );
 					cmd.DrawRendererList( rendererList );
-
+					
 
 
 					// Set z buffer and blit to color buffer
@@ -130,10 +131,6 @@ namespace Post_Process_Effect.Render_Feature {
 				// var draw = CreateDrawingSettings( shaderTag, ref renderingData, renderingData.cameraData.defaultOpaqueSortFlags );
 				// draw.overrideMaterial = _ssrMaterial;
 				// draw.overrideMaterialPassIndex = 1; //材质覆盖
-
-
-
-
 
 				context.ExecuteCommandBuffer( cmd );
 				cmd.Clear();

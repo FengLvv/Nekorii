@@ -80,10 +80,10 @@ Shader "Custom/Sea"
 
         float4 color = colorN;
         color.xyz *= shadow;
-        color.w += 1-shadow;
-        
+        color.w += 1 - shadow;
 
-        return  color;
+
+        return color;
     }
     ENDHLSL
 
@@ -93,12 +93,16 @@ Shader "Custom/Sea"
         {
             "RenderType"="transparent" //用于指明渲染类型
             "Queue"="Transparent" //用于指明渲染顺序
-
-            "RenderPipeLine"="UniversalRenderPipeline" //用于指明使用URP来渲染              
+            "RenderPipeLine"="UniversalRenderPipeline" //用于指明使用URP来渲染      
+            "LightMode" = "UniversalForward"
         }
 
         Pass
         {
+            Tags
+            {
+                "LightMode" = "UniversalForward"
+            }
             Blend One One
             ZWrite Off
             HLSLPROGRAM

@@ -379,7 +379,7 @@ MonoBehaviour:
   active: 1
   MarchSteps:
     m_OverrideState: 1
-    m_Value: 432
+    m_Value: 636
   DepthTolerance:
     m_OverrideState: 1
     m_Value: 0.79
