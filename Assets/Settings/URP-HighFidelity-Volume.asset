@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 899c54efeace73346a0a16faa3afe726, type: 3}
   m_Name: Vignette
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   color:
     m_OverrideState: 1
     m_Value: {r: 1, g: 1, b: 1, a: 1}
@@ -28,6 +28,91 @@ MonoBehaviour:
   rounded:
     m_OverrideState: 1
     m_Value: 0
+--- !u!114 &-5358984540206963848
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33a3f0580e82b774289eebfc37cfac5f, type: 3}
+  m_Name: PPVolumeCloud
+  m_EditorClassIdentifier: 
+  active: 0
+  RaySteps:
+    m_OverrideState: 1
+    m_Value: 47
+  RayStepLength:
+    m_OverrideState: 1
+    m_Value: 10.4
+  CloudDensityScale:
+    m_OverrideState: 1
+    m_Value: 1
+  CloudDensityAdd:
+    m_OverrideState: 1
+    m_Value: 0
+  BoxMin:
+    m_OverrideState: 1
+    m_Value: {x: -20000, y: 1751.15, z: -20000}
+  BoxMax:
+    m_OverrideState: 1
+    m_Value: {x: 20000, y: 4000, z: 20000}
+  SkymaskNoiseScale:
+    m_OverrideState: 1
+    m_Value: 2.74
+  SkymaskNoiseBias:
+    m_OverrideState: 1
+    m_Value: {x: 0, y: 0}
+  DensityNoiseScale:
+    m_OverrideState: 1
+    m_Value: 0.009
+  DensityNoiseBias:
+    m_OverrideState: 1
+    m_Value: {x: 0, y: 0}
+  DensityNoiseWeight:
+    m_OverrideState: 1
+    m_Value: {x: 0.6, y: 0.2, z: 0.1, w: 0.1}
+  DetailNoiseScale:
+    m_OverrideState: 1
+    m_Value: 0.305
+  DetailNoiseWeight:
+    m_OverrideState: 1
+    m_Value: 2.56
+  MoveSpeedShape:
+    m_OverrideState: 1
+    m_Value: 2.41
+  MoveSpeedDetail:
+    m_OverrideState: 1
+    m_Value: 15
+  xy_MoveSpeedSky_z_MoveMask_w_ScaleMask:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 0, z: 2, w: 1}
+  LightAbsorptionTowardSun:
+    m_OverrideState: 1
+    m_Value: 0.41
+  LightEnergyScale:
+    m_OverrideState: 1
+    m_Value: 1
+  CloudMidColor:
+    m_OverrideState: 0
+    m_Value: {r: 0, g: 1, b: 1, a: 1}
+  CloudDarkColor:
+    m_OverrideState: 0
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  ColorOffset1:
+    m_OverrideState: 0
+    m_Value: 1
+  ColorOffset2:
+    m_OverrideState: 0
+    m_Value: 1
+  DarknessThreshold:
+    m_OverrideState: 0
+    m_Value: 0
+  HG:
+    m_OverrideState: 0
+    m_Value: -0.53
 --- !u!114 &-2836910487985875517
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -40,7 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97c23e3b12dc18c42a140437e53d3951, type: 3}
   m_Name: Tonemapping
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   mode:
     m_OverrideState: 1
     m_Value: 0
@@ -80,7 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a43c284e4e49646478fc5b44ff354c08, type: 3}
   m_Name: ShaftParameter
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   DownSampleTimes:
     m_OverrideState: 1
     m_Value: 0
@@ -139,6 +224,7 @@ MonoBehaviour:
   - {fileID: 3936850321319989917}
   - {fileID: 8329676798517855505}
   - {fileID: -2493535110030938318}
+  - {fileID: -5358984540206963848}
 --- !u!114 &117353428541520204
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -194,19 +280,19 @@ MonoBehaviour:
   active: 1
   DownSampleTimes:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   EnableBlur:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   BlurStepMultiple:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 12
   ColorSigma:
     m_OverrideState: 1
     m_Value: 0.1
   SpacialSigma:
     m_OverrideState: 1
-    m_Value: 0.88
+    m_Value: 1.52
   LightColor:
     m_OverrideState: 1
     m_Value: {r: 16, g: 16, b: 16, a: 1}
@@ -227,7 +313,7 @@ MonoBehaviour:
     m_Value: 20
   HG_g:
     m_OverrideState: 1
-    m_Value: 0.785
+    m_Value: 0.698
   RayleighWeight:
     m_OverrideState: 1
     m_Value: 1
@@ -379,13 +465,13 @@ MonoBehaviour:
   active: 1
   MarchSteps:
     m_OverrideState: 1
-    m_Value: 636
+    m_Value: 717
   DepthTolerance:
     m_OverrideState: 1
-    m_Value: 0.79
+    m_Value: 1.66
   EnableBlur:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
   BlurStepMultiple:
     m_OverrideState: 1
     m_Value: 4

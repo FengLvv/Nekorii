@@ -52,6 +52,7 @@
     <Compile Include="Assets\Post Process\Volume Parameter\Shaft Parameter.cs" />
     <Compile Include="Assets\AnyTrail\DataAndTools\AnyTrailStruct.cs" />
     <Compile Include="Assets\MyMaterial\Sea\Scripts\move.cs" />
+    <Compile Include="Assets\Post Process\Render Feature\pp volume.cs" />
     <Compile Include="Assets\AnyTrail\Effect\DrawTrail\TrailWriter.cs" />
     <Compile Include="Assets\AnyTrail\Demo\SetFrameRate.cs" />
     <Compile Include="Assets\AnyTrail\Effect\DrawPattern\DrawPattern.cs" />
@@ -64,6 +65,7 @@
     <Compile Include="Assets\AnyTrail\DataAndTools\CanvasComputerAbstract.cs" />
     <Compile Include="Assets\AnyTrail\Effect\DrawWave\WaveWriter.cs" />
     <Compile Include="Assets\AnyTrail\Demo\BasicMove.cs" />
+    <Compile Include="Assets\Post Process\Volume Parameter\CloudPara.cs" />
     <Compile Include="Assets\Post Process\Render Feature\SSR.cs" />
     <Compile Include="Assets\Post Process\Volume Parameter\SSR Parameter.cs" />
     <Compile Include="Assets\AnyTrail\DataAndTools\TrailWriterAbstract.cs" />
@@ -95,6 +97,7 @@
     <None Include="Assets\Texture\Real Stars Skybox\Demo Scene\Documentation.txt" />
     <None Include="Assets\AnyTrail\AnyTrailShaderInclude.hlsl" />
     <None Include="Assets\AnyTrail\Resources\NSCompute.compute" />
+    <None Include="Assets\Post Process\Resources\Shader\PP Volume.shader" />
     <None Include="Assets\Post Process\Resources\Sky.shader" />
     <None Include="Assets\AnyTrail\Resources\WavesCompute.compute" />
     <None Include="Assets\Post Process\Resources\Shader\Blur.shader" />

@@ -14,7 +14,6 @@ int _MarchSteps;
 int _MaxStepDistance;
 float _NearPlaneDistance;
 float _FarPointDistance;
-float4 _MieScatteringFactor;
 float _ExtinctionFactor;
 float3 _LightPowerColorEnhance;
 float _Density;
@@ -80,7 +79,7 @@ half4 fragVL(VaryingsVL i) : SV_Target
         // light power * density * step length * in Shadow
         float3 lightPower = (mainLight.color + _LightPowerColorEnhance) * length(marchVector) * _Density;
         // light attenuation by HG phase function
-        float hg = MieScatteringFuncHG(normalize(mainLight.direction), -rayDirNormalize, _MieScatteringFactor);
+        float hg = MieScatteringFuncHG(normalize(mainLight.direction), -rayDirNormalize);
         // light attenuation by Beer's law
         float beer = Beer(marchLength * (x + 1), _Density,_ExtinctionFactor);
 

@@ -15,7 +15,7 @@ E:/Study/Chalmers/Nekorii
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-61635
+61761
 -job-worker-count
 9
 -background-job-worker-count
@@ -58,12 +58,12 @@ E:/Study/Chalmers/Nekorii
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [4120] Host "[IP] 192.168.5.111 [Port] 0 [Flags] 2 [Guid] 1233119756 [EditorId] 1233119756 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6E4HN7O) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
-Player connection [4120] Host "[IP] 192.168.5.111 [Port] 0 [Flags] 2 [Guid] 1233119756 [EditorId] 1233119756 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6E4HN7O) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [24224] Host "[IP] 192.168.5.111 [Port] 0 [Flags] 2 [Guid] 2579986325 [EditorId] 2579986325 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6E4HN7O) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [24224] Host "[IP] 192.168.5.111 [Port] 0 [Flags] 2 [Guid] 2579986325 [EditorId] 2579986325 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6E4HN7O) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 9
 [Physics::Module] Initialized MultithreadedJobDispatcher with 9 workers.
 Library Redirect Path: Library/
-Refreshing native plugins compatible for Editor in 1.07 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 1.26 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.2.15f1 (c5cbb0b314fa)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.2.15f1/Editor/Data/Resources/UnitySubsystems
@@ -79,7 +79,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.2.15f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.2.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.2.15f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56912
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56184
 Begin MonoManager ReloadAssembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
@@ -93,41 +93,41 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001557 seconds.
-- Loaded All Assemblies, in  0.345 seconds
+Registered in 0.001959 seconds.
+- Loaded All Assemblies, in  0.257 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-- Finished resetting the current domain, in  0.204 seconds
-Domain Reload Profiling: 548ms
-	BeginReloadAssembly (132ms)
+- Finished resetting the current domain, in  0.179 seconds
+Domain Reload Profiling: 435ms
+	BeginReloadAssembly (89ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (30ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (35ms)
-	LoadAllAssembliesAndSetupDomain (137ms)
-		LoadAssemblies (132ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (104ms)
+		LoadAssemblies (87ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (134ms)
-			TypeCache.Refresh (133ms)
-				TypeCache.ScanAssembly (119ms)
+		AnalyzeDomain (102ms)
+			TypeCache.Refresh (101ms)
+				TypeCache.ScanAssembly (90ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (204ms)
+	FinalizeReload (179ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (170ms)
+		SetupLoadedEditorAssemblies (145ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (6ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (5ms)
-			ProcessInitializeOnLoadAttributes (129ms)
-			ProcessInitializeOnLoadMethodAttributes (28ms)
+			SetLoadedEditorAssemblies (2ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (107ms)
+			ProcessInitializeOnLoadMethodAttributes (27ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -150,356 +150,952 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.763 seconds
-Refreshing native plugins compatible for Editor in 0.67 ms, found 6 plugins.
+- Loaded All Assemblies, in  0.616 seconds
+Refreshing native plugins compatible for Editor in 0.55 ms, found 6 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.757 seconds
-Domain Reload Profiling: 1520ms
-	BeginReloadAssembly (253ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (21ms)
-	RebuildCommonClasses (31ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (25ms)
-	LoadAllAssembliesAndSetupDomain (444ms)
-		LoadAssemblies (297ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (214ms)
-			TypeCache.Refresh (170ms)
-				TypeCache.ScanAssembly (152ms)
-			BuildScriptInfoCaches (30ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (758ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (511ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (34ms)
-			ProcessInitializeOnLoadAttributes (433ms)
-			ProcessInitializeOnLoadMethodAttributes (35ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 1.04 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 212 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5992 unused Assets / (7.3 MB). Loaded Objects now: 6699.
-Memory consumption went from 194.7 MB to 187.4 MB.
-Total: 9.545300 ms (FindLiveObjects: 0.559500 ms CreateObjectMapping: 0.300300 ms MarkObjects: 4.322500 ms  DeleteObjects: 4.360400 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 19583.868587 seconds.
-  path: Assets/Scenes/Post Process Test
-  artifactKey: Guid(df78dac975649be42a8a3f521e3af556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Post Process Test using Guid(df78dac975649be42a8a3f521e3af556) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e6c599c2e125481dae22a7170e472654') in 0.00488 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Scenes/Post Process Test/New Scene.unity
-  artifactKey: Guid(fefed71b2ac2e454bb3a032418602051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Post Process Test/New Scene.unity using Guid(fefed71b2ac2e454bb3a032418602051) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '717c43677ce8ce3079f8408fee4bb21e') in 0.0007661 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000085 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(9c53962885c2c4f449125a979d6ad240) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(9c53962885c2c4f449125a979d6ad240) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c6652c2e8aeced85daab3a03d920116d') in 0.0010927 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.449 seconds
-Refreshing native plugins compatible for Editor in 0.84 ms, found 6 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.510 seconds
-Domain Reload Profiling: 960ms
-	BeginReloadAssembly (139ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (2ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (37ms)
-	RebuildCommonClasses (22ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (17ms)
-	LoadAllAssembliesAndSetupDomain (264ms)
-		LoadAssemblies (232ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (103ms)
-			TypeCache.Refresh (8ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (85ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (510ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (362ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (1ms)
-			SetLoadedEditorAssemblies (2ms)
-			BeforeProcessingInitializeOnLoad (29ms)
-			ProcessInitializeOnLoadAttributes (303ms)
-			ProcessInitializeOnLoadMethodAttributes (24ms)
-			AfterProcessingInitializeOnLoad (2ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (16ms)
-Refreshing native plugins compatible for Editor in 0.64 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 29 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5990 unused Assets / (6.7 MB). Loaded Objects now: 6702.
-Memory consumption went from 165.3 MB to 158.6 MB.
-Total: 7.054900 ms (FindLiveObjects: 0.415400 ms CreateObjectMapping: 0.600200 ms MarkObjects: 3.831000 ms  DeleteObjects: 2.207200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 43.451849 seconds.
-  path: Assets/Texture/wave.png
-  artifactKey: Guid(23fde12a9ca76d34f87cfc687f4204c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Texture/wave.png using Guid(23fde12a9ca76d34f87cfc687f4204c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b263a3e7730b8d34b772c33a2d653b06') in 0.0485383 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 239.681084 seconds.
-  path: Assets/Shader/Sea.shader
-  artifactKey: Guid(cbe49d3baaaadd34183b385f865ecafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shader/Sea.shader using Guid(cbe49d3baaaadd34183b385f865ecafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b9fbf74dbd0d1f247058942b7bd916f3') in 0.0009352 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.669764 seconds.
-  path: Assets/Shader/Sea 1.shader
-  artifactKey: Guid(d6a56a11746cf52408f5d792e7fcafd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shader/Sea 1.shader using Guid(d6a56a11746cf52408f5d792e7fcafd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5ad2981955fd5999ef83800a66899ff5') in 0.0015076 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.476 seconds
-Refreshing native plugins compatible for Editor in 0.52 ms, found 6 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.752 seconds
-Domain Reload Profiling: 1230ms
-	BeginReloadAssembly (138ms)
+- Finished resetting the current domain, in  0.516 seconds
+Domain Reload Profiling: 1131ms
+	BeginReloadAssembly (229ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (38ms)
-	RebuildCommonClasses (24ms)
+		CreateAndSetChildDomain (23ms)
+	RebuildCommonClasses (22ms)
 	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (17ms)
-	LoadAllAssembliesAndSetupDomain (290ms)
-		LoadAssemblies (245ms)
+	initialDomainReloadingComplete (24ms)
+	LoadAllAssembliesAndSetupDomain (332ms)
+		LoadAssemblies (251ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (111ms)
-			TypeCache.Refresh (5ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (97ms)
+		AnalyzeDomain (154ms)
+			TypeCache.Refresh (125ms)
+				TypeCache.ScanAssembly (113ms)
+			BuildScriptInfoCaches (20ms)
 			ResolveRequiredComponents (7ms)
-	FinalizeReload (752ms)
+	FinalizeReload (516ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (562ms)
+		SetupLoadedEditorAssemblies (354ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (1ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (41ms)
-			ProcessInitializeOnLoadAttributes (473ms)
-			ProcessInitializeOnLoadMethodAttributes (40ms)
-			AfterProcessingInitializeOnLoad (4ms)
+			SetLoadedEditorAssemblies (2ms)
+			BeforeProcessingInitializeOnLoad (29ms)
+			ProcessInitializeOnLoadAttributes (297ms)
+			ProcessInitializeOnLoadMethodAttributes (22ms)
+			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (28ms)
-Refreshing native plugins compatible for Editor in 1.72 ms, found 6 plugins.
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 0.78 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 29 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5991 unused Assets / (5.6 MB). Loaded Objects now: 6706.
-Memory consumption went from 167.4 MB to 161.8 MB.
-Total: 7.728600 ms (FindLiveObjects: 0.932300 ms CreateObjectMapping: 0.488200 ms MarkObjects: 4.314400 ms  DeleteObjects: 1.992000 ms)
-
-Prepare: number of updated asset objects reloaded= 1
-========================================================================
-Received Import Request.
-  Time since last request: 78.854771 seconds.
-  path: Assets/Shader/Sea.shader
-  artifactKey: Guid(cbe49d3baaaadd34183b385f865ecafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shader/Sea.shader using Guid(cbe49d3baaaadd34183b385f865ecafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a42eebdcde384975bbad602c7ec5aebf') in 0.0159134 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+Unloading 215 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5991 unused Assets / (6.4 MB). Loaded Objects now: 6733.
+Memory consumption went from 204.7 MB to 198.3 MB.
+Total: 6.050900 ms (FindLiveObjects: 0.457000 ms CreateObjectMapping: 0.232400 ms MarkObjects: 3.425500 ms  DeleteObjects: 1.935000 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.364036 seconds.
-  path: Assets/Shader
-  artifactKey: Guid(3eae4f15af53a024298824fbf4be3a23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shader using Guid(3eae4f15af53a024298824fbf4be3a23) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b6e89ec83c1a36b9a272a7ad2fd3e048') in 0.000665 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.819088 seconds.
-  path: Assets/Shader/Sea_vfx.shader
-  artifactKey: Guid(cbe49d3baaaadd34183b385f865ecafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shader/Sea_vfx.shader using Guid(cbe49d3baaaadd34183b385f865ecafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '090b9b8cbb2defd130fe3f844b462aef') in 0.0005678 seconds
-Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.435632 seconds.
+  Time since last request: 22407.318562 seconds.
   path: Assets/Shader/Sea_ssr.shader
   artifactKey: Guid(d6a56a11746cf52408f5d792e7fcafd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shader/Sea_ssr.shader using Guid(d6a56a11746cf52408f5d792e7fcafd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5bff95413769cc4dbdf42ca6172a44ef') in 0.0014478 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.370609 seconds.
-  path: Assets/Materials
-  artifactKey: Guid(856875273ea8ea446b6fe3bfd376f870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials using Guid(856875273ea8ea446b6fe3bfd376f870) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '917662708ffa2ea2d036cfdeb56130da') in 0.0003402 seconds
+Start importing Assets/Shader/Sea_ssr.shader using Guid(d6a56a11746cf52408f5d792e7fcafd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '565a82d9435deb9394f4741a120318ee') in 0.0131103 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.261013 seconds.
-  path: Assets/New Terrain.asset
-  artifactKey: Guid(09eeba2315b1c7748943399cd6541978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Terrain.asset using Guid(09eeba2315b1c7748943399cd6541978) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ee1985a9dab79f3946c3854da704dfb1') in 0.0152015 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.182440 seconds.
-  path: Assets/Shader/Sea_ssr.shader
-  artifactKey: Guid(d6a56a11746cf52408f5d792e7fcafd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shader/Sea_ssr.shader using Guid(d6a56a11746cf52408f5d792e7fcafd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '88ad3b2e991638db3e80c6a78b3b1e3a') in 0.0018094 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.731848 seconds.
-  path: Assets/MyMaterial
-  artifactKey: Guid(ad58f1feb7d5c374e816051b11accff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyMaterial using Guid(ad58f1feb7d5c374e816051b11accff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f8406de17b3d5f137dda5ccb55afdc3e') in 0.0003649 seconds
+  Time since last request: 9.224167 seconds.
+  path: Assets/MyMaterial/Cloud/Volume Cloud
+  artifactKey: Guid(3748a30324028354cbcb98f2973df27c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyMaterial/Cloud/Volume Cloud using Guid(3748a30324028354cbcb98f2973df27c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '689390957428448f9c5dd70114589561') in 0.0005006 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.786555 seconds.
-  path: Assets/Post Process
-  artifactKey: Guid(6d01b84eaf81e844488f8ec510f9173f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Post Process using Guid(6d01b84eaf81e844488f8ec510f9173f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c606b4361cee1e958e91fb18d39bfa37') in 0.0003572 seconds
+  Time since last request: 1.223186 seconds.
+  path: Assets/MyMaterial/Cloud/Volume Cloud/pp
+  artifactKey: Guid(939ed25e0369f384d9e58c3d873b1a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyMaterial/Cloud/Volume Cloud/pp using Guid(939ed25e0369f384d9e58c3d873b1a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '89c1d9ef8bd559acd0c59bc7f29ee463') in 0.0003604 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.93 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5978 unused Assets / (7.0 MB). Loaded Objects now: 6736.
+Memory consumption went from 169.4 MB to 162.4 MB.
+Total: 7.420600 ms (FindLiveObjects: 0.497200 ms CreateObjectMapping: 0.231500 ms MarkObjects: 4.178500 ms  DeleteObjects: 2.512700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.440 seconds
+Refreshing native plugins compatible for Editor in 0.64 ms, found 6 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.438 seconds
+Domain Reload Profiling: 880ms
+	BeginReloadAssembly (136ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (38ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (16ms)
+	LoadAllAssembliesAndSetupDomain (261ms)
+		LoadAssemblies (224ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (102ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (84ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (438ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (307ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (1ms)
+			SetLoadedEditorAssemblies (2ms)
+			BeforeProcessingInitializeOnLoad (29ms)
+			ProcessInitializeOnLoadAttributes (254ms)
+			ProcessInitializeOnLoadMethodAttributes (18ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 0.83 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5989 unused Assets / (6.3 MB). Loaded Objects now: 6737.
+Memory consumption went from 175.8 MB to 169.6 MB.
+Total: 6.144600 ms (FindLiveObjects: 0.548800 ms CreateObjectMapping: 0.243100 ms MarkObjects: 3.297700 ms  DeleteObjects: 2.054200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 13.280475 seconds.
+  path: Assets/MyMaterial/Cloud/pp/PP Volume.shader
+  artifactKey: Guid(e95cbc48b06d3c742bf0ff541654f570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyMaterial/Cloud/pp/PP Volume.shader using Guid(e95cbc48b06d3c742bf0ff541654f570) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c618753fb372ac0c2ea127bb202c7438') in 0.0183634 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.025465 seconds.
-  path: Assets/Resources
-  artifactKey: Guid(716547ca5aa34e44bacb1efd8f1d7a40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources using Guid(716547ca5aa34e44bacb1efd8f1d7a40) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '02355c09658900a3562f97fc3f2c6be4') in 0.0003653 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 0.585880 seconds.
+  path: Assets/MyMaterial/Cloud/pp/2DNoiseA.png
+  artifactKey: Guid(878674a2558a91c4b9c3a859e638e2cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyMaterial/Cloud/pp/2DNoiseA.png using Guid(878674a2558a91c4b9c3a859e638e2cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1896b10c8b101fd7389fb8a7dee56bf4') in 0.0241022 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
-Received Import Request.
-  Time since last request: 1.587127 seconds.
-  path: Assets/Settings
-  artifactKey: Guid(709f11a7f3c4041caa4ef136ea32d874) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings using Guid(709f11a7f3c4041caa4ef136ea32d874) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '46cb7eccf4f0e80b0986be61368b7c0c') in 0.0003515 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.69 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5978 unused Assets / (5.9 MB). Loaded Objects now: 6739.
+Memory consumption went from 175.9 MB to 170.0 MB.
+Total: 6.066000 ms (FindLiveObjects: 0.402400 ms CreateObjectMapping: 0.219000 ms MarkObjects: 3.694800 ms  DeleteObjects: 1.749100 ms)
 
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.439 seconds
+Refreshing native plugins compatible for Editor in 0.88 ms, found 6 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.440 seconds
+Domain Reload Profiling: 882ms
+	BeginReloadAssembly (132ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (31ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (15ms)
+	LoadAllAssembliesAndSetupDomain (265ms)
+		LoadAssemblies (230ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (105ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (86ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (440ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (305ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (1ms)
+			SetLoadedEditorAssemblies (2ms)
+			BeforeProcessingInitializeOnLoad (28ms)
+			ProcessInitializeOnLoadAttributes (252ms)
+			ProcessInitializeOnLoadMethodAttributes (19ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 0.67 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5989 unused Assets / (5.9 MB). Loaded Objects now: 6739.
+Memory consumption went from 177.7 MB to 171.8 MB.
+Total: 5.541100 ms (FindLiveObjects: 0.434900 ms CreateObjectMapping: 0.231600 ms MarkObjects: 3.242300 ms  DeleteObjects: 1.631600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.960278 seconds.
-  path: Assets/Scenes/Post Process Test/Volume Test
-  artifactKey: Guid(bce63a2766fb6df47a207b25ee3dc05e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Post Process Test/Volume Test using Guid(bce63a2766fb6df47a207b25ee3dc05e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '98fa290333de6e36595e66a8f5a54bc2') in 0.0003637 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.588816 seconds.
-  path: Assets/Scenes/Post Process Test/Volume Test.unity
-  artifactKey: Guid(2ed07ab76a4814041a114f0741c763d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Post Process Test/Volume Test.unity using Guid(2ed07ab76a4814041a114f0741c763d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'beb7f840f9d69d4336f00a5f4da98f1a') in 0.00039 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.090004 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(99c9720ab356a0642a771bea13969a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0f44e5cce52b6268b2abc4f5074a78ee') in 0.0003755 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.096004 seconds.
-  path: Assets/Scenes/Post Process Test/New Scene
-  artifactKey: Guid(79131c702a05c524cae201a48714ec3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Post Process Test/New Scene using Guid(79131c702a05c524cae201a48714ec3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8830931c97054a9cf188d7f0522c132c') in 0.0004157 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 23.878242 seconds.
+  Time since last request: 37.790763 seconds.
   path: Assets/Settings/URP-HighFidelity-Volume.asset
   artifactKey: Guid(5f05637e997004ddcb840ad015136b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/URP-HighFidelity-Volume.asset using Guid(5f05637e997004ddcb840ad015136b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '37d7acc717618cc9128883831994b267') in 0.000709 seconds
+Start importing Assets/Settings/URP-HighFidelity-Volume.asset using Guid(5f05637e997004ddcb840ad015136b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '549f057836bd9067bc0a21cca4757095') in 0.0217677 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.307439 seconds.
+  Time since last request: 37.625418 seconds.
+  path: Assets/MyMaterial/Cloud/Volume Cloud/CloudPara.cs
+  artifactKey: Guid(33a3f0580e82b774289eebfc37cfac5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyMaterial/Cloud/Volume Cloud/CloudPara.cs using Guid(33a3f0580e82b774289eebfc37cfac5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1961167cd6c16ffc0805fc6662a00080') in 0.0004453 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.053445 seconds.
+  path: Assets/MyMaterial/Cloud/Volume Cloud/1/blueNoise.png
+  artifactKey: Guid(4599b3e9f1a3f0d44b4483a92b5b49b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyMaterial/Cloud/Volume Cloud/1/blueNoise.png using Guid(4599b3e9f1a3f0d44b4483a92b5b49b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '72460279b6935286b23a975fa004fca6') in 0.0206445 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.408720 seconds.
+  path: Assets/MyMaterial/Cloud/Volume Cloud/1/Clouds Test_DetailNoise.asset
+  artifactKey: Guid(e13c660f280075e41b277ee223ced4f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyMaterial/Cloud/Volume Cloud/1/Clouds Test_DetailNoise.asset using Guid(e13c660f280075e41b277ee223ced4f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '22e4669750b09c43a99cf971fccc2580') in 0.26218 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.061367 seconds.
+  path: Assets/MyMaterial/Cloud/Volume Cloud/1/weather4.png
+  artifactKey: Guid(f4b8265b2ed54644c98b711a6bfcfc82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyMaterial/Cloud/Volume Cloud/1/weather4.png using Guid(f4b8265b2ed54644c98b711a6bfcfc82) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ac86ad7d2ff611ac60c465a62b595db3') in 0.0098716 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.632539 seconds.
+  path: Assets/MyMaterial/Cloud/Volume Cloud/1/ExampleNoise13D.asset
+  artifactKey: Guid(d99aaa9072608854ab17389028dbf76e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyMaterial/Cloud/Volume Cloud/1/ExampleNoise13D.asset using Guid(d99aaa9072608854ab17389028dbf76e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a97e522865f05fae7b4b195e2430cca0') in 0.082978 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.191054 seconds.
+  path: Assets/MyMaterial/Cloud/Volume Cloud/1/mask.png
+  artifactKey: Guid(09f560f8f677c2641add97faa3498eeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyMaterial/Cloud/Volume Cloud/1/mask.png using Guid(09f560f8f677c2641add97faa3498eeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dd9d31acf433bacb7509c60763da6887') in 0.0097827 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.701094 seconds.
+  path: Assets/MyMaterial/Cloud/Volume Cloud/1/weather3.png
+  artifactKey: Guid(8eb97cf2daf68a746a1860364d6b7c22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyMaterial/Cloud/Volume Cloud/1/weather3.png using Guid(8eb97cf2daf68a746a1860364d6b7c22) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a373ddbd8929075a1f81648616081bbd') in 0.0100909 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.246410 seconds.
+  path: Assets/MyMaterial/Cloud/Volume Cloud/1/cloudDetailTexture.asset
+  artifactKey: Guid(3489debeec6bf4f489129c2f7f8e9ce4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyMaterial/Cloud/Volume Cloud/1/cloudDetailTexture.asset using Guid(3489debeec6bf4f489129c2f7f8e9ce4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7169395e123e19db37acc48d96409e88') in 0.0086623 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.107846 seconds.
+  path: Assets/MyMaterial/Cloud/Volume Cloud/3DNoiseB.asset
+  artifactKey: Guid(b10cb69999cd02440bc03d760c846203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyMaterial/Cloud/Volume Cloud/3DNoiseB.asset using Guid(b10cb69999cd02440bc03d760c846203) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2f60d84152ce47c169be80f482ecf259') in 0.0206004 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.277819 seconds.
+  path: Assets/MyMaterial/Cloud/Volume Cloud/pp volume.cs
+  artifactKey: Guid(6b049f35783eaf94097fecdb06c579f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyMaterial/Cloud/Volume Cloud/pp volume.cs using Guid(6b049f35783eaf94097fecdb06c579f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd604534595e3a6a6bf3e88b687cf3224') in 0.0005106 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 77.725660 seconds.
+  path: Assets/MyMaterial/Cloud/Volume Cloud/2DNoiseB.png
+  artifactKey: Guid(2531e6c7ce455b44ba4009e80450ce55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+NullReferenceException: Object reference not set to an instance of an object
+  at ppvolume+CustomRenderPass..ctor (ppvolume+Setting setting) [0x00018] in E:\Study\Chalmers\Nekorii\Assets\MyMaterial\Cloud\Volume Cloud\pp volume.cs:35 
+  at ppvolume.Create () [0x00000] in E:\Study\Chalmers\Nekorii\Assets\MyMaterial\Cloud\Volume Cloud\pp volume.cs:93 
+  at UnityEngine.Rendering.Universal.ScriptableRendererFeature.OnValidate () [0x00000] in .\Library\PackageCache\com.unity.render-pipelines.universal@16.0.5\Runtime\ScriptableRendererFeature.cs:53 
+
+(Filename: Assets/MyMaterial/Cloud/Volume Cloud/pp volume.cs Line: 35)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ppvolume+CustomRenderPass..ctor (ppvolume+Setting setting) [0x00018] in E:\Study\Chalmers\Nekorii\Assets\MyMaterial\Cloud\Volume Cloud\pp volume.cs:35 
+  at ppvolume.Create () [0x00000] in E:\Study\Chalmers\Nekorii\Assets\MyMaterial\Cloud\Volume Cloud\pp volume.cs:93 
+  at UnityEngine.Rendering.Universal.ScriptableRendererFeature.OnEnable () [0x00000] in .\Library\PackageCache\com.unity.render-pipelines.universal@16.0.5\Runtime\ScriptableRendererFeature.cs:48 
+
+(Filename: Assets/MyMaterial/Cloud/Volume Cloud/pp volume.cs Line: 35)
+
+Start importing Assets/MyMaterial/Cloud/Volume Cloud/2DNoiseB.png using Guid(2531e6c7ce455b44ba4009e80450ce55) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6d8fb5e9bb437f1d0025b67284a369d2') in 0.0196317 seconds
+Number of updated asset objects reloaded before import = 14Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.547448 seconds.
+  path: Assets/MyMaterial/Cloud/Volume Cloud/3DNoiseA.asset
+  artifactKey: Guid(88c978840f6d02b4fbc20169832a1442) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyMaterial/Cloud/Volume Cloud/3DNoiseA.asset using Guid(88c978840f6d02b4fbc20169832a1442) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9da741266de0866ecef861c0748b52d5') in 0.0081707 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 83.488222 seconds.
   path: Assets/Settings/URP-HighFidelity-Renderer.asset
   artifactKey: Guid(c40be3174f62c4acf8c1216858c64956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/URP-HighFidelity-Renderer.asset using Guid(c40be3174f62c4acf8c1216858c64956) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '17f1c62d91eba9c49ce7c3fe9d9fc318') in 0.0008533 seconds
+Start importing Assets/Settings/URP-HighFidelity-Renderer.asset using Guid(c40be3174f62c4acf8c1216858c64956) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '85495a0f2a15b182c141d729cd0516f5') in 0.0011125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 226.938623 seconds.
+  path: Assets/Post Process/Render Feature/Shaft.cs
+  artifactKey: Guid(bc12a265bdf71cd4eabd6c9256df7064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+NullReferenceException: Object reference not set to an instance of an object
+  at ppvolume+CustomRenderPass..ctor (ppvolume+Setting setting) [0x00018] in E:\Study\Chalmers\Nekorii\Assets\MyMaterial\Cloud\Volume Cloud\pp volume.cs:35 
+  at ppvolume.Create () [0x00000] in E:\Study\Chalmers\Nekorii\Assets\MyMaterial\Cloud\Volume Cloud\pp volume.cs:93 
+  at UnityEngine.Rendering.Universal.ScriptableRendererFeature.OnValidate () [0x00000] in .\Library\PackageCache\com.unity.render-pipelines.universal@16.0.5\Runtime\ScriptableRendererFeature.cs:53 
+
+(Filename: Assets/MyMaterial/Cloud/Volume Cloud/pp volume.cs Line: 35)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ppvolume+CustomRenderPass..ctor (ppvolume+Setting setting) [0x00018] in E:\Study\Chalmers\Nekorii\Assets\MyMaterial\Cloud\Volume Cloud\pp volume.cs:35 
+  at ppvolume.Create () [0x00000] in E:\Study\Chalmers\Nekorii\Assets\MyMaterial\Cloud\Volume Cloud\pp volume.cs:93 
+  at UnityEngine.Rendering.Universal.ScriptableRendererFeature.OnEnable () [0x00000] in .\Library\PackageCache\com.unity.render-pipelines.universal@16.0.5\Runtime\ScriptableRendererFeature.cs:48 
+
+(Filename: Assets/MyMaterial/Cloud/Volume Cloud/pp volume.cs Line: 35)
+
+Start importing Assets/Post Process/Render Feature/Shaft.cs using Guid(bc12a265bdf71cd4eabd6c9256df7064) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6058835533b1b44e3189013df023c6d3') in 0.0005459 seconds
+Number of updated asset objects reloaded before import = 16Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 155.703384 seconds.
+  path: Assets/MyMaterial/Repo
+  artifactKey: Guid(b653d498474057b4ab45aaadd194f57b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyMaterial/Repo using Guid(b653d498474057b4ab45aaadd194f57b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b9059e74cadc181fd9760ba087e6cf73') in 0.0004332 seconds
+Number of updated asset objects reloaded before import = 8Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.924867 seconds.
+  path: Assets/Post Process/Render Feature/SSR.cs
+  artifactKey: Guid(2320b04c215e0aa458de51e4d540933e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Post Process/Render Feature/SSR.cs using Guid(2320b04c215e0aa458de51e4d540933e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0dce3093fbaf59753dbaa570748f47bf') in 0.0005947 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.699195 seconds.
+  path: Assets/Post Process/Volume Parameter
+  artifactKey: Guid(b95100d04c6e5754e92aadfa325eb3dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Post Process/Volume Parameter using Guid(b95100d04c6e5754e92aadfa325eb3dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0a0b8347e62f5ff8442e237485ef30b6') in 0.0004956 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.131218 seconds.
+  path: Assets/Plugins
+  artifactKey: Guid(cf03a82bcfd5702409589c899e8168c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins using Guid(cf03a82bcfd5702409589c899e8168c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a4004c6388eac1eadfe890c3a3638da0') in 0.000455 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.305517 seconds.
+  path: Assets/MyMaterial/Sea
+  artifactKey: Guid(4a450f72e6e1f504b81d58d5a1dba8f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyMaterial/Sea using Guid(4a450f72e6e1f504b81d58d5a1dba8f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '22cd3de11f64a2580b2e4e09e6014d2f') in 0.0005146 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1231.761615 seconds.
+  path: Assets/MyMaterial/Cloud
+  artifactKey: Guid(35fe0091be9ce054f90f437ccefc7d4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyMaterial/Cloud using Guid(35fe0091be9ce054f90f437ccefc7d4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '36281d282deb26cfc8604e146a2188e2') in 0.0005205 seconds
+Number of updated asset objects reloaded before import = 8Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.64 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5978 unused Assets / (6.0 MB). Loaded Objects now: 6762.
+Memory consumption went from 183.3 MB to 177.4 MB.
+Total: 7.802800 ms (FindLiveObjects: 0.415500 ms CreateObjectMapping: 0.205700 ms MarkObjects: 4.752900 ms  DeleteObjects: 2.427000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 13.381718 seconds.
+  path: Assets/Post Process/Render Feature/pp volume.cs
+  artifactKey: Guid(6b049f35783eaf94097fecdb06c579f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Post Process/Render Feature/pp volume.cs using Guid(6b049f35783eaf94097fecdb06c579f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd7925ba13edf45f74a4a63b747a785b8') in 0.0069176 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.445 seconds
+Refreshing native plugins compatible for Editor in 0.57 ms, found 6 plugins.
+Native extension for WindowsStandalone target not found
+NullReferenceException: Object reference not set to an instance of an object
+  at ppvolume+CustomRenderPass..ctor (ppvolume+Setting setting) [0x00018] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\pp volume.cs:35 
+  at ppvolume.Create () [0x00000] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\pp volume.cs:93 
+  at UnityEngine.Rendering.Universal.ScriptableRendererFeature.OnValidate () [0x00000] in .\Library\PackageCache\com.unity.render-pipelines.universal@16.0.5\Runtime\ScriptableRendererFeature.cs:53 
+
+(Filename: Assets/Post Process/Render Feature/pp volume.cs Line: 35)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ppvolume+CustomRenderPass..ctor (ppvolume+Setting setting) [0x00018] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\pp volume.cs:35 
+  at ppvolume.Create () [0x00000] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\pp volume.cs:93 
+  at UnityEngine.Rendering.Universal.ScriptableRendererFeature.OnEnable () [0x00000] in .\Library\PackageCache\com.unity.render-pipelines.universal@16.0.5\Runtime\ScriptableRendererFeature.cs:48 
+
+(Filename: Assets/Post Process/Render Feature/pp volume.cs Line: 35)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.578 seconds
+Domain Reload Profiling: 1026ms
+	BeginReloadAssembly (133ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (39ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (15ms)
+	LoadAllAssembliesAndSetupDomain (270ms)
+		LoadAssemblies (219ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (113ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (87ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (578ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (339ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (33ms)
+			ProcessInitializeOnLoadAttributes (281ms)
+			ProcessInitializeOnLoadMethodAttributes (19ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (20ms)
+Refreshing native plugins compatible for Editor in 0.62 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 28 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5989 unused Assets / (5.7 MB). Loaded Objects now: 6829.
+Memory consumption went from 199.3 MB to 193.6 MB.
+Total: 5.153800 ms (FindLiveObjects: 0.422500 ms CreateObjectMapping: 0.203400 ms MarkObjects: 3.078900 ms  DeleteObjects: 1.447100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.29 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5978 unused Assets / (6.1 MB). Loaded Objects now: 6829.
+Memory consumption went from 199.0 MB to 192.9 MB.
+Total: 7.747300 ms (FindLiveObjects: 0.695300 ms CreateObjectMapping: 0.332000 ms MarkObjects: 4.572400 ms  DeleteObjects: 2.146000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.437 seconds
+Refreshing native plugins compatible for Editor in 0.65 ms, found 6 plugins.
+Native extension for WindowsStandalone target not found
+NullReferenceException: Object reference not set to an instance of an object
+  at ppvolume+CustomRenderPass..ctor (ppvolume+Setting setting) [0x00018] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\pp volume.cs:35 
+  at ppvolume.Create () [0x00000] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\pp volume.cs:93 
+  at UnityEngine.Rendering.Universal.ScriptableRendererFeature.OnValidate () [0x00000] in .\Library\PackageCache\com.unity.render-pipelines.universal@16.0.5\Runtime\ScriptableRendererFeature.cs:53 
+
+(Filename: Assets/Post Process/Render Feature/pp volume.cs Line: 35)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ppvolume+CustomRenderPass..ctor (ppvolume+Setting setting) [0x00018] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\pp volume.cs:35 
+  at ppvolume.Create () [0x00000] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\pp volume.cs:93 
+  at UnityEngine.Rendering.Universal.ScriptableRendererFeature.OnEnable () [0x00000] in .\Library\PackageCache\com.unity.render-pipelines.universal@16.0.5\Runtime\ScriptableRendererFeature.cs:48 
+
+(Filename: Assets/Post Process/Render Feature/pp volume.cs Line: 35)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.515 seconds
+Domain Reload Profiling: 954ms
+	BeginReloadAssembly (130ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (32ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (16ms)
+	LoadAllAssembliesAndSetupDomain (261ms)
+		LoadAssemblies (220ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (106ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (86ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (515ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (373ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			BeforeProcessingInitializeOnLoad (35ms)
+			ProcessInitializeOnLoadAttributes (314ms)
+			ProcessInitializeOnLoadMethodAttributes (19ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
+Refreshing native plugins compatible for Editor in 1.02 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5989 unused Assets / (5.7 MB). Loaded Objects now: 6829.
+Memory consumption went from 200.9 MB to 195.1 MB.
+Total: 5.632600 ms (FindLiveObjects: 0.420500 ms CreateObjectMapping: 0.233800 ms MarkObjects: 3.263900 ms  DeleteObjects: 1.713200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 27.621994 seconds.
+  path: Assets/Post Process/Resources/Shader
+  artifactKey: Guid(d4c14affa9f51d44f86de9241cd28be9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Post Process/Resources/Shader using Guid(d4c14affa9f51d44f86de9241cd28be9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ae6ebd14d1df427564f10df442bf4091') in 0.017002 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.154231 seconds.
+  path: Assets/Post Process/Resources
+  artifactKey: Guid(2fffb4c9e11585746998d59e2256ddfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Post Process/Resources using Guid(2fffb4c9e11585746998d59e2256ddfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6cabb8c1cff52074dd453c0cd58a7d5d') in 0.0003819 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.304658 seconds.
+  path: Assets/Post Process/Resources/Texture
+  artifactKey: Guid(b3aab61a89187784d9851fdea02302b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Post Process/Resources/Texture using Guid(b3aab61a89187784d9851fdea02302b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '66992c0c3872baebf6bc3028ad7b254d') in 0.01056 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.853376 seconds.
+  path: Assets/Post Process/Resources/Material
+  artifactKey: Guid(eb33fd6a3709105459e843d12100baf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Post Process/Resources/Material using Guid(eb33fd6a3709105459e843d12100baf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '532fcf4a2ff864336ee53c4913312ccf') in 0.000516 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.379145 seconds.
+  path: Assets/Post Process/Resources/Include
+  artifactKey: Guid(16e0f2094c168234694f45ef121d9035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Post Process/Resources/Include using Guid(16e0f2094c168234694f45ef121d9035) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8058a5d6797501615691e8e87f0f2fe0') in 0.0004086 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.860989 seconds.
+  path: Assets/Post Process/Resources/NewUnlitShader.shader
+  artifactKey: Guid(40a3f9566d915984d805dfcfce329d20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Post Process/Resources/NewUnlitShader.shader using Guid(40a3f9566d915984d805dfcfce329d20) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '38575f83355f9ac8d258d4414ff6d425') in 0.0082414 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.569821 seconds.
+  path: Assets/Post Process/Volume Parameter/Shaft Parameter.cs
+  artifactKey: Guid(a43c284e4e49646478fc5b44ff354c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Post Process/Volume Parameter/Shaft Parameter.cs using Guid(a43c284e4e49646478fc5b44ff354c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ce577ebdac20dc39d5dfd3c0f85e5043') in 0.0003694 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.937104 seconds.
+  path: Assets/Post Process/Resources/Include/SSR.hlsl
+  artifactKey: Guid(12083f29961ae3847bde00ed325f1a28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Post Process/Resources/Include/SSR.hlsl using Guid(12083f29961ae3847bde00ed325f1a28) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c7270dac883abfc4299b882960e87b77') in 0.0011575 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.467751 seconds.
+  path: Assets/Post Process/Resources/Include/Volume Calculation Function.hlsl
+  artifactKey: Guid(34f1ae4d6ce08a14eb566f35b61ea423) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Post Process/Resources/Include/Volume Calculation Function.hlsl using Guid(34f1ae4d6ce08a14eb566f35b61ea423) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cfa3bbc7d4a79fa9a2060434e22d42a8') in 0.0010043 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.379064 seconds.
+  path: Assets/Post Process/Resources/Include/Postprocess Blur.hlsl
+  artifactKey: Guid(4261e9b2ed4b5254ab7c0c0c528da6eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Post Process/Resources/Include/Postprocess Blur.hlsl using Guid(4261e9b2ed4b5254ab7c0c0c528da6eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fc4e2488c057092d8af0e2d3778bc061') in 0.0008383 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.190688 seconds.
+  path: Assets/Post Process/Resources/Include/Volume Light.hlsl
+  artifactKey: Guid(1178b1a33e0227e42a4001cdf73bb141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Post Process/Resources/Include/Volume Light.hlsl using Guid(1178b1a33e0227e42a4001cdf73bb141) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ab2dd880e15e29d67354ff6094ed0480') in 0.001039 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.396276 seconds.
+  path: Assets/Post Process/Resources/Include/Atmosphere.hlsl
+  artifactKey: Guid(5322d75161897cb46adb995a4ae71990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Post Process/Resources/Include/Atmosphere.hlsl using Guid(5322d75161897cb46adb995a4ae71990) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '09e23bbc51f12c5a3244a08ccbf10a10') in 0.0008759 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 57.713746 seconds.
+  path: Assets/Post Process/Resources/Shader/SSR.shader
+  artifactKey: Guid(d3c82ef4bfcc9354ab093b34ab7c1bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Post Process/Resources/Shader/SSR.shader using Guid(d3c82ef4bfcc9354ab093b34ab7c1bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd01f8605f39ed7699921ef9d805e9878') in 0.0006997 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.364990 seconds.
+  path: Assets/Post Process/Resources/Shader/VolumeLight.shader
+  artifactKey: Guid(0d43b427825c35a4fa5542ce04da452a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Post Process/Resources/Shader/VolumeLight.shader using Guid(0d43b427825c35a4fa5542ce04da452a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '94c66412299eb4063e0ec9aded2c0894') in 0.0010347 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.677638 seconds.
+  path: Assets/Post Process/Resources/Shader/ProcedualSkyBox.shader
+  artifactKey: Guid(a34eb9340d7806d4e91c4007f258263f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Post Process/Resources/Shader/ProcedualSkyBox.shader using Guid(a34eb9340d7806d4e91c4007f258263f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1e565fa3f94f96154a060ced911a6502') in 0.0006543 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.737680 seconds.
+  path: Assets/Post Process/Resources/Shader/Blur.shader
+  artifactKey: Guid(1bacbd550ba32ef4bbf581815e6c8f5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Post Process/Resources/Shader/Blur.shader using Guid(1bacbd550ba32ef4bbf581815e6c8f5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '28a9fd9c5f8744ec2361677fbcddc911') in 0.000654 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 355.486881 seconds.
+  path: Assets/Post Process/Resources/Include/Atmosphere.hlsl
+  artifactKey: Guid(5322d75161897cb46adb995a4ae71990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Post Process/Resources/Include/Atmosphere.hlsl using Guid(5322d75161897cb46adb995a4ae71990) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dfdde9b38c75b60f89763ed2f287987f') in 0.0059151 seconds
+Number of updated asset objects reloaded before import = 5Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.254826 seconds.
+  path: Assets/Post Process/Resources/Include/Volume Light.hlsl
+  artifactKey: Guid(1178b1a33e0227e42a4001cdf73bb141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Post Process/Resources/Include/Volume Light.hlsl using Guid(1178b1a33e0227e42a4001cdf73bb141) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00e1c75a3b5523b0d626ca977edd6d5d') in 0.0006367 seconds
+Number of updated asset objects reloaded before import = 2Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.259965 seconds.
+  path: Assets/Post Process/Resources/Include/Volume Light.hlsl
+  artifactKey: Guid(1178b1a33e0227e42a4001cdf73bb141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Post Process/Resources/Include/Volume Light.hlsl using Guid(1178b1a33e0227e42a4001cdf73bb141) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd751ebd4858de0d1c5bbf23d390664d5') in 0.0024281 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 109.400953 seconds.
+  path: Assets/Post Process/Resources/Include/Volume Calculation Function.hlsl
+  artifactKey: Guid(34f1ae4d6ce08a14eb566f35b61ea423) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Post Process/Resources/Include/Volume Calculation Function.hlsl using Guid(34f1ae4d6ce08a14eb566f35b61ea423) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a1360ea7490a1e0bbcf6d3be7b323f3a') in 0.0010478 seconds
+Number of updated asset objects reloaded before import = 8Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.326736 seconds.
+  path: Assets/Post Process/Resources/Shader/ProcedualSkyBox.shader
+  artifactKey: Guid(a34eb9340d7806d4e91c4007f258263f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Post Process/Resources/Shader/ProcedualSkyBox.shader using Guid(a34eb9340d7806d4e91c4007f258263f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5deee98b827c4c61091916aed5c5592c') in 0.0005755 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.336677 seconds.
+  path: Assets/Settings/URP-HighFidelity-Renderer.asset
+  artifactKey: Guid(c40be3174f62c4acf8c1216858c64956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/URP-HighFidelity-Renderer.asset using Guid(c40be3174f62c4acf8c1216858c64956) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5575a20290dca2813b0b97542cb97e8b') in 0.0009048 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 90.621347 seconds.
+  path: Assets/Settings/URP-HighFidelity-Volume.asset
+  artifactKey: Guid(5f05637e997004ddcb840ad015136b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/URP-HighFidelity-Volume.asset using Guid(5f05637e997004ddcb840ad015136b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '12deb221b89282420d8ff51271334f22') in 0.0008939 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 49.602980 seconds.
+  path: Assets/Settings/URP-HighFidelity-Renderer.asset
+  artifactKey: Guid(c40be3174f62c4acf8c1216858c64956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+NullReferenceException: Object reference not set to an instance of an object
+  at ppvolume+CustomRenderPass..ctor (ppvolume+Setting setting) [0x00018] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\pp volume.cs:35 
+  at ppvolume.Create () [0x00000] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\pp volume.cs:93 
+  at UnityEngine.Rendering.Universal.ScriptableRendererFeature.OnValidate () [0x00000] in .\Library\PackageCache\com.unity.render-pipelines.universal@16.0.5\Runtime\ScriptableRendererFeature.cs:53 
+
+(Filename: Assets/Post Process/Render Feature/pp volume.cs Line: 35)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ppvolume+CustomRenderPass..ctor (ppvolume+Setting setting) [0x00018] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\pp volume.cs:35 
+  at ppvolume.Create () [0x00000] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\pp volume.cs:93 
+  at UnityEngine.Rendering.Universal.ScriptableRendererFeature.OnEnable () [0x00000] in .\Library\PackageCache\com.unity.render-pipelines.universal@16.0.5\Runtime\ScriptableRendererFeature.cs:48 
+
+(Filename: Assets/Post Process/Render Feature/pp volume.cs Line: 35)
+
+Start importing Assets/Settings/URP-HighFidelity-Renderer.asset using Guid(c40be3174f62c4acf8c1216858c64956) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8f8942ed89e067676bc775aeb7bb05d8') in 0.0009108 seconds
+Number of updated asset objects reloaded before import = 17Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2501.637393 seconds.
+  path: Assets/Settings/URP-HighFidelity-Volume.asset
+  artifactKey: Guid(5f05637e997004ddcb840ad015136b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/URP-HighFidelity-Volume.asset using Guid(5f05637e997004ddcb840ad015136b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd97ac125b873afa1f287346b32a0063d') in 0.0013943 seconds
+Number of updated asset objects reloaded before import = 5Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1009.109338 seconds.
+  path: Assets/Settings/DefaultVolumeProfile.asset
+  artifactKey: Guid(4377c8fcb0d1dfe42a228b26e09d870c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+NullReferenceException: Object reference not set to an instance of an object
+  at ppvolume+CustomRenderPass..ctor (ppvolume+Setting setting) [0x00018] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\pp volume.cs:35 
+  at ppvolume.Create () [0x00000] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\pp volume.cs:93 
+  at UnityEngine.Rendering.Universal.ScriptableRendererFeature.OnValidate () [0x00000] in .\Library\PackageCache\com.unity.render-pipelines.universal@16.0.5\Runtime\ScriptableRendererFeature.cs:53 
+
+(Filename: Assets/Post Process/Render Feature/pp volume.cs Line: 35)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ppvolume+CustomRenderPass..ctor (ppvolume+Setting setting) [0x00018] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\pp volume.cs:35 
+  at ppvolume.Create () [0x00000] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\pp volume.cs:93 
+  at UnityEngine.Rendering.Universal.ScriptableRendererFeature.OnEnable () [0x00000] in .\Library\PackageCache\com.unity.render-pipelines.universal@16.0.5\Runtime\ScriptableRendererFeature.cs:48 
+
+(Filename: Assets/Post Process/Render Feature/pp volume.cs Line: 35)
+
+Start importing Assets/Settings/DefaultVolumeProfile.asset using Guid(4377c8fcb0d1dfe42a228b26e09d870c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd866a9f0405858c0ec28b210c255ff33') in 0.0077496 seconds
+Number of updated asset objects reloaded before import = 17Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.113607 seconds.
+  path: Assets/Settings/URP-HighFidelity-Volume.asset
+  artifactKey: Guid(5f05637e997004ddcb840ad015136b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/URP-HighFidelity-Volume.asset using Guid(5f05637e997004ddcb840ad015136b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd313e25b0c4a06329d4915febfad6b91') in 0.0009475 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.383665 seconds.
+  path: Assets/Settings/URP-HighFidelity-Renderer.asset
+  artifactKey: Guid(c40be3174f62c4acf8c1216858c64956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/URP-HighFidelity-Renderer.asset using Guid(c40be3174f62c4acf8c1216858c64956) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bea725e0e71f83ce048947cadb72df48') in 0.0012052 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.559 seconds
+Refreshing native plugins compatible for Editor in 0.77 ms, found 6 plugins.
+Native extension for WindowsStandalone target not found
+NullReferenceException: Object reference not set to an instance of an object
+  at ppvolume+CustomRenderPass..ctor (ppvolume+Setting setting) [0x00018] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\pp volume.cs:35 
+  at ppvolume.Create () [0x00000] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\pp volume.cs:93 
+  at UnityEngine.Rendering.Universal.ScriptableRendererFeature.OnValidate () [0x00000] in .\Library\PackageCache\com.unity.render-pipelines.universal@16.0.5\Runtime\ScriptableRendererFeature.cs:53 
+
+(Filename: Assets/Post Process/Render Feature/pp volume.cs Line: 35)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ppvolume+CustomRenderPass..ctor (ppvolume+Setting setting) [0x00018] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\pp volume.cs:35 
+  at ppvolume.Create () [0x00000] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\pp volume.cs:93 
+  at UnityEngine.Rendering.Universal.ScriptableRendererFeature.OnEnable () [0x00000] in .\Library\PackageCache\com.unity.render-pipelines.universal@16.0.5\Runtime\ScriptableRendererFeature.cs:48 
+
+(Filename: Assets/Post Process/Render Feature/pp volume.cs Line: 35)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.477 seconds
+Domain Reload Profiling: 1038ms
+	BeginReloadAssembly (167ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (51ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (20ms)
+	LoadAllAssembliesAndSetupDomain (344ms)
+		LoadAssemblies (282ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (134ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (112ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (477ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (327ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			BeforeProcessingInitializeOnLoad (29ms)
+			ProcessInitializeOnLoadAttributes (269ms)
+			ProcessInitializeOnLoadMethodAttributes (22ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (20ms)
+Refreshing native plugins compatible for Editor in 0.77 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5989 unused Assets / (6.0 MB). Loaded Objects now: 6829.
+Memory consumption went from 202.7 MB to 196.7 MB.
+Total: 6.557900 ms (FindLiveObjects: 0.501500 ms CreateObjectMapping: 0.249100 ms MarkObjects: 3.418800 ms  DeleteObjects: 2.387700 ms)
+
+Prepare: number of updated asset objects reloaded= 9
+========================================================================
+Received Import Request.
+  Time since last request: 2246.395171 seconds.
+  path: Assets/Settings/UniversalRenderPipelineGlobalSettings.asset
+  artifactKey: Guid(18dc0cd2c080841dea60987a38ce93fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/UniversalRenderPipelineGlobalSettings.asset using Guid(18dc0cd2c080841dea60987a38ce93fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f786c7f31750b7990ea7533f68578df0') in 0.084911 seconds
+Number of updated asset objects reloaded before import = 13Number of asset objects unloaded after import = 25
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.177677 seconds.
+  path: Assets/Settings/URP-HighFidelity-Volume.asset
+  artifactKey: Guid(5f05637e997004ddcb840ad015136b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/URP-HighFidelity-Volume.asset using Guid(5f05637e997004ddcb840ad015136b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f8e00a9483846cf0c754892bca86d42e') in 0.0007582 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 

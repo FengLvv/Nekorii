@@ -136,7 +136,7 @@ half4 fragBilateralBlur(VaryingsBilateralBlur i) : SV_Target
         float valueWeight = _ColorWeightParam.x * exp(colorDistinction * colorDistinction * _ColorWeightParam.y);
 
         float weight = _SpatialWeight[j] * valueWeight;
-        color.xyz += SAMPLE_TEXTURE2D_X(_BlitTexture, sampler_PointClamp, i.uv[j]) * weight;
+        color += SAMPLE_TEXTURE2D_X(_BlitTexture, sampler_PointClamp, i.uv[j]) * weight;
         weightSum += weight;
     }
     color /= weightSum;

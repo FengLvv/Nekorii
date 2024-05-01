@@ -14,7 +14,6 @@ int _MarchSteps;
 int _MaxStepDistance;
 float _NearPlaneDistance;
 float _FarPointDistance;
-float4 _MieScatteringFactor;
 float _ExtinctionFactor;
 float3 _LightPowerColorEnhance;
 float _Density;
@@ -86,39 +85,6 @@ half4 fragAtmosphere(VaryingsVL i) : SV_Target
     float skyMask = step(0.999, rayLength / _ProjectionParams.z);
     // set the sky to infinite far
     rayLength = lerp(rayLength, Max_float(), skyMask);
-
-    // cameraPosWS = cameraPosWS + rayDirNormalize * _NearPlaneDistance;
-    // pixelPosWS = pixelPosWS - rayDirNormalize * _FarPointDistance;
-    // float rayLength = min(length(pixelPosWS - cameraPosWS), _MaxStepDistance);
-
-    // float3 ray = rayLength * rayDirNormalize;
-    // float3 marchVector = ray / _MarchSteps;
-    // float marchLength = length(marchVector);
-    //
-    // // ray marching from camera
-    // half3 shaftLight = 0;
-    // float3 marchPosWS = cameraPosWS;
-    // UNITY_LOOP
-    // for (float x = 0; x < _MarchSteps; x++)
-    // {
-    //     float jitterX = InterleavedGradientNoise(marchPosWS.xy * 592826, 0);
-    //     float jitterY = InterleavedGradientNoise(marchPosWS.yy * 105656, 0);
-    //     float jitterZ = InterleavedGradientNoise(marchPosWS.zy * 105561, 0);
-    //     float3 jitterPos = float3(jitterX, jitterY, jitterZ) * 2 - 1;
-    //     jitterPos = jitterPos * float3(0.2, 0.2, 0.2);
-    //
-    //     float inShadow = GetLightAttenuation(marchPosWS + jitterPos);
-    //     // light power * density * step length * in Shadow
-    //     float3 lightPower = lightColor * length(marchVector) * _Density;
-    //     // light attenuation by HG phase function
-    //     float hg = MieScatteringFuncHG(normalize(mainLight.direction), -rayDirNormalize, _MieScatteringFactor);
-    //     // light attenuation by Beer's law
-    //     float beer = Beer(marchLength * (x + 1), _Density, _ExtinctionFactor);
-    //
-    //     shaftLight += lightPower * hg * beer * _ExtinctionFactor * inShadow;
-    //     marchPosWS += marchVector;
-    // }
-
 
     // Atmosphere color
     // Postulate standing on the top of ground, the atmosphere center is at (0, -_PlanetRadius, 0)
@@ -202,7 +168,7 @@ half4 fragAtmosphere(VaryingsVL i) : SV_Target
         }
     }
     float3 phaseR = RayleighPhaseFunc(lightDir, -rayDirNormalize);
-    float3 phaseM = MieScatteringFuncHG(lightDir, -rayDirNormalize, _MieScatteringFactor);
+    float3 phaseM = MieScatteringFuncHG(lightDir, -rayDirNormalize);
     // sun intensity * phase * extinction * weight
     float3 colorR = lightColor * extinctionR * phaseR * _RayleighWeight;
     float3 colorM = lightColor * extinctionM * phaseM * _MieWeight;

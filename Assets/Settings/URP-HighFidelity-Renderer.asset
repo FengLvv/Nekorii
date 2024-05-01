@@ -1,5 +1,25 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8205086039910606088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b049f35783eaf94097fecdb06c579f3, type: 3}
+  m_Name: ppvolume
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  setting:
+    profilingName: ppvolume
+    volumeMaterial: {fileID: 2100000, guid: a64e675c6bf8a9e47ba90efced73dffa, type: 2}
+    noiseTexture2D1: {fileID: 2800000, guid: 878674a2558a91c4b9c3a859e638e2cb, type: 3}
+    noiseTexture2D2: {fileID: 2800000, guid: 2531e6c7ce455b44ba4009e80450ce55, type: 3}
+    noiseTexture3D1: {fileID: 11700000, guid: 88c978840f6d02b4fbc20169832a1442, type: 2}
+    noiseTexture3D2: {fileID: 11700000, guid: b10cb69999cd02440bc03d760c846203, type: 2}
 --- !u!114 &-7708095356517652118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,7 +133,8 @@ MonoBehaviour:
   - {fileID: -3144451238897219575}
   - {fileID: 2202087736872446425}
   - {fileID: -7708095356517652118}
-  m_RendererFeatureMap: 8b79fd1488072d3836d70f9d1f6410acc50f987d49cbc83b0988fe1b42aa5cd4d9a9862821638f1e6a69edcb1c580795
+  - {fileID: -8205086039910606088}
+  m_RendererFeatureMap: 8b79fd1488072d3836d70f9d1f6410acc50f987d49cbc83b0988fe1b42aa5cd4d9a9862821638f1e6a69edcb1c580795f89a9c17b8ad218e
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}

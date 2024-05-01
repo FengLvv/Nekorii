@@ -4,6 +4,7 @@
 #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Lighting.hlsl"
 #include "Packages/com.unity.render-pipelines.core/Runtime/Utilities/Blit.hlsl"
 
+float4 _MieScatteringFactor;
 
 half3 CalculateRayleighScatter(float h, float H)
 {
@@ -27,13 +28,13 @@ half3 CalculateRayleighExtinction(half3 cameraDir, half3 lightDir)
 //MieScatteringFactor.x = (1 - g) ^ 2 / 4 * pi
 //MieScatteringFactor.y =  1 + g ^ 2
 //MieScatteringFactor.z =  2 * g
-float MieScatteringFuncHG(float3 lightDir, float3 cameraDir, float3 MieScatteringFactor)
+float MieScatteringFuncHG(float3 lightDir, float3 cameraDir )
 {
     //MieScattering: https://pic2.zhimg.com/v2-c65602e5c50e66eed7c2671f9fcff281_r.jpg
     // (1 - g)^2 / (4 * pi * (1 + g ^2 - 2 * g * cosθ) ^ 1.5 )
     // largest when lightDir(pos to light) = -cameraDir(pos to camera)
     float lightCos = dot(lightDir, -cameraDir);
-    return MieScatteringFactor.x / pow((MieScatteringFactor.y - MieScatteringFactor.z * lightCos), 1.5);
+    return _MieScatteringFactor.x / pow((_MieScatteringFactor.y - _MieScatteringFactor.z * lightCos), 1.5);
 }
 
 float RayleighPhaseFunc(float3 lightDir, float3 cameraDir)
@@ -108,6 +109,16 @@ void RaySphereIntersection(float3 rayOrigin, float3 rayDir, float3 sphereCenter,
 
     intersectionFront = rayOrigin + rayDir * intersection.y;
     intersectionBack = rayOrigin + rayDir * intersection.x;
+}
+
+
+//density总密度=\sum局部密度，步长
+float BeerPowder(float density)
+{
+    float powder = 1.0 - exp(-density * 2.0);
+    float beers = exp(-density);
+    float light_energy = 2.0 * beers * powder;
+    return beers;
 }
 
 

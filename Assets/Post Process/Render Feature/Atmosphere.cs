@@ -118,10 +118,6 @@ namespace Post_Process_Effect.Render_Feature {
 
 					// Blit to color buffer
 					Blitter.BlitCameraTexture( cmd, _tempTex1, _cameraColorBuffer, _atmosphereMaterial, 1 );
-
-
-					// Set z buffer and blit to color buffer
-					// Blitter.BlitCameraTexture( cmd, _cameraDepthBuffer, _cameraColorBuffer, _volumeLightMaterial, 0 );
 				}
 
 				context.ExecuteCommandBuffer( cmd );
