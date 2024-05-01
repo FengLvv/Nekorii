@@ -185,11 +185,10 @@ VaryingsDrawSSR vertDrawSSR(AttributeDrawSSR input)
 
 half4 fragRenderReflection(VaryingsDrawSSR i) : SV_Target
 {
-    float3 lightDir = GetMainLight().direction;
+    float3 viewWS = GetWorldSpaceNormalizeViewDir(i.positionWS);
     float2 screenUV = i.positionCS.xy / _ScreenParams.xy;
     float3 reflectColor = SAMPLE_TEXTURE2D(_ReflectionTex, sampler_ReflectionTex, screenUV).rgb;
-    float nDotl = dot(lightDir, i.normalWS);
-    float fresnel = 1 - nDotl;
+    float fresnel = 1 - dot(viewWS, i.normalWS);
     fresnel = fresnel * fresnel * fresnel * fresnel * fresnel;
     reflectColor *= fresnel;
     return float4(reflectColor, 1);

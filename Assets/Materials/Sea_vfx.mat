@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Sea
+  m_Name: Sea_vfx
   m_Shader: {fileID: 4800000, guid: cbe49d3baaaadd34183b385f865ecafc, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -35,7 +35,7 @@ Material:
     m_Floats: []
     m_Colors:
     - TrailColorSlow: {r: 0, g: 30.113346, b: 31.999989, a: 1}
-    - _TrailColor: {r: 0.16304553, g: 2.0332735, b: 1.6280574, a: 1}
+    - _TrailColor: {r: 1.0110818, g: 1.162669, b: 1.587772, a: 1}
     - _TrailColorFast: {r: 0.08710842, g: 0.6367924, b: 0.3991873, a: 1}
     - _TrailColorSlow: {r: 0.2688679, g: 0.123019755, b: 0.123019755, a: 1}
   m_BuildTextureStacks: []

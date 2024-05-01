@@ -91,6 +91,7 @@
     <None Include="Assets\AnyTrail\Resources\MoveCanvas.compute" />
     <None Include="Assets\AnyTrail\Demo\AnyTrailDemo.shader" />
     <None Include="Assets\AnyTrail\DataAndTools\AnyTrailComputeInclude.hlsl" />
+    <None Include="Assets\Shader\Sea_ssr.shader" />
     <None Include="Assets\Texture\Real Stars Skybox\Demo Scene\Documentation.txt" />
     <None Include="Assets\AnyTrail\AnyTrailShaderInclude.hlsl" />
     <None Include="Assets\AnyTrail\Resources\NSCompute.compute" />
@@ -98,7 +99,7 @@
     <None Include="Assets\AnyTrail\Resources\WavesCompute.compute" />
     <None Include="Assets\Post Process\Resources\Shader\Blur.shader" />
     <None Include="Assets\AnyTrail\Resources\TrailCompute.compute" />
-    <None Include="Assets\Shader\Sea.shader" />
+    <None Include="Assets\Shader\Sea_vfx.shader" />
     <None Include="Assets\Post Process\Resources\Shader\VolumeLight.shader" />
     <None Include="Assets\Shader\Toon sky.shader" />
     <None Include="Assets\AnyTrail\Resources\PostEffect.compute" />
