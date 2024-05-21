@@ -82,7 +82,7 @@ Shader "Custom/SeaSSR"
         color.xyz *= shadow;
         color.w += 1 - shadow;
 
-        return 0.1;
+        return 0.05;
     }
 
     half4 fragNormal(Varyings i) : SV_Target

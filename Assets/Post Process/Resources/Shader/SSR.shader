@@ -28,7 +28,11 @@ Shader "Custom/PostProcess/SSR"
             }
             HLSLPROGRAM
             #pragma vertex vertSSR
-            #pragma fragment fragSSR
+            // #pragma fragment fragSSR
+            // #pragma fragment fragSSRDDA
+            // #pragma fragment fragSSRDDABinary
+            #pragma fragment fragSSRDDAHIZ
+        
             ENDHLSL
         }
         Pass
@@ -40,11 +44,12 @@ Shader "Custom/PostProcess/SSR"
             {
                 "LightMode" = "DrawSSR"
             }
-            Blend one one
+//            Blend one one
             HLSLPROGRAM
             #pragma vertex vertDrawSSR
-            #pragma fragment fragRenderReflection
+            #pragma fragment fragRenderReflection       
             ENDHLSL
         }
+
     }
 }

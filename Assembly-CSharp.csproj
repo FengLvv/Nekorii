@@ -58,6 +58,7 @@
     <Compile Include="Assets\AnyTrail\Effect\DrawPattern\DrawPattern.cs" />
     <Compile Include="Assets\AnyTrail\DataAndTools\AnyTrailDic.cs" />
     <Compile Include="Assets\AnyTrail\Effect\DrawWave\DrawWave.cs" />
+    <Compile Include="Assets\Post Process\Volume Parameter\GasVolume.cs" />
     <Compile Include="Assets\AnyTrail\PostEffectOnTrail\PostEffectOnTrail.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\MyMaterial\Sea\Scripts\Reflection.cs" />
@@ -70,6 +71,7 @@
     <Compile Include="Assets\Post Process\Volume Parameter\SSR Parameter.cs" />
     <Compile Include="Assets\AnyTrail\DataAndTools\TrailWriterAbstract.cs" />
     <Compile Include="Assets\AnyTrail\Effect\DrawPattern\PatternWriter.cs" />
+    <Compile Include="Assets\Post Process\Render Feature\Gas.cs" />
     <Compile Include="Assets\AnyTrail\AnyTrailCanvas.cs" />
     <Compile Include="Assets\MyMaterial\Sea\Scripts\SeaControl.cs" />
     <Compile Include="Assets\AnyTrail\Effect\DrawFluid\FluidWriter.cs" />
@@ -78,7 +80,8 @@
     <Compile Include="Assets\AnyTrail\Effect\DrawTrailGO.cs" />
     <Compile Include="Assets\AnyTrail\Effect\DrawTrail\DrawTrail.cs" />
     <Compile Include="Assets\Post Process\Render Feature\Shaft.cs" />
-    <None Include="Assets\Post Process\Resources\NewUnlitShader.shader" />
+    <None Include="Assets\Post Process\Resources\Shader\FluidSample.shader" />
+    <None Include="Assets\Post Process\Resources\AuroraSky.shader" />
     <None Include="Assets\Post Process\Resources\Include\Volume Light.hlsl" />
     <None Include="Assets\Post Process\Resources\Shader\Atmosphere.shader" />
     <None Include="Assets\Post Process\Resources\Include\SSR.hlsl" />
@@ -93,6 +96,7 @@
     <None Include="Assets\AnyTrail\Resources\MoveCanvas.compute" />
     <None Include="Assets\AnyTrail\Demo\AnyTrailDemo.shader" />
     <None Include="Assets\AnyTrail\DataAndTools\AnyTrailComputeInclude.hlsl" />
+    <None Include="Assets\Post Process\Resources\Shader\GasSample.shader" />
     <None Include="Assets\Shader\Sea_ssr.shader" />
     <None Include="Assets\Texture\Real Stars Skybox\Demo Scene\Documentation.txt" />
     <None Include="Assets\AnyTrail\AnyTrailShaderInclude.hlsl" />
@@ -103,10 +107,12 @@
     <None Include="Assets\Post Process\Resources\Shader\Blur.shader" />
     <None Include="Assets\AnyTrail\Resources\TrailCompute.compute" />
     <None Include="Assets\Shader\Sea_vfx.shader" />
+    <None Include="Assets\Post Process\Resources\Shader\HizCompute.compute" />
     <None Include="Assets\Post Process\Resources\Shader\VolumeLight.shader" />
     <None Include="Assets\Shader\Toon sky.shader" />
     <None Include="Assets\AnyTrail\Resources\PostEffect.compute" />
     <None Include="Assets\MyMaterial\Sea\Shader&amp;Material\Sea.shader" />
+    <None Include="Assets\Post Process\Resources\Shader\DrawFluid.compute" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

@@ -32,7 +32,7 @@ public class ppvolume : ScriptableRendererFeature {
 			
 			//get parameter from volume
 			VolumeStack vs = VolumeManager.instance.stack;
-			ppVolumeCloud = vs.GetComponent<PPVolumeCloud>();
+			ppVolumeCloud = vs?.GetComponent<PPVolumeCloud>();
 		}
 
 		public override void OnCameraSetup( CommandBuffer cmd, ref RenderingData renderingData ) {

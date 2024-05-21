@@ -15,11 +15,16 @@ namespace Post_Process_Effect.Render_Feature {
 		public Settings settings = new Settings();
 
 		class CustomRenderPass : ScriptableRenderPass {
+
+			#region hiz
+			ComputeShader _hizMipGen;
+			RTHandle[] hizMips = new RTHandle[7];
+			#endregion
+
+
 			Material _ssrMaterial;
 			Material _blurMaterial;
-			
 
-			FilteringSettings filtering; //在之后设置
 			ShaderTagId shaderTag = new ShaderTagId( "UniversalForward" ); //执行带有这个tag的shader
 			static LayerMask reflectionLayer;
 
@@ -37,12 +42,8 @@ namespace Post_Process_Effect.Render_Feature {
 			public CustomRenderPass( Settings settings ) {
 				_ssrMaterial = Resources.Load<Material>( "Material/SSR" );
 				_blurMaterial = Resources.Load<Material>( "Material/PPBlur" );
-				// _material = CoreUtils.CreateEngineMaterial(settings.shaderNeeded);`
+				_hizMipGen = Resources.Load<ComputeShader>( "Shader/HizCompute" );
 
-				RenderQueueRange queue = new RenderQueueRange(); //设置filter的队列
-				queue.lowerBound = RenderQueueRange.transparent.lowerBound;
-				queue.upperBound = RenderQueueRange.transparent.upperBound;
-				filtering = new FilteringSettings( queue, settings.ReflectionLayer ); //设置filter
 				reflectionLayer = settings.ReflectionLayer;
 			}
 
@@ -52,6 +53,8 @@ namespace Post_Process_Effect.Render_Feature {
 				// get z-buffer and color buffer
 				_cameraDepthBuffer = renderingData.cameraData.renderer.cameraDepthTargetHandle;
 				_cameraColorBuffer = renderingData.cameraData.renderer.cameraColorTargetHandle;
+				ConfigureClear( ClearFlag.None, Color.black );
+				ConfigureTarget( _cameraColorBuffer, _cameraDepthBuffer );
 			}
 
 			// execute each frame in render event
@@ -60,32 +63,64 @@ namespace Post_Process_Effect.Render_Feature {
 					Debug.Log( "Not set material" );
 					return;
 				}
-
 				if( renderingData.cameraData.camera.cameraType != CameraType.Game ) return;
+
 
 				//input parameter from volume
 				VolumeStack vs = VolumeManager.instance.stack;
 				var parameters = vs.GetComponent<SSRParameter>();
-
 				if( parameters.IsActive() == false ) {
 					return;
 				}
 
 				CommandBuffer cmd = CommandBufferPool.Get( name:_passName );
-
 				using( new ProfilingScope( cmd, new ProfilingSampler( cmd.name ) ) ) {
+					#region HIZ
+					// create hiz mipmap
+					// upsample to power of 2
+					int hizWidth = Mathf.NextPowerOfTwo( Screen.width );
+					int hizHeight = Mathf.NextPowerOfTwo( Screen.height );
+
+					// generate mips
+					for( int i = 0; i < 7; i++ ) {
+						int mipWidth = hizWidth >> i;
+						int mipHeight = hizHeight >> i;
+						RenderTextureDescriptor hizMipDesc = new RenderTextureDescriptor( mipWidth, mipHeight, RenderTextureFormat.RFloat, 0 ){
+							enableRandomWrite = true,
+							autoGenerateMips = false,
+							useMipMap = false,
+							sRGB = false,
+						};
+						RenderingUtils.ReAllocateIfNeeded( ref hizMips[i], hizMipDesc, FilterMode.Point, TextureWrapMode.Clamp, name:"_hizMip" + i );
+					}
+
+					
+					// generate mips	
+					for( int i = 0; i < 7; i++ ) {
+						cmd.SetComputeTextureParam( _hizMipGen, i==0?0:1, "Depth1", i == 0 ? _cameraDepthBuffer.rt : hizMips[i - 1].rt );
+						cmd.SetComputeTextureParam( _hizMipGen, i==0?0:1, "Depth2", hizMips[i].rt );
+						cmd.DispatchCompute( _hizMipGen, i==0?0:1, Mathf.CeilToInt( hizWidth / Mathf.Pow( 2, i + 3 ) ), Mathf.CeilToInt( hizHeight / Mathf.Pow( 2, i + 3 ) ), 1 );
+					}
+
+					cmd.SetGlobalVector( "_HizTexSize", new Vector4( hizWidth, hizHeight, 1f / hizWidth, 1f / hizHeight ) );
+					cmd.SetGlobalTexture( "_HizDepthTexture0", hizMips[0].rt );
+					cmd.SetGlobalTexture( "_HizDepthTexture1", hizMips[1].rt );
+					cmd.SetGlobalTexture( "_HizDepthTexture2", hizMips[2].rt );
+					cmd.SetGlobalTexture( "_HizDepthTexture3", hizMips[3].rt );
+					cmd.SetGlobalTexture( "_HizDepthTexture4", hizMips[4].rt );
+					cmd.SetGlobalTexture( "_HizDepthTexture5", hizMips[5].rt );
+					cmd.SetGlobalTexture( "_HizDepthTexture6", hizMips[6].rt );
+					#endregion
 
 					// Down sample
-					m_Descriptor = new RenderTextureDescriptor( Screen.width, Screen.height, RenderTextureFormat.Default, 0 ){
-						depthBufferBits = 0
-					};
+					m_Descriptor = new RenderTextureDescriptor( Screen.width, Screen.height, RenderTextureFormat.Default, 0 );
 
 					RenderingUtils.ReAllocateIfNeeded( ref _tempTex1, m_Descriptor, FilterMode.Bilinear, TextureWrapMode.Clamp, name:"_tempTex1" );
 					RenderingUtils.ReAllocateIfNeeded( ref _tempTex2, m_Descriptor, FilterMode.Bilinear, TextureWrapMode.Clamp, name:"_tempTex2" );
 
 					// store the light to quarter size texture
-					Shader.SetGlobalFloat( "_MarchSteps", parameters.MarchSteps.value );
-					Shader.SetGlobalFloat( "_DepthTolerance", parameters.DepthTolerance.value );
+					cmd.SetGlobalFloat( "_MarchSteps", parameters.MarchSteps.value );
+					cmd.SetGlobalFloat( "_DepthTolerance", parameters.DepthTolerance.value );
 					Blitter.BlitCameraTexture( cmd, _cameraDepthBuffer, _tempTex1, _ssrMaterial, 0 );
 					// Blitter.BlitCameraTexture( cmd, _cameraDepthBuffer, _tempTex1, _volumeLightMaterial, 0 );
 
@@ -96,11 +131,11 @@ namespace Post_Process_Effect.Render_Feature {
 						spacialPara[2] = CalculateGaussian( parameters.SpacialSigma.value, 0 );
 						spacialPara[3] = spacialPara[1] = CalculateGaussian( parameters.SpacialSigma.value, 1 );
 						spacialPara[0] = spacialPara[4] = CalculateGaussian( parameters.SpacialSigma.value, 2 );
-						Shader.SetGlobalFloatArray( "_SpatialWeight", spacialPara );
+						cmd.SetGlobalFloatArray( "_SpatialWeight", spacialPara );
 						float colorSigma = parameters.ColorSigma.value;
-						Shader.SetGlobalVector( "_ColorWeightParam", new Vector2( 1 / ( colorSigma * Mathf.Sqrt( 2 * Mathf.PI ) ), -1 / ( 2 * colorSigma * colorSigma ) ) );
+						cmd.SetGlobalVector( "_ColorWeightParam", new Vector2( 1 / ( colorSigma * Mathf.Sqrt( 2 * Mathf.PI ) ), -1 / ( 2 * colorSigma * colorSigma ) ) );
 
-						Shader.SetGlobalFloat( "_BlurStepMultiple", parameters.BlurStepMultiple.value );
+						cmd.SetGlobalFloat( "_BlurStepMultiple", parameters.BlurStepMultiple.value );
 						Blitter.BlitCameraTexture( cmd, _tempTex1, _tempTex2, _blurMaterial, 2 );
 						Blitter.BlitCameraTexture( cmd, _tempTex2, _tempTex1, _blurMaterial, 3 );
 					}
@@ -109,7 +144,7 @@ namespace Post_Process_Effect.Render_Feature {
 					// Blitter.BlitCameraTexture( cmd, _tempTex1, _cameraColorBuffer );
 
 					cmd.SetRenderTarget( _cameraColorBuffer, _cameraDepthBuffer );
-					Shader.SetGlobalTexture( "_ReflectionTex", _tempTex1 );
+					cmd.SetGlobalTexture( "_ReflectionTex", _tempTex1 );
 					RendererListDesc rendererListDesc = new RendererListDesc( shaderTag, renderingData.cullResults, renderingData.cameraData.camera ){
 						overrideMaterial = _ssrMaterial,
 						overrideMaterialPassIndex = 1,
@@ -119,23 +154,13 @@ namespace Post_Process_Effect.Render_Feature {
 					};
 					var rendererList = context.CreateRendererList( rendererListDesc );
 					cmd.DrawRendererList( rendererList );
-					
-
 
 					// Set z buffer and blit to color buffer
 					// Blitter.BlitCameraTexture( cmd, _cameraDepthBuffer, _cameraColorBuffer, _volumeLightMaterial, 0 );
 				}
 
-
-
-				// var draw = CreateDrawingSettings( shaderTag, ref renderingData, renderingData.cameraData.defaultOpaqueSortFlags );
-				// draw.overrideMaterial = _ssrMaterial;
-				// draw.overrideMaterialPassIndex = 1; //材质覆盖
-
 				context.ExecuteCommandBuffer( cmd );
 				cmd.Clear();
-
-
 				CommandBufferPool.Release( cmd );
 			}
 

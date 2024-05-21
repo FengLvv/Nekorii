@@ -15,7 +15,7 @@ E:/Study/Chalmers/Nekorii
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-62117
+63776
 -job-worker-count
 9
 -background-job-worker-count
@@ -58,12 +58,12 @@ E:/Study/Chalmers/Nekorii
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [24896] Host "[IP] 192.168.5.111 [Port] 0 [Flags] 2 [Guid] 1518550594 [EditorId] 1518550594 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6E4HN7O) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
-Player connection [24896] Host "[IP] 192.168.5.111 [Port] 0 [Flags] 2 [Guid] 1518550594 [EditorId] 1518550594 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6E4HN7O) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [25232] Host "[IP] 192.168.5.111 [Port] 0 [Flags] 2 [Guid] 4136787610 [EditorId] 4136787610 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6E4HN7O) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [25232] Host "[IP] 192.168.5.111 [Port] 0 [Flags] 2 [Guid] 4136787610 [EditorId] 4136787610 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6E4HN7O) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 9
 [Physics::Module] Initialized MultithreadedJobDispatcher with 9 workers.
 Library Redirect Path: Library/
-Refreshing native plugins compatible for Editor in 1.15 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 1.42 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.2.15f1 (c5cbb0b314fa)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.2.15f1/Editor/Data/Resources/UnitySubsystems
@@ -79,7 +79,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.2.15f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.2.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.2.15f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56652
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56360
 Begin MonoManager ReloadAssembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
@@ -93,41 +93,41 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001512 seconds.
-- Loaded All Assemblies, in  0.348 seconds
+Registered in 0.001858 seconds.
+- Loaded All Assemblies, in  0.423 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-- Finished resetting the current domain, in  0.181 seconds
-Domain Reload Profiling: 528ms
-	BeginReloadAssembly (140ms)
+- Finished resetting the current domain, in  0.274 seconds
+Domain Reload Profiling: 696ms
+	BeginReloadAssembly (170ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (29ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (32ms)
-	LoadAllAssembliesAndSetupDomain (138ms)
-		LoadAssemblies (139ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (170ms)
+		LoadAssemblies (169ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (136ms)
-			TypeCache.Refresh (135ms)
-				TypeCache.ScanAssembly (121ms)
+		AnalyzeDomain (168ms)
+			TypeCache.Refresh (167ms)
+				TypeCache.ScanAssembly (149ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (182ms)
+	FinalizeReload (274ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (148ms)
+		SetupLoadedEditorAssemblies (238ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (2ms)
-			BeforeProcessingInitializeOnLoad (4ms)
-			ProcessInitializeOnLoadAttributes (110ms)
-			ProcessInitializeOnLoadMethodAttributes (27ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (170ms)
+			ProcessInitializeOnLoadMethodAttributes (56ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -150,66 +150,50 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.765 seconds
-Refreshing native plugins compatible for Editor in 0.57 ms, found 6 plugins.
+- Loaded All Assemblies, in  0.890 seconds
+Refreshing native plugins compatible for Editor in 0.69 ms, found 6 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.529 seconds
-Domain Reload Profiling: 1293ms
-	BeginReloadAssembly (252ms)
+- Finished resetting the current domain, in  0.618 seconds
+Domain Reload Profiling: 1507ms
+	BeginReloadAssembly (325ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
+		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (21ms)
-	RebuildCommonClasses (21ms)
+		CreateAndSetChildDomain (29ms)
+	RebuildCommonClasses (26ms)
 	RebuildNativeTypeToScriptingClass (8ms)
 	initialDomainReloadingComplete (23ms)
-	LoadAllAssembliesAndSetupDomain (460ms)
-		LoadAssemblies (328ms)
+	LoadAllAssembliesAndSetupDomain (507ms)
+		LoadAssemblies (351ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (194ms)
-			TypeCache.Refresh (161ms)
-				TypeCache.ScanAssembly (147ms)
-			BuildScriptInfoCaches (24ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (530ms)
+		AnalyzeDomain (236ms)
+			TypeCache.Refresh (191ms)
+				TypeCache.ScanAssembly (173ms)
+			BuildScriptInfoCaches (32ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (618ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (353ms)
+		SetupLoadedEditorAssemblies (386ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (1ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
 			BeforeProcessingInitializeOnLoad (29ms)
-			ProcessInitializeOnLoadAttributes (295ms)
-			ProcessInitializeOnLoadMethodAttributes (23ms)
+			ProcessInitializeOnLoadAttributes (328ms)
+			ProcessInitializeOnLoadMethodAttributes (22ms)
 			AfterProcessingInitializeOnLoad (2ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (5ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 0.57 ms, found 6 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 0.78 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 214 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5989 unused Assets / (6.3 MB). Loaded Objects now: 6726.
-Memory consumption went from 204.1 MB to 197.8 MB.
-Total: 6.313300 ms (FindLiveObjects: 0.568200 ms CreateObjectMapping: 0.244300 ms MarkObjects: 3.790400 ms  DeleteObjects: 1.709800 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 20328.926746 seconds.
-  path: Assets/Scenes/Post Process Test/Volume Test/Global Volume Profile.asset
-  artifactKey: Guid(85475748aaa52b74080b3bf1b5062491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Post Process Test/Volume Test/Global Volume Profile.asset using Guid(85475748aaa52b74080b3bf1b5062491) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '67ad6737999772a58d7ac13ad9353dbe') in 0.0128272 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Settings/URP-Balanced-Volume.asset
-  artifactKey: Guid(52d5b3d9cf7414aad91e0e0189fa316e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/URP-Balanced-Volume.asset using Guid(52d5b3d9cf7414aad91e0e0189fa316e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '104e05224928d822718badfff214f965') in 0.0012434 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+Unloading 227 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5993 unused Assets / (6.1 MB). Loaded Objects now: 6744.
+Memory consumption went from 210.5 MB to 204.3 MB.
+Total: 10.922900 ms (FindLiveObjects: 0.608900 ms CreateObjectMapping: 0.478500 ms MarkObjects: 6.160000 ms  DeleteObjects: 3.673700 ms)
 
 ========================================================================
 Received Prepare
@@ -228,67 +212,67 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.451 seconds
-Refreshing native plugins compatible for Editor in 0.73 ms, found 6 plugins.
+- Loaded All Assemblies, in  0.525 seconds
+Refreshing native plugins compatible for Editor in 0.58 ms, found 6 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.490 seconds
-Domain Reload Profiling: 945ms
-	BeginReloadAssembly (141ms)
+- Finished resetting the current domain, in  0.521 seconds
+Domain Reload Profiling: 1047ms
+	BeginReloadAssembly (155ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (40ms)
-	RebuildCommonClasses (24ms)
+		CreateAndSetChildDomain (44ms)
+	RebuildCommonClasses (34ms)
 	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (17ms)
-	LoadAllAssembliesAndSetupDomain (263ms)
-		LoadAssemblies (225ms)
+	initialDomainReloadingComplete (18ms)
+	LoadAllAssembliesAndSetupDomain (310ms)
+		LoadAssemblies (259ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (106ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (90ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (491ms)
+		AnalyzeDomain (128ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (110ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (521ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (342ms)
+		SetupLoadedEditorAssemblies (347ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (1ms)
 			SetLoadedEditorAssemblies (2ms)
-			BeforeProcessingInitializeOnLoad (31ms)
-			ProcessInitializeOnLoadAttributes (283ms)
-			ProcessInitializeOnLoadMethodAttributes (22ms)
-			AfterProcessingInitializeOnLoad (2ms)
+			BeforeProcessingInitializeOnLoad (29ms)
+			ProcessInitializeOnLoadAttributes (278ms)
+			ProcessInitializeOnLoadMethodAttributes (33ms)
+			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (16ms)
-Refreshing native plugins compatible for Editor in 0.80 ms, found 6 plugins.
+		AwakeInstancesAfterBackupRestoration (22ms)
+Refreshing native plugins compatible for Editor in 0.85 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5987 unused Assets / (6.4 MB). Loaded Objects now: 6730.
-Memory consumption went from 175.4 MB to 169.0 MB.
-Total: 7.728400 ms (FindLiveObjects: 0.467800 ms CreateObjectMapping: 0.261900 ms MarkObjects: 3.639500 ms  DeleteObjects: 3.356700 ms)
+Unloading 5991 unused Assets / (6.8 MB). Loaded Objects now: 6745.
+Memory consumption went from 179.9 MB to 173.1 MB.
+Total: 11.504900 ms (FindLiveObjects: 0.744400 ms CreateObjectMapping: 0.443600 ms MarkObjects: 4.823500 ms  DeleteObjects: 5.492100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.90 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5980 unused Assets / (6.0 MB). Loaded Objects now: 6745.
+Memory consumption went from 179.8 MB to 173.9 MB.
+Total: 15.460600 ms (FindLiveObjects: 1.114100 ms CreateObjectMapping: 0.499600 ms MarkObjects: 8.087800 ms  DeleteObjects: 5.757700 ms)
 
 Prepare: number of updated asset objects reloaded= 1
 ========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 0.87 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5976 unused Assets / (6.9 MB). Loaded Objects now: 6730.
-Memory consumption went from 175.4 MB to 168.5 MB.
-Total: 12.852000 ms (FindLiveObjects: 1.020500 ms CreateObjectMapping: 0.745000 ms MarkObjects: 6.453600 ms  DeleteObjects: 4.630300 ms)
-
-Prepare: number of updated asset objects reloaded= 15
-========================================================================
 Received Import Request.
-  Time since last request: 1338.495843 seconds.
-  path: Assets/Post Process/Render Feature/Atmosphere.cs
-  artifactKey: Guid(07fdeab46466bf34fa1d4679fbfbdb0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Post Process/Render Feature/Atmosphere.cs using Guid(07fdeab46466bf34fa1d4679fbfbdb0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '957f8b7ebe40f69cb1c5efe276b8549e') in 0.0183279 seconds
+  Time since last request: 948.285034 seconds.
+  path: Assets/Post Process/Volume Parameter/GasVolume.cs
+  artifactKey: Guid(aba5797c4fd0f784e8882b6d488c15db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Post Process/Volume Parameter/GasVolume.cs using Guid(aba5797c4fd0f784e8882b6d488c15db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'afee11d2266058d0a8f05d085bdda53b') in 0.0317398 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
@@ -308,48 +292,826 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.482 seconds
-Refreshing native plugins compatible for Editor in 0.68 ms, found 6 plugins.
+- Loaded All Assemblies, in  0.846 seconds
+Refreshing native plugins compatible for Editor in 1.87 ms, found 6 plugins.
+A scripted class has a different serialization layout when loading. (Read 32 bytes but expected 56 bytes)
+Did you change any of your scripts when entering playmode?
 Native extension for WindowsStandalone target not found
+NullReferenceException: Object reference not set to an instance of an object
+  at Post_Process_Effect.Render_Feature.Gas+CustomRenderPass..ctor (Post_Process_Effect.Render_Feature.Gas+Settings settings) [0x00062] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\Gas.cs:55 
+  at Post_Process_Effect.Render_Feature.Gas.Create () [0x00000] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\Gas.cs:155 
+  at UnityEngine.Rendering.Universal.ScriptableRendererFeature.OnValidate () [0x00000] in .\Library\PackageCache\com.unity.render-pipelines.universal@16.0.5\Runtime\ScriptableRendererFeature.cs:53 
+
+(Filename: Assets/Post Process/Render Feature/Gas.cs Line: 55)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Post_Process_Effect.Render_Feature.Gas+CustomRenderPass..ctor (Post_Process_Effect.Render_Feature.Gas+Settings settings) [0x00062] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\Gas.cs:55 
+  at Post_Process_Effect.Render_Feature.Gas.Create () [0x00000] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\Gas.cs:155 
+  at UnityEngine.Rendering.Universal.ScriptableRendererFeature.OnEnable () [0x00000] in .\Library\PackageCache\com.unity.render-pipelines.universal@16.0.5\Runtime\ScriptableRendererFeature.cs:48 
+
+(Filename: Assets/Post Process/Render Feature/Gas.cs Line: 55)
+
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.462 seconds
-Domain Reload Profiling: 946ms
-	BeginReloadAssembly (146ms)
+- Finished resetting the current domain, in  0.443 seconds
+Domain Reload Profiling: 1290ms
+	BeginReloadAssembly (280ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
+		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (35ms)
-	RebuildCommonClasses (26ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (16ms)
-	LoadAllAssembliesAndSetupDomain (281ms)
-		LoadAssemblies (249ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (76ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (473ms)
+		LoadAssemblies (431ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (112ms)
-			TypeCache.Refresh (9ms)
-				TypeCache.ScanAssembly (1ms)
-			BuildScriptInfoCaches (93ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (463ms)
+		AnalyzeDomain (191ms)
+			TypeCache.Refresh (14ms)
+				TypeCache.ScanAssembly (2ms)
+			BuildScriptInfoCaches (159ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (444ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (327ms)
+		SetupLoadedEditorAssemblies (308ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (1ms)
 			SetLoadedEditorAssemblies (2ms)
-			BeforeProcessingInitializeOnLoad (28ms)
-			ProcessInitializeOnLoadAttributes (275ms)
-			ProcessInitializeOnLoadMethodAttributes (19ms)
+			BeforeProcessingInitializeOnLoad (26ms)
+			ProcessInitializeOnLoadAttributes (257ms)
+			ProcessInitializeOnLoadMethodAttributes (20ms)
 			AfterProcessingInitializeOnLoad (2ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (13ms)
-Refreshing native plugins compatible for Editor in 0.67 ms, found 6 plugins.
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 0.64 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5987 unused Assets / (5.7 MB). Loaded Objects now: 6730.
-Memory consumption went from 177.2 MB to 171.5 MB.
-Total: 5.185600 ms (FindLiveObjects: 0.407400 ms CreateObjectMapping: 0.239800 ms MarkObjects: 3.001300 ms  DeleteObjects: 1.536600 ms)
+Unloading 5995 unused Assets / (6.5 MB). Loaded Objects now: 6743.
+Memory consumption went from 182.2 MB to 175.7 MB.
+Total: 6.421500 ms (FindLiveObjects: 0.435800 ms CreateObjectMapping: 0.302300 ms MarkObjects: 3.725300 ms  DeleteObjects: 1.956600 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.26 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5981 unused Assets / (6.6 MB). Loaded Objects now: 6743.
+Memory consumption went from 182.3 MB to 175.7 MB.
+Total: 10.545200 ms (FindLiveObjects: 0.809500 ms CreateObjectMapping: 0.320100 ms MarkObjects: 4.415500 ms  DeleteObjects: 4.999000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.82 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5981 unused Assets / (6.1 MB). Loaded Objects now: 6743.
+Memory consumption went from 182.3 MB to 176.2 MB.
+Total: 14.011100 ms (FindLiveObjects: 1.415700 ms CreateObjectMapping: 0.443500 ms MarkObjects: 7.456600 ms  DeleteObjects: 4.691100 ms)
+
+Prepare: number of updated asset objects reloaded= 1
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.26 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5981 unused Assets / (6.0 MB). Loaded Objects now: 6743.
+Memory consumption went from 182.3 MB to 176.4 MB.
+Total: 16.261600 ms (FindLiveObjects: 0.766400 ms CreateObjectMapping: 0.310700 ms MarkObjects: 12.531000 ms  DeleteObjects: 2.651000 ms)
+
+Prepare: number of updated asset objects reloaded= 1
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.756 seconds
+Refreshing native plugins compatible for Editor in 1.04 ms, found 6 plugins.
+Native extension for WindowsStandalone target not found
+NullReferenceException: Object reference not set to an instance of an object
+  at Post_Process_Effect.Render_Feature.Gas+CustomRenderPass..ctor (Post_Process_Effect.Render_Feature.Gas+Settings settings) [0x00072] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\Gas.cs:57 
+  at Post_Process_Effect.Render_Feature.Gas.Create () [0x00000] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\Gas.cs:157 
+  at UnityEngine.Rendering.Universal.ScriptableRendererFeature.OnValidate () [0x00000] in .\Library\PackageCache\com.unity.render-pipelines.universal@16.0.5\Runtime\ScriptableRendererFeature.cs:53 
+
+(Filename: Assets/Post Process/Render Feature/Gas.cs Line: 57)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Post_Process_Effect.Render_Feature.Gas+CustomRenderPass..ctor (Post_Process_Effect.Render_Feature.Gas+Settings settings) [0x00072] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\Gas.cs:57 
+  at Post_Process_Effect.Render_Feature.Gas.Create () [0x00000] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\Gas.cs:157 
+  at UnityEngine.Rendering.Universal.ScriptableRendererFeature.OnEnable () [0x00000] in .\Library\PackageCache\com.unity.render-pipelines.universal@16.0.5\Runtime\ScriptableRendererFeature.cs:48 
+
+(Filename: Assets/Post Process/Render Feature/Gas.cs Line: 57)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.884 seconds
+Domain Reload Profiling: 1643ms
+	BeginReloadAssembly (212ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (60ms)
+	RebuildCommonClasses (46ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (439ms)
+		LoadAssemblies (356ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (187ms)
+			TypeCache.Refresh (13ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (158ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (885ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (634ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (68ms)
+			ProcessInitializeOnLoadAttributes (502ms)
+			ProcessInitializeOnLoadMethodAttributes (52ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (35ms)
+Refreshing native plugins compatible for Editor in 1.95 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 29 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5995 unused Assets / (5.9 MB). Loaded Objects now: 6743.
+Memory consumption went from 184.2 MB to 178.3 MB.
+Total: 7.441400 ms (FindLiveObjects: 0.792000 ms CreateObjectMapping: 0.308600 ms MarkObjects: 4.287900 ms  DeleteObjects: 2.051200 ms)
+
+Prepare: number of updated asset objects reloaded= 1
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.43 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 27 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5981 unused Assets / (5.9 MB). Loaded Objects now: 6743.
+Memory consumption went from 184.5 MB to 178.6 MB.
+Total: 8.278800 ms (FindLiveObjects: 0.871400 ms CreateObjectMapping: 0.337000 ms MarkObjects: 4.495300 ms  DeleteObjects: 2.573000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.756 seconds
+Refreshing native plugins compatible for Editor in 0.99 ms, found 6 plugins.
+Native extension for WindowsStandalone target not found
+NullReferenceException: Object reference not set to an instance of an object
+  at Post_Process_Effect.Render_Feature.Gas+CustomRenderPass..ctor (Post_Process_Effect.Render_Feature.Gas+Settings settings) [0x00072] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\Gas.cs:57 
+  at Post_Process_Effect.Render_Feature.Gas.Create () [0x00000] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\Gas.cs:162 
+  at UnityEngine.Rendering.Universal.ScriptableRendererFeature.OnValidate () [0x00000] in .\Library\PackageCache\com.unity.render-pipelines.universal@16.0.5\Runtime\ScriptableRendererFeature.cs:53 
+
+(Filename: Assets/Post Process/Render Feature/Gas.cs Line: 57)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Post_Process_Effect.Render_Feature.Gas+CustomRenderPass..ctor (Post_Process_Effect.Render_Feature.Gas+Settings settings) [0x00072] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\Gas.cs:57 
+  at Post_Process_Effect.Render_Feature.Gas.Create () [0x00000] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\Gas.cs:162 
+  at UnityEngine.Rendering.Universal.ScriptableRendererFeature.OnEnable () [0x00000] in .\Library\PackageCache\com.unity.render-pipelines.universal@16.0.5\Runtime\ScriptableRendererFeature.cs:48 
+
+(Filename: Assets/Post Process/Render Feature/Gas.cs Line: 57)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.859 seconds
+Domain Reload Profiling: 1616ms
+	BeginReloadAssembly (228ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (48ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (446ms)
+		LoadAssemblies (379ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (185ms)
+			TypeCache.Refresh (14ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (152ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (859ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (607ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (55ms)
+			ProcessInitializeOnLoadAttributes (505ms)
+			ProcessInitializeOnLoadMethodAttributes (38ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (32ms)
+Refreshing native plugins compatible for Editor in 1.12 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 29 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5995 unused Assets / (3.8 MB). Loaded Objects now: 6743.
+Memory consumption went from 186.1 MB to 182.3 MB.
+Total: 6.856100 ms (FindLiveObjects: 0.839800 ms CreateObjectMapping: 0.351600 ms MarkObjects: 4.190100 ms  DeleteObjects: 1.473800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.24 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5981 unused Assets / (5.8 MB). Loaded Objects now: 6743.
+Memory consumption went from 186.2 MB to 180.4 MB.
+Total: 8.734200 ms (FindLiveObjects: 0.895200 ms CreateObjectMapping: 0.350700 ms MarkObjects: 5.359400 ms  DeleteObjects: 2.128000 ms)
+
+Prepare: number of updated asset objects reloaded= 1
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.533 seconds
+Refreshing native plugins compatible for Editor in 0.54 ms, found 6 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.448 seconds
+Domain Reload Profiling: 984ms
+	BeginReloadAssembly (158ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (47ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (17ms)
+	LoadAllAssembliesAndSetupDomain (326ms)
+		LoadAssemblies (280ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (112ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (94ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (448ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (310ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (1ms)
+			SetLoadedEditorAssemblies (2ms)
+			BeforeProcessingInitializeOnLoad (27ms)
+			ProcessInitializeOnLoadAttributes (257ms)
+			ProcessInitializeOnLoadMethodAttributes (20ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 0.87 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 29 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5991 unused Assets / (6.2 MB). Loaded Objects now: 6747.
+Memory consumption went from 190.0 MB to 183.8 MB.
+Total: 6.467100 ms (FindLiveObjects: 0.582900 ms CreateObjectMapping: 0.243900 ms MarkObjects: 3.483400 ms  DeleteObjects: 2.155900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.25 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5980 unused Assets / (5.7 MB). Loaded Objects now: 6747.
+Memory consumption went from 190.0 MB to 184.3 MB.
+Total: 8.161200 ms (FindLiveObjects: 0.774400 ms CreateObjectMapping: 0.332600 ms MarkObjects: 4.803000 ms  DeleteObjects: 2.249500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.854 seconds
+Refreshing native plugins compatible for Editor in 1.31 ms, found 6 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.003 seconds
+Domain Reload Profiling: 1858ms
+	BeginReloadAssembly (258ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (61ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (515ms)
+		LoadAssemblies (484ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (174ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (148ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (1004ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (701ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (71ms)
+			ProcessInitializeOnLoadAttributes (557ms)
+			ProcessInitializeOnLoadMethodAttributes (56ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (27ms)
+Refreshing native plugins compatible for Editor in 0.61 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5991 unused Assets / (6.1 MB). Loaded Objects now: 6747.
+Memory consumption went from 191.8 MB to 185.8 MB.
+Total: 5.586200 ms (FindLiveObjects: 0.409600 ms CreateObjectMapping: 0.203200 ms MarkObjects: 3.267700 ms  DeleteObjects: 1.705100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.14 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5980 unused Assets / (5.7 MB). Loaded Objects now: 6747.
+Memory consumption went from 191.9 MB to 186.3 MB.
+Total: 8.020000 ms (FindLiveObjects: 0.765700 ms CreateObjectMapping: 0.325000 ms MarkObjects: 4.357000 ms  DeleteObjects: 2.571300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.952 seconds
+Refreshing native plugins compatible for Editor in 1.07 ms, found 6 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.844 seconds
+Domain Reload Profiling: 1798ms
+	BeginReloadAssembly (332ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (71ms)
+	RebuildCommonClasses (81ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (56ms)
+	LoadAllAssembliesAndSetupDomain (461ms)
+		LoadAssemblies (456ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (199ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (171ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (845ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (605ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (57ms)
+			ProcessInitializeOnLoadAttributes (501ms)
+			ProcessInitializeOnLoadMethodAttributes (37ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (25ms)
+Refreshing native plugins compatible for Editor in 1.08 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5991 unused Assets / (6.0 MB). Loaded Objects now: 6747.
+Memory consumption went from 193.8 MB to 187.8 MB.
+Total: 8.265900 ms (FindLiveObjects: 0.781600 ms CreateObjectMapping: 0.359500 ms MarkObjects: 4.686100 ms  DeleteObjects: 2.436900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.62 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5980 unused Assets / (5.9 MB). Loaded Objects now: 6747.
+Memory consumption went from 193.9 MB to 188.0 MB.
+Total: 8.534000 ms (FindLiveObjects: 0.808000 ms CreateObjectMapping: 0.317200 ms MarkObjects: 4.608000 ms  DeleteObjects: 2.799400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.806 seconds
+Refreshing native plugins compatible for Editor in 1.14 ms, found 6 plugins.
+Native extension for WindowsStandalone target not found
+NullReferenceException: Object reference not set to an instance of an object
+  at Post_Process_Effect.Render_Feature.Gas+CustomRenderPass..ctor (Post_Process_Effect.Render_Feature.Gas+Settings settings) [0x00072] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\Gas.cs:57 
+  at Post_Process_Effect.Render_Feature.Gas.Create () [0x00000] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\Gas.cs:162 
+  at UnityEngine.Rendering.Universal.ScriptableRendererFeature.OnValidate () [0x00000] in .\Library\PackageCache\com.unity.render-pipelines.universal@16.0.5\Runtime\ScriptableRendererFeature.cs:53 
+
+(Filename: Assets/Post Process/Render Feature/Gas.cs Line: 57)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Post_Process_Effect.Render_Feature.Gas+CustomRenderPass..ctor (Post_Process_Effect.Render_Feature.Gas+Settings settings) [0x00072] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\Gas.cs:57 
+  at Post_Process_Effect.Render_Feature.Gas.Create () [0x00000] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\Gas.cs:162 
+  at UnityEngine.Rendering.Universal.ScriptableRendererFeature.OnEnable () [0x00000] in .\Library\PackageCache\com.unity.render-pipelines.universal@16.0.5\Runtime\ScriptableRendererFeature.cs:48 
+
+(Filename: Assets/Post Process/Render Feature/Gas.cs Line: 57)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.984 seconds
+Domain Reload Profiling: 1790ms
+	BeginReloadAssembly (264ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (56ms)
+	RebuildCommonClasses (50ms)
+	RebuildNativeTypeToScriptingClass (29ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (434ms)
+		LoadAssemblies (403ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (183ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (155ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (984ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (683ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (54ms)
+			ProcessInitializeOnLoadAttributes (576ms)
+			ProcessInitializeOnLoadMethodAttributes (42ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (35ms)
+Refreshing native plugins compatible for Editor in 1.38 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5995 unused Assets / (6.2 MB). Loaded Objects now: 6743.
+Memory consumption went from 195.7 MB to 189.5 MB.
+Total: 9.221900 ms (FindLiveObjects: 0.863600 ms CreateObjectMapping: 0.364300 ms MarkObjects: 5.223300 ms  DeleteObjects: 2.769600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.745 seconds
+Refreshing native plugins compatible for Editor in 1.31 ms, found 6 plugins.
+Native extension for WindowsStandalone target not found
+NullReferenceException: Object reference not set to an instance of an object
+  at Post_Process_Effect.Render_Feature.Gas+CustomRenderPass..ctor (Post_Process_Effect.Render_Feature.Gas+Settings settings) [0x00072] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\Gas.cs:57 
+  at Post_Process_Effect.Render_Feature.Gas.Create () [0x00000] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\Gas.cs:162 
+  at UnityEngine.Rendering.Universal.ScriptableRendererFeature.OnValidate () [0x00000] in .\Library\PackageCache\com.unity.render-pipelines.universal@16.0.5\Runtime\ScriptableRendererFeature.cs:53 
+
+(Filename: Assets/Post Process/Render Feature/Gas.cs Line: 57)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Post_Process_Effect.Render_Feature.Gas+CustomRenderPass..ctor (Post_Process_Effect.Render_Feature.Gas+Settings settings) [0x00072] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\Gas.cs:57 
+  at Post_Process_Effect.Render_Feature.Gas.Create () [0x00000] in E:\Study\Chalmers\Nekorii\Assets\Post Process\Render Feature\Gas.cs:162 
+  at UnityEngine.Rendering.Universal.ScriptableRendererFeature.OnEnable () [0x00000] in .\Library\PackageCache\com.unity.render-pipelines.universal@16.0.5\Runtime\ScriptableRendererFeature.cs:48 
+
+(Filename: Assets/Post Process/Render Feature/Gas.cs Line: 57)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.919 seconds
+Domain Reload Profiling: 1663ms
+	BeginReloadAssembly (203ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (44ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (433ms)
+		LoadAssemblies (334ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (212ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (186ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (919ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (641ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (65ms)
+			ProcessInitializeOnLoadAttributes (525ms)
+			ProcessInitializeOnLoadMethodAttributes (40ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (27ms)
+Refreshing native plugins compatible for Editor in 1.17 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 29 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5995 unused Assets / (5.8 MB). Loaded Objects now: 6743.
+Memory consumption went from 197.7 MB to 191.9 MB.
+Total: 8.130200 ms (FindLiveObjects: 0.759800 ms CreateObjectMapping: 0.373900 ms MarkObjects: 4.773600 ms  DeleteObjects: 2.221900 ms)
+
+Prepare: number of updated asset objects reloaded= 8
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.30 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5981 unused Assets / (5.7 MB). Loaded Objects now: 6744.
+Memory consumption went from 197.9 MB to 192.2 MB.
+Total: 9.506900 ms (FindLiveObjects: 1.036100 ms CreateObjectMapping: 0.516000 ms MarkObjects: 5.161600 ms  DeleteObjects: 2.791400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Study\Chalmers\Nekorii\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.846 seconds
+Refreshing native plugins compatible for Editor in 0.99 ms, found 6 plugins.
+The file 'MemoryStream' is corrupted! Remove it and launch unity again!
+[Position out of bounds!]
+Fatal Error! The file 'MemoryStream' is corrupted! Remove it and launch unity again!
+[Position out of bounds!]
+Crash!!!
+SymInit: Symbol-SearchPath: 'C:/Program Files/Unity/Hub/Editor/2023.2.15f1/Editor/Data/Mono;.;E:\Study\Chalmers\Nekorii;E:\Study\Chalmers\Nekorii\Library\BurstCache\JIT;C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor;C:\Windows;C:\Windows\system32;', symOptions: 534, UserName: 'Fenglvv'
+OS-Version: 10.0.0
+C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor\Unity.exe:Unity.exe (00007FF6CFA80000), size: 184320 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2023.2.15.52144
+C:\Windows\SYSTEM32\ntdll.dll:ntdll.dll (00007FFB50750000), size: 2179072 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1928
+C:\Windows\System32\KERNEL32.DLL:KERNEL32.DLL (00007FFB4F9E0000), size: 794624 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1928
+C:\Windows\System32\KERNELBASE.dll:KERNELBASE.dll (00007FFB4DDE0000), size: 3813376 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1928
+C:\Windows\System32\USER32.dll:USER32.dll (00007FFB504D0000), size: 1744896 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1928
+C:\Windows\System32\win32u.dll:win32u.dll (00007FFB4E190000), size: 155648 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1992
+C:\Windows\System32\GDI32.dll:GDI32.dll (00007FFB4E6F0000), size: 167936 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1778
+C:\Windows\System32\gdi32full.dll:gdi32full.dll (00007FFB4DCC0000), size: 1150976 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1778
+C:\Windows\System32\msvcp_win.dll:msvcp_win.dll (00007FFB4E370000), size: 630784 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.608
+C:\Windows\System32\ucrtbase.dll:ucrtbase.dll (00007FFB4E410000), size: 1118208 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.608
+C:\Windows\System32\IMM32.DLL:IMM32.DLL (00007FFB50490000), size: 200704 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1344
+C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor\Unity.dll:Unity.dll (00007FFA9B250000), size: 80252928 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2023.2.15.52144
+C:\Windows\System32\CRYPT32.dll:CRYPT32.dll (00007FFB4DB50000), size: 1470464 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1992
+C:\Windows\System32\ADVAPI32.dll:ADVAPI32.dll (00007FFB4E900000), size: 712704 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1485
+C:\Windows\System32\msvcrt.dll:msvcrt.dll (00007FFB50200000), size: 684032 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 7.0.22621.608
+C:\Windows\System32\sechost.dll:sechost.dll (00007FFB4E640000), size: 671744 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1635
+C:\Windows\System32\RPCRT4.dll:RPCRT4.dll (00007FFB4F370000), size: 1142784 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1992
+C:\Windows\System32\ole32.dll:ole32.dll (00007FFB4FB30000), size: 1687552 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1702
+C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor\s3tcompress.dll:s3tcompress.dll (00007FFAA4240000), size: 180224 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor\libfbxsdk.dll:libfbxsdk.dll (00007FFAA4270000), size: 10067968 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2020.3.3.0
+C:\Windows\System32\combase.dll:combase.dll (00007FFB4FD40000), size: 3706880 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1485
+C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor\etccompress.dll:etccompress.dll (00007FFAA3D60000), size: 5070848 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor\ispc_texcomp.dll:ispc_texcomp.dll (00007FFAA3BA0000), size: 1826816 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor\compress_bc7e.dll:compress_bc7e.dll (00007FFAA3A40000), size: 1433600 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Windows\System32\SETUPAPI.dll:SETUPAPI.dll (00007FFB4F510000), size: 4669440 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1778
+C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor\FreeImage.dll:FreeImage.dll (0000000180000000), size: 5783552 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 3.18.0.0
+C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor\WinPixEventRuntime.dll:WinPixEventRuntime.dll (00007FFAAF9B0000), size: 53248 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.0.2201.24001
+C:\Windows\System32\WS2_32.dll:WS2_32.dll (00007FFB50410000), size: 462848 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\Windows\System32\SHELL32.dll:SHELL32.dll (00007FFB4E9B0000), size: 8359936 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1992
+C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor\umbraoptimizer64.dll:umbraoptimizer64.dll (00007FFAA3910000), size: 1187840 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Windows\System32\SHLWAPI.dll:SHLWAPI.dll (00007FFB50180000), size: 385024 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1635
+C:\Windows\System32\OLEAUT32.dll:OLEAUT32.dll (00007FFB4E720000), size: 880640 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1992
+C:\Windows\SYSTEM32\bcrypt.dll:bcrypt.dll (00007FFB4D500000), size: 163840 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1992
+C:\Windows\System32\WINTRUST.dll:WINTRUST.dll (00007FFB4E280000), size: 438272 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1928
+C:\Windows\SYSTEM32\d3d12.dll:d3d12.dll (00007FFAA38E0000), size: 143360 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1635
+C:\Windows\SYSTEM32\d3d11.dll:d3d11.dll (00007FFB49A80000), size: 2453504 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1928
+C:\Windows\SYSTEM32\dxgi.dll:dxgi.dll (00007FFB4B280000), size: 1007616 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1485
+C:\Windows\SYSTEM32\dwmapi.dll:dwmapi.dll (00007FFB4B3A0000), size: 176128 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1635
+C:\Windows\SYSTEM32\IPHLPAPI.DLL:IPHLPAPI.DLL (00007FFB4C6E0000), size: 184320 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\Windows\SYSTEM32\HID.DLL:HID.DLL (00007FFB4C410000), size: 57344 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\Windows\SYSTEM32\OPENGL32.dll:OPENGL32.dll (00007FFB1F140000), size: 1048576 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1635
+C:\Windows\SYSTEM32\MSVCP140.dll:MSVCP140.dll (00007FFB36330000), size: 577536 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.40.33617.1
+C:\Windows\SYSTEM32\VCRUNTIME140.dll:VCRUNTIME140.dll (00007FFB3A9E0000), size: 118784 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.40.33617.1
+C:\Windows\SYSTEM32\VCRUNTIME140_1.dll:VCRUNTIME140_1.dll (00007FFB35110000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.40.33617.1
+C:\Windows\SYSTEM32\GLU32.dll:GLU32.dll (00007FFB1F110000), size: 184320 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.608
+C:\Windows\SYSTEM32\WINMM.dll:WINMM.dll (00007FFB47560000), size: 212992 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1635
+C:\Windows\SYSTEM32\WINHTTP.dll:WINHTTP.dll (00007FFB48260000), size: 1273856 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1635
+C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor\SketchUpAPI.dll:SketchUpAPI.dll (00007FFAA27E0000), size: 8990720 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 23.0.0.0
+C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor\NativeProxyHelper.dll:NativeProxyHelper.dll (00007FFAA3720000), size: 1789952 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Windows\SYSTEM32\VERSION.dll:VERSION.dll (00007FFB438A0000), size: 40960 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\Windows\SYSTEM32\WSOCK32.dll:WSOCK32.dll (00007FFB33340000), size: 36864 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor\SketchUpCommonPreferences.dll:SketchUpCommonPreferences.dll (00007FFAA36A0000), size: 499712 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 23.0.0.0
+C:\Windows\SYSTEM32\Secur32.dll:Secur32.dll (00007FFB413C0000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\Windows\SYSTEM32\dxcore.dll:dxcore.dll (00007FFB4B220000), size: 229376 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1778
+C:\Windows\SYSTEM32\SSPICLI.DLL:SSPICLI.DLL (00007FFB4CEE0000), size: 270336 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1635
+C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor\OpenRL.dll:OpenRL.dll (0000022E84520000), size: 12779520 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.5.0.2907
+C:\Windows\SYSTEM32\MSVCP100.dll:MSVCP100.dll (0000000054ED0000), size: 622592 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.40219.473
+C:\Windows\SYSTEM32\MSVCR100.dll:MSVCR100.dll (0000000054DF0000), size: 860160 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.40219.473
+C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor\embree.dll:embree.dll (00007FFAA0920000), size: 16711680 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2.14.0.0
+C:\Windows\SYSTEM32\cfgmgr32.DLL:cfgmgr32.DLL (00007FFB4D860000), size: 319488 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1344
+C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor\tbb.dll:tbb.dll (00007FFAA3650000), size: 303104 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2020.3.2022.1111
+C:\Windows\SYSTEM32\MSWSOCK.DLL:MSWSOCK.DLL (00007FFB4D100000), size: 430080 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor\OpenRL_pthread.dll:OpenRL_pthread.dll (0000022E85170000), size: 61440 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2.9.0.0
+C:\Windows\SYSTEM32\MSASN1.dll:MSASN1.dll (00007FFB4D7F0000), size: 73728 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.819
+C:\Windows\System32\bcryptprimitives.dll:bcryptprimitives.dll (00007FFB4E2F0000), size: 499712 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1928
+C:\Windows\SYSTEM32\kernel.appcore.dll:kernel.appcore.dll (00007FFB4CC80000), size: 98304 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\Windows\system32\uxtheme.dll:uxtheme.dll (00007FFB4B0B0000), size: 700416 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1635
+C:\Windows\SYSTEM32\windows.storage.dll:windows.storage.dll (00007FFB4BB20000), size: 9232384 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1992
+C:\Windows\SYSTEM32\wintypes.dll:wintypes.dll (00007FFB4B9E0000), size: 1302528 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1485
+C:\Windows\System32\SHCORE.dll:SHCORE.dll (00007FFB4E800000), size: 987136 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1928
+C:\Windows\SYSTEM32\profapi.dll:profapi.dll (00007FFB4DA80000), size: 155648 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1928
+C:\Windows\system32\IconCodecService.dll:IconCodecService.dll (00007FFB1E990000), size: 36864 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\Windows\SYSTEM32\WindowsCodecs.dll:WindowsCodecs.dll (00007FFB495B0000), size: 1769472 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1635
+C:\Windows\System32\clbcatq.dll:clbcatq.dll (00007FFB500D0000), size: 720896 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2001.12.10941.16384
+C:\Windows\System32\netprofm.dll:netprofm.dll (00007FFB4AF20000), size: 491520 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1635
+C:\Windows\System32\NSI.dll:NSI.dll (00007FFB4E630000), size: 36864 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\Windows\SYSTEM32\dhcpcsvc6.DLL:dhcpcsvc6.DLL (00007FFB47E10000), size: 102400 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1344
+C:\Windows\System32\npmproxy.dll:npmproxy.dll (00007FFB46540000), size: 98304 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1635
+C:\Windows\SYSTEM32\dhcpcsvc.DLL:dhcpcsvc.DLL (00007FFB47DF0000), size: 126976 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1344
+C:\Windows\SYSTEM32\DNSAPI.dll:DNSAPI.dll (00007FFB4C710000), size: 995328 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1778
+C:\Windows\system32\napinsp.dll:napinsp.dll (00007FFB33BC0000), size: 94208 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\Windows\system32\pnrpnsp.dll:pnrpnsp.dll (00007FFB33AA0000), size: 110592 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\Windows\System32\winrnr.dll:winrnr.dll (00007FFB33940000), size: 69632 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\Windows\system32\wshbth.dll:wshbth.dll (00007FFB338E0000), size: 86016 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1778
+C:\Program Files\Bonjour\mdnsNSP.dll:mdnsNSP.dll (0000000054970000), size: 155648 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 3.0.0.10
+C:\Windows\System32\fwpuclnt.dll:fwpuclnt.dll (00007FFB46C60000), size: 540672 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1928
+C:\Windows\System32\rasadhlp.dll:rasadhlp.dll (00007FFB40A70000), size: 40960 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor\NVUnityPlugin.DLL:NVUnityPlugin.DLL (00007FFAA34B0000), size: 1519616 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor\Data\Tools\astcenc-avx2.dll:astcenc-avx2.dll (00007FFAA3450000), size: 364544 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Windows\System32\MMDevApi.dll:MMDevApi.dll (00007FFB40B20000), size: 643072 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.608
+C:\Windows\System32\DEVOBJ.dll:DEVOBJ.dll (00007FFB4D810000), size: 180224 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1344
+C:\Windows\SYSTEM32\directxdatabasehelper.dll:directxdatabasehelper.dll (00007FFB47790000), size: 294912 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1635
+C:\Windows\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_268e85175aa9e991\nvldumdx.dll:nvldumdx.dll (00007FFB438B0000), size: 778240 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 31.0.15.5212
+C:\Windows\SYSTEM32\cryptnet.dll:cryptnet.dll (00007FFB43620000), size: 204800 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\Windows\SYSTEM32\drvstore.dll:drvstore.dll (00007FFB434A0000), size: 1441792 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1778
+C:\Windows\SYSTEM32\wldp.dll:wldp.dll (00007FFB4D410000), size: 286720 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1992
+C:\Windows\SYSTEM32\cryptbase.dll:cryptbase.dll (00007FFB4D380000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\Windows\System32\imagehlp.dll:imagehlp.dll (00007FFB503E0000), size: 126976 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\Windows\SYSTEM32\CRYPTSP.dll:CRYPTSP.dll (00007FFB4D360000), size: 110592 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\Windows\system32\rsaenh.dll:rsaenh.dll (00007FFB4CBF0000), size: 217088 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\Windows\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_268e85175aa9e991\nvgpucomp64.dll:nvgpucomp64.dll (00007FFB3E780000), size: 35774464 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 31.0.15.5212
+C:\Windows\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_268e85175aa9e991\Display.NvContainer\NvMessageBus.dll:NvMessageBus.dll (00007FFB429D0000), size: 3506176 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 3.12.3354.5005
+C:\Windows\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_268e85175aa9e991\nvwgf2umx.dll:nvwgf2umx.dll (00007FFB365D0000), size: 68034560 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 31.0.15.5212
+C:\Windows\SYSTEM32\powrprof.dll:powrprof.dll (00007FFB4CA50000), size: 315392 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1344
+C:\Windows\SYSTEM32\UMPDC.dll:UMPDC.dll (00007FFB4CA30000), size: 77824 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\Windows\system32\nvspcap64.dll:nvspcap64.dll (00007FFB28AB0000), size: 2953216 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 3.27.0.120
+C:\Windows\SYSTEM32\ntmarta.dll:ntmarta.dll (00007FFB4CCA0000), size: 212992 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\Windows\system32\wbem\wbemprox.dll:wbemprox.dll (00007FFB44190000), size: 65536 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\Windows\SYSTEM32\wbemcomn.dll:wbemcomn.dll (00007FFB440B0000), size: 524288 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\Windows\system32\wbem\wbemsvc.dll:wbemsvc.dll (00007FFB43600000), size: 81920 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\Windows\system32\wbem\fastprox.dll:fastprox.dll (00007FFB43720000), size: 1015808 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1635
+C:\Windows\SYSTEM32\amsi.dll:amsi.dll (00007FFB41070000), size: 118784 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\Windows\SYSTEM32\opencl.dll:opencl.dll (00007FFAA2520000), size: 1490944 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 3.0.3.0
+C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor\radeonrays.dll:radeonrays.dll (00007FFAA2490000), size: 557056 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Program Files\Unity\Hub\Editor\2023.2.15f1\Editor\Data\MonoBleedingEdge\EmbedRuntime\mono-2.0-bdwgc.dll:mono-2.0-bdwgc.dll (00007FFA954B0000), size: 10756096 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Windows\SYSTEM32\dbghelp.dll:dbghelp.dll (00007FFB3A6C0000), size: 2285568 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+
+========== OUTPUTTING STACK TRACE ==================
+
+0x00007FFB4DE44B2C (KERNELBASE) RaiseException
+0x00007FFA9CD06DCD (Unity) EditorMonoConsole::LogToConsoleImplementation
+0x00007FFA9CD07AEF (Unity) EditorMonoConsole::LogToConsoleImplementation
+0x00007FFA9DA02EAA (Unity) DebugStringToFilePostprocessedStacktrace
+0x00007FFA9DA02248 (Unity) DebugStringToFile
+0x00007FFA9BE79311 (Unity) CachedReader::OutOfBoundsError
+0x00007FFA9BE7A2B4 (Unity) CachedReader::UpdateReadCache
+0x00007FFA9C200204 (Unity) Transfer_Blittable_SingleValueField<StreamedBinaryRead,signed char>
+0x00007FFA9C153566 (Unity) ExecuteSerializationCommands<ConfigSettingsRead>
+0x00007FFA9C2016E5 (Unity) Transfer_ManagedObject<StreamedBinaryRead,0>
+0x00007FFA9C1536CC (Unity) ExecuteSerializationCommands<JSONRead>
+0x00007FFA9C170758 (Unity) <lambda_580fa16bd23d18c3e466e7b58feca0a1>::operator()
+0x00007FFA9C16AA58 (Unity) TransferScriptingObject<StreamedBinaryRead>
+0x00007FFA9C16C1D3 (Unity) SerializableManagedRefTransfer::TransferScriptingObjectWithSerializedRefSupport<StreamedBinaryRead>
+0x00007FFA9C181686 (Unity) SerializableManagedRefTransfer::TransferBinaryInstanceOnly
+0x00007FFA9C154E9E (Unity) SerializableManagedRefTransfer::RestoreBackupImpl<SerializableManagedRefBackupGenerator>
+0x00007FFA9C154CC5 (Unity) SerializableManagedRefTransfer::RestoreBackup<SerializableManagedRefBackupGenerator>
+0x00007FFA9C22EE2C (Unity) SerializableManagedRefsUtilities::RestoreBackups
+0x00007FFA9C1768AF (Unity) MonoManager::FinalizeReload
+0x00007FFA9D60DF4A (Unity) ScriptingInitializer::FinalizeReload
+0x00007FFA9D635944 (Unity) <lambda_98b6126b54c872b118dde93ee6090d2f>::operator()
+0x00007FFA9D71A64E (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)>,asio::io_context::basic_executor_type<std::allocator<void>,0> >::do_complete
+0x00007FFA9D7072FE (Unity) asio::detail::win_iocp_io_context::do_one
+0x00007FFA9D708E44 (Unity) asio::detail::win_iocp_io_context::run
+0x00007FFA9D718DEC (Unity) IOService::Run
+0x00007FFA9D661016 (Unity) RunAssetImportWorkerClientV2
+0x00007FFA9D6610DB (Unity) RunAssetImporterV2
+0x00007FFA9CE7ADD8 (Unity) Application::InitializeProject
+0x00007FFA9D2C838E (Unity) UnityMain
+0x00007FF6CFA82CDA (Unity) __scrt_common_main_seh
+0x00007FFB4F9F26AD (KERNEL32) BaseThreadInitThunk
+0x00007FFB507AAA68 (ntdll) RtlUserThreadStart
+
+========== END OF STACKTRACE ===========
+
+A crash has been intercepted by the crash handler. For call stack and other details, see the latest crash report generated in:
+ * C:/Users/Fenglvv/AppData/Local/Temp/Unity/Editor/Crashes

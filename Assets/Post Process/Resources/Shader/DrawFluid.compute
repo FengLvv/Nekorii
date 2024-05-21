@@ -1,0 +1,220 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel Advection //0
+#pragma kernel Diffusion1 //1
+#pragma kernel Diffusion2 //2
+#pragma kernel Force //3
+#pragma kernel Divergence //4
+#pragma kernel Pressure1 //5
+#pragma kernel Pressure2 //6
+#pragma kernel Projection  //7
+#pragma kernel ClearTexture //8
+
+
+// Create a RenderTexture with enableRandomWrite flag and set it
+// with cs.SetTexture
+RWTexture3D<float4> _Velocity1;
+RWTexture3D<float4> _Velocity2;
+RWTexture3D<float4> _Pressure;
+
+
+float3 _TexDim;
+float _Dt;
+float _AdvectionSpeed;
+float _Viscosity;
+float3 _ForcePos;
+
+// kernel0: vel1 -> vel2
+[numthreads(8,8, 8)]
+void Advection(uint3 id : SV_DispatchThreadID)
+{
+    float3 vel = _Velocity1.Load(id).xyz;
+    float3 pos = float3(id) - vel * _Dt * _AdvectionSpeed;
+
+    // tri-linear interpolation
+    uint3 texCordFloor = floor(pos);
+    uint3 texCordCeil = ceil(pos);
+    float3 t = pos - float3(texCordFloor);
+    float4 tex000 = _Velocity1.Load(texCordFloor);
+    float4 tex010 = _Velocity1.Load(uint3(texCordFloor.x, texCordCeil.y, texCordFloor.z));
+    float4 tex100 = _Velocity1.Load(uint3(texCordCeil.x, texCordFloor.y, texCordFloor.z));
+    float4 tex110 = _Velocity1.Load(uint3(texCordCeil.x, texCordCeil.y, texCordFloor.z));
+    float4 tex001 = _Velocity1.Load(uint3(texCordFloor.x, texCordFloor.y, texCordCeil.z));
+    float4 tex011 = _Velocity1.Load(uint3(texCordFloor.x, texCordCeil.y, texCordCeil.z));
+    float4 tex101 = _Velocity1.Load(uint3(texCordCeil.x, texCordFloor.y, texCordCeil.z));
+    float4 tex111 = _Velocity1.Load(uint3(texCordCeil.x, texCordCeil.y, texCordCeil.z));
+    float4 tex0_0 = lerp(tex000, tex010, t.y);
+    float4 tex0_1 = lerp(tex001, tex011, t.y);
+    float4 tex1_0 = lerp(tex100, tex110, t.y);
+    float4 tex1_1 = lerp(tex101, tex111, t.y);
+    float4 tex0 = lerp(tex0_0, tex0_1, t.z);
+    float4 tex1 = lerp(tex1_0, tex1_1, t.z);
+    float4 tex = lerp(tex0, tex1, t.x);
+
+    _Velocity2[id] = tex;
+}
+
+// kernel1: vel2 -> vel1
+[numthreads(8,8, 8)]
+void Diffusion1(uint3 id : SV_DispatchThreadID)
+{
+    float4 vol = _Velocity2.Load(id);
+    float4 left = _Velocity2.Load(id + uint3(-1, 0, 0));
+    float4 right = _Velocity2.Load(id + uint3(1, 0, 0));
+    float4 top = _Velocity2.Load(id + uint3(0, 1, 0));
+    float4 bottom = _Velocity2.Load(id + uint3(0, -1, 0));
+    float4 front = _Velocity2.Load(id + uint3(0, 0, 1));
+    float4 back = _Velocity2.Load(id + uint3(0, 0, -1));
+    float4 bC = vol;
+
+    float alpha = (_Dt / _Viscosity);
+    float beta = 4 + alpha;
+
+    _Velocity1[id] = (left + right + top + bottom + front + back + alpha * bC) / beta;
+}
+
+
+// kernel2: vel1 -> vel2
+[numthreads(8,8, 8)]
+void Diffusion2(uint3 id : SV_DispatchThreadID)
+{
+    float4 vol = _Velocity1.Load(id);
+    float4 left = _Velocity1.Load(id + uint3(-1, 0, 0));
+    float4 right = _Velocity1.Load(id + uint3(1, 0, 0));
+    float4 top = _Velocity1.Load(id + uint3(0, 1, 0));
+    float4 bottom = _Velocity1.Load(id + uint3(0, -1, 0));
+    float4 front = _Velocity1.Load(id + uint3(0, 0, 1));
+    float4 back = _Velocity1.Load(id + uint3(0, 0, -1));
+    float4 bC = vol;
+
+    float alpha = (_Dt / _Viscosity);
+    float beta = 4 + alpha;
+
+    _Velocity2[id] = (left + right + top + bottom + front + back + alpha * bC) / beta;
+}
+
+
+// kernel3: vel2 -> vel2
+[numthreads(8,8, 8)]
+void Force(uint3 id : SV_DispatchThreadID)
+{
+    float4 vel = _Velocity2.Load(id);
+    // vel += float4(0, -0.98, 0, 0) * 0.01;
+    vel += float4(0, 1, 0, 1) * exp(-length(float3(id) - _ForcePos)) * 1;
+    _Velocity2[id] = vel;
+
+    
+}
+
+
+// kernel4: vel2 -> pressure.x
+// divergence of velocity
+[numthreads(8,8, 8)]
+void Divergence(uint3 id : SV_DispatchThreadID)
+{
+    float4 left = _Velocity2.Load(id + uint3(-1, 0, 0));
+    float4 right = _Velocity2.Load(id + uint3(1, 0, 0));
+    float4 top = _Velocity2.Load(id + uint3(0, 1, 0));
+    float4 bottom = _Velocity2.Load(id + uint3(0, -1, 0));
+    float4 front = _Velocity2.Load(id + uint3(0, 0, 1));
+    float4 back = _Velocity2.Load(id + uint3(0, 0, -1));
+
+    float4 bc = _Velocity2.Load(id);
+
+    int3 pos = int3(id);
+    
+    // edge condition
+    if (pos.x <=  1)
+    {
+        left = -bc;
+    }
+    if (pos.x >= _TexDim.x-1)
+    {
+        right = -bc;
+    }
+    if (pos.y <= 1)
+    {
+        bottom = -bc;
+    }
+    if (pos.y >= _TexDim.y-1)
+    {
+        top = -bc;
+    }
+    if (pos.z <= 1)
+    {
+        back = -bc;
+    }
+    if (pos.z >= _TexDim.z-1)
+    {
+        front = -bc;
+    }
+
+    
+
+    float result = (right.x - left.x + top.y - bottom.y + front.z - back.z) * 0.5;
+    _Pressure[id] = float4(0, 0, result, 1);
+}
+
+// kernel5: pressure.x -> pressure.y
+[numthreads(8,8, 8)]
+void Pressure1(uint3 id : SV_DispatchThreadID)
+{
+    float4 pre = _Pressure.Load(id);
+    float left = _Pressure.Load(id + uint3(-1, 0, 0)).x;
+    float right = _Pressure.Load(id + uint3(1, 0, 0)).x;
+    float top = _Pressure.Load(id + uint3(0, 1, 0)).x;
+    float bottom = _Pressure.Load(id + uint3(0, -1, 0)).x;
+    float front = _Pressure.Load(id + uint3(0, 0, 1)).x;
+    float back = _Pressure.Load(id + uint3(0, 0, -1)).x;
+
+    float bC = pre.z;
+    float beta = 6;
+
+    float result = (left + right + top + bottom + front + back - bC) / beta;
+    _Pressure[id] = float4(pre.x, result, pre.z, 1);
+}
+
+
+// kernel6: pressure.y -> pressure.x
+[numthreads(8,8, 8)]
+void Pressure2(uint3 id : SV_DispatchThreadID)
+{
+    float4 pre = _Pressure.Load(id);
+    float left = _Pressure.Load(id + uint3(-1, 0, 0)).y;
+    float right = _Pressure.Load(id + uint3(1, 0, 0)).y;
+    float top = _Pressure.Load(id + uint3(0, 1, 0)).y;
+    float bottom = _Pressure.Load(id + uint3(0, -1, 0)).y;
+    float front = _Pressure.Load(id + uint3(0, 0, 1)).y;
+    float back = _Pressure.Load(id + uint3(0, 0, -1)).y;
+
+    float bC = pre.z;
+    float beta = 6;
+
+    float result = (left + right + top + bottom + front + back - bC) / beta;
+    _Pressure[id] = float4(result, pre.y, pre.z, 1);
+}
+
+// kernel7: pressure.x & vel2 -> vel1
+[numthreads(8,8, 8)]
+void Projection(uint3 id : SV_DispatchThreadID)
+{
+    float4 divergenceVel = _Velocity2.Load(id);
+
+    float left = _Pressure.Load(id + uint3(-1, 0, 0)).x;
+    float right = _Pressure.Load(id + uint3(1, 0, 0)).x;
+    float top = _Pressure.Load(id + uint3(0, 1, 0)).x;
+    float bottom = _Pressure.Load(id + uint3(0, -1, 0)).x;
+    float front = _Pressure.Load(id + uint3(0, 0, 1)).x;
+    float back = _Pressure.Load(id + uint3(0, 0, -1)).x;
+
+    _Velocity1[id] = divergenceVel - float4(right - left, top - bottom, front - back, 0) * 0.5;
+}
+
+
+// kernel8: clear texture
+[numthreads(8,8, 8)]
+void ClearTexture(uint3 id : SV_DispatchThreadID)
+{
+    _Velocity1[id] = float4(0, 0, 0, 1);
+    _Velocity2[id] = float4(0, 0, 0, 1);
+    _Pressure[id] = float4(0, 0, 0, 1);
+}

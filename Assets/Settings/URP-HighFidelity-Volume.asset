@@ -55,10 +55,10 @@ MonoBehaviour:
     m_Value: 0
   BoxMin:
     m_OverrideState: 1
-    m_Value: {x: -20000, y: 1751.15, z: -20000}
+    m_Value: {x: -20000, y: 8825, z: -20000}
   BoxMax:
     m_OverrideState: 1
-    m_Value: {x: 20000, y: 4000, z: 20000}
+    m_Value: {x: 20000, y: 10108, z: 20000}
   SkymaskNoiseScale:
     m_OverrideState: 1
     m_Value: 2.74
@@ -225,6 +225,7 @@ MonoBehaviour:
   - {fileID: 8329676798517855505}
   - {fileID: -2493535110030938318}
   - {fileID: -5358984540206963848}
+  - {fileID: 395696187231431769}
 --- !u!114 &117353428541520204
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -265,6 +266,22 @@ MonoBehaviour:
   maxNits:
     m_OverrideState: 0
     m_Value: 1000
+--- !u!114 &395696187231431769
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aba5797c4fd0f784e8882b6d488c15db, type: 3}
+  m_Name: GasVolume
+  m_EditorClassIdentifier: 
+  active: 1
+  gasVolumeBoundingBox:
+    m_OverrideState: 1
+    m_Value: {fileID: 0}
 --- !u!114 &3936850321319989917
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -277,7 +294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8728aaba74d25674187636706d335320, type: 3}
   m_Name: VolumeLightParameter
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   DownSampleTimes:
     m_OverrideState: 1
     m_Value: 1
@@ -286,13 +303,13 @@ MonoBehaviour:
     m_Value: 1
   BlurStepMultiple:
     m_OverrideState: 1
-    m_Value: 12
+    m_Value: 4
   ColorSigma:
     m_OverrideState: 1
-    m_Value: 0.1
+    m_Value: 0.43
   SpacialSigma:
     m_OverrideState: 1
-    m_Value: 1.52
+    m_Value: 0.74
   LightColor:
     m_OverrideState: 1
     m_Value: {r: 16, g: 16, b: 16, a: 1}
@@ -465,19 +482,19 @@ MonoBehaviour:
   active: 1
   MarchSteps:
     m_OverrideState: 1
-    m_Value: 717
+    m_Value: 0
   DepthTolerance:
     m_OverrideState: 1
-    m_Value: 1.66
+    m_Value: 1.29
   EnableBlur:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   BlurStepMultiple:
     m_OverrideState: 1
-    m_Value: 4
+    m_Value: 1
   ColorSigma:
     m_OverrideState: 1
-    m_Value: 0.1
+    m_Value: 0.18
   SpacialSigma:
     m_OverrideState: 1
-    m_Value: 3.16
+    m_Value: 1.1
