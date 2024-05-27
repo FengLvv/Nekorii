@@ -30,7 +30,7 @@ Shader "Custom/PostProcess/SSR"
             #pragma vertex vertSSR
             // #pragma fragment fragSSR
             // #pragma fragment fragSSRDDA
-            // #pragma fragment fragSSRDDABinary
+             // #pragma fragment fragSSRDDABinary
             #pragma fragment fragSSRDDAHIZ
         
             ENDHLSL

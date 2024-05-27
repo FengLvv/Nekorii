@@ -187,7 +187,7 @@ namespace Post_Process_Effect.Render_Feature {
 			// initialize CustomRenderPass
 			_ssrPass = new CustomRenderPass( settings ){
 				// render volume light before postprocess
-				renderPassEvent = RenderPassEvent.BeforeRenderingPostProcessing - 10,
+				renderPassEvent = RenderPassEvent.BeforeRenderingTransparents - 10,
 			};
 		}
 

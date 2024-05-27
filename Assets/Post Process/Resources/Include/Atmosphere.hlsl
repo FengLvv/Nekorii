@@ -61,7 +61,6 @@ VaryingsVL vertAtmosphere(Attributes input)
 }
 
 
-
 // input height, output density of Rayleigh and Mie scattering
 float2 CalculateDensityTerm(float height)
 {

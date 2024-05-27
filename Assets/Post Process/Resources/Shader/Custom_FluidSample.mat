@@ -22,9 +22,14 @@ Material:
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
-    m_TexEnvs: []
+    m_TexEnvs:
+    - _BlueNoiseTexture:
+        m_Texture: {fileID: 2800000, guid: 4599b3e9f1a3f0d44b4483a92b5b49b9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _JitterSize: 0.97
     - _ZValue: 0.5
     m_Colors: []
   m_BuildTextureStacks: []

@@ -225,7 +225,6 @@ MonoBehaviour:
   - {fileID: 8329676798517855505}
   - {fileID: -2493535110030938318}
   - {fileID: -5358984540206963848}
-  - {fileID: 395696187231431769}
 --- !u!114 &117353428541520204
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -266,22 +265,6 @@ MonoBehaviour:
   maxNits:
     m_OverrideState: 0
     m_Value: 1000
---- !u!114 &395696187231431769
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aba5797c4fd0f784e8882b6d488c15db, type: 3}
-  m_Name: GasVolume
-  m_EditorClassIdentifier: 
-  active: 1
-  gasVolumeBoundingBox:
-    m_OverrideState: 1
-    m_Value: {fileID: 0}
 --- !u!114 &3936850321319989917
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -294,7 +277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8728aaba74d25674187636706d335320, type: 3}
   m_Name: VolumeLightParameter
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   DownSampleTimes:
     m_OverrideState: 1
     m_Value: 1
@@ -330,7 +313,7 @@ MonoBehaviour:
     m_Value: 20
   HG_g:
     m_OverrideState: 1
-    m_Value: 0.698
+    m_Value: 0.728
   RayleighWeight:
     m_OverrideState: 1
     m_Value: 1
@@ -482,10 +465,10 @@ MonoBehaviour:
   active: 1
   MarchSteps:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 60
   DepthTolerance:
     m_OverrideState: 1
-    m_Value: 1.29
+    m_Value: 1
   EnableBlur:
     m_OverrideState: 1
     m_Value: 1

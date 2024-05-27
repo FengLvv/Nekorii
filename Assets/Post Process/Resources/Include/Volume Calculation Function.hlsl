@@ -111,7 +111,6 @@ void RaySphereIntersection(float3 rayOrigin, float3 rayDir, float3 sphereCenter,
     intersectionBack = rayOrigin + rayDir * intersection.x;
 }
 
-
 //density总密度=\sum局部密度，步长
 float BeerPowder(float density)
 {

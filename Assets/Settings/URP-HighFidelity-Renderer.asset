@@ -14,13 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Active: 1
   settings:
-    viscosity: 0
-    advectionSpeed: 200
-    forcePosition: {x: 34.3, y: 13.61, z: 32}
+    viscosity: 1
+    advectionSpeed: 500
+    forcePosition: {x: 32, y: 4.55, z: 32}
+    forceDir: {x: 0.26, y: 1, z: 0}
     viscosityIterations: 0
-    pressureIterations: 20
-    positionWS: {x: 0, y: 0, z: 0}
-    sizeWS: {x: 0, y: 0, z: 0}
+    pressureIterations: 11
+    fluidCenter: {x: -74.4, y: 264.28, z: -50.2}
+    fluidSize: 113.21
+    fluidDensityMultiply: 1
+    gasColor: {r: 1, g: 1, b: 1, a: 1}
+    sphereCenter: {x: 32, y: 32, z: 32}
+    sphereRadius: 0
 --- !u!114 &-8205086039910606088
 MonoBehaviour:
   m_ObjectHideFlags: 0

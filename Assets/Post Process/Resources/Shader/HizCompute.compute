@@ -1,12 +1,6 @@
 // Each #kernel tells which function to compile; you can have many kernels
 #pragma kernel CopyDepth
 #pragma kernel Mip1
-#pragma kernel Mip2
-#pragma kernel Mip3
-#pragma kernel Mip4
-#pragma kernel Mip5
-#pragma kernel Mip6
-
 
 Texture2D<float> Depth1;
 RWTexture2D<float> Depth2;
@@ -37,77 +31,3 @@ void Mip1 (uint3 id : SV_DispatchThreadID)
 
     Depth2[id.xy] = minDepth;    
 }
-
-
-[numthreads(8,8,1)]
-void Mip2 (uint3 id : SV_DispatchThreadID)
-{
-    // calculate the size of the grid
-    uint2 groupID = id.xy * 2;
-    float d1 = Depth1[groupID].x;
-    float d2 = Depth1[groupID + uint2(1, 0)].x;
-    float d3 = Depth1[groupID + uint2(0, 1)].x;
-    float d4 = Depth1[groupID + uint2(1, 1)].x;
-    float minDepth = max(max(max(d1, d2), d3), d4);
-
-    Depth2[id.xy] = minDepth;    
-}
-
-[numthreads(8,8,1)]
-void Mip3 (uint3 id : SV_DispatchThreadID)
-{
-    // calculate the size of the grid
-    uint2 groupID = id.xy * 2;
-    float d1 = Depth1[groupID].x;
-    float d2 = Depth1[groupID + uint2(1, 0)].x;
-    float d3 = Depth1[groupID + uint2(0, 1)].x;
-    float d4 = Depth1[groupID + uint2(1, 1)].x;
-    float minDepth = max(max(max(d1, d2), d3), d4);
-    Depth2[id.xy] = minDepth;    
-}
-
-[numthreads(8,8,1)]
-void Mip4 (uint3 id : SV_DispatchThreadID)
-{
-    // calculate the size of the grid
-    uint2 groupID = id.xy * 2;
-    float d1 = Depth1[groupID].x;
-    float d2 = Depth1[groupID + uint2(1, 0)].x;
-    float d3 = Depth1[groupID + uint2(0, 1)].x;
-    float d4 = Depth1[groupID + uint2(1, 1)].x;
-    float minDepth = max(max(max(d1, d2), d3), d4);
-
-    Depth2[id.xy] = minDepth;    
-}
-
-
-[numthreads(8,8,1)]
-void Mip5 (uint3 id : SV_DispatchThreadID)
-{
-    // calculate the size of the grid
-    uint2 groupID = id.xy * 2;
-    float d1 = Depth1[groupID].x;
-    float d2 = Depth1[groupID + uint2(1, 0)].x;
-    float d3 = Depth1[groupID + uint2(0, 1)].x;
-    float d4 = Depth1[groupID + uint2(1, 1)].x;
-    float minDepth = max(max(max(d1, d2), d3), d4);
-
-
-    Depth2[id.xy] = minDepth;    
-}
-
-[numthreads(8,8,1)]
-void Mip6 (uint3 id : SV_DispatchThreadID)
-{
-    // calculate the size of the grid
-    uint2 groupID = id.xy * 2;
-    float d1 = Depth1[groupID].x;
-    float d2 = Depth1[groupID + uint2(1, 0)].x;
-    float d3 = Depth1[groupID + uint2(0, 1)].x;
-    float d4 = Depth1[groupID + uint2(1, 1)].x;
-    float minDepth = max(max(max(d1, d2), d3), d4);
-
-
-    Depth2[id.xy] = minDepth;    
-}
-

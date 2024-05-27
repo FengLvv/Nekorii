@@ -12,62 +12,76 @@ namespace Post_Process_Effect.Render_Feature {
 	public class Gas : ScriptableRendererFeature {
 		[Serializable]
 		public class Settings {
-			[Header("Fluid")]
-			public float viscosity=0.1f;
-			public float advectionSpeed=100F;
-			public Vector3 forcePosition=new Vector3(32,32,32);
+			[Header( "Fluid" )]
+			public float viscosity = 0.1f;
+			public float advectionSpeed = 100F;
+			public Vector3 forcePosition = new Vector3( 32, 32, 32 );
+			public Vector3 forceDir = new Vector3( 0, 1, 0 );
 			public int viscosityIterations = 10;
 			public int pressureIterations = 10;
-			
-	}
+
+			[Header( "Render" )]
+			public Vector3 fluidCenter = new Vector3( -83, 255, -44.7f );
+			public float fluidSize = 3;
+			public float fluidDensityMultiply = 0.5f;
+			public Color gasColor = new Color( 0.5f, 0.5f, 0.5f, 1 );
+
+			[Header( "Sphere" )]
+			public Vector3 sphereCenter = new Vector3( 32, 32, 32 );
+			public float sphereRadius = 10;
+		}
 
 		public Settings settings = new Settings();
 
 		class CustomRenderPass : ScriptableRenderPass {
+			RTHandle _cameraColor;
+			RTHandle _cameraDepth;
+
 			ComputeShader _computeFluid;
 			Material _fluidSample;
 			RenderTexture _vel1;
 			RenderTexture _vel2;
 			RenderTexture _pressure;
+			RenderTexture _density;
 			float _advectionSpeed;
 			float _viscosity;
 			Vector3 _forcePosition;
+			Vector3 _forceDir;
 
 			//cmd name
 			string _passName = "GasSimulation";
-			Settings settings;
-			
+			Settings _settings;
+
 			bool _isInitialized;
 
-			
+
 			Vector3 _center;
-			Vector3 _size;
-			
+			float _size;
+
 			//初始类的时候传入材质
 			public CustomRenderPass( Settings settings ) {
 				_vel1 = Resources.Load<RenderTexture>( "Texture/Gas/velocity1" );
 				_vel2 = Resources.Load<RenderTexture>( "Texture/Gas/velocity2" );
 				_pressure = Resources.Load<RenderTexture>( "Texture/Gas/pressure" );
+				_density = Resources.Load<RenderTexture>( "Texture/Gas/density" );
 				_computeFluid = Resources.Load<ComputeShader>( "Shader/DrawFluid" );
-				this.settings = settings;
-				
-				
-				 _fluidSample  = Resources.Load<Material>( "Shader/Custom_FluidSample" );
-				// VolumeStack stack = VolumeManager.instance.stack;
-				// var gasStack = stack.GetComponent<GasVolume>();
-				// var gasVolume = gasStack.gasVolumeBoundingBox.value ;
-				// _center = gasVolume.center;
-				// _size = gasVolume.size;
-			 }
+				_fluidSample = Resources.Load<Material>( "Shader/Custom_FluidSample" );
+				this._settings = settings;
+			}
 
 			// execute each frame when set up camera
 			// create temp rt
 			public override void OnCameraSetup( CommandBuffer cmd, ref RenderingData renderingData ) {
+				_cameraColor = renderingData.cameraData.renderer.cameraColorTargetHandle;
+				_cameraDepth = renderingData.cameraData.renderer.cameraDepthTargetHandle;
 				// get z-buffer and color buffer
 				ConfigureClear( ClearFlag.None, Color.black );
-				_forcePosition = settings.forcePosition;
-				_viscosity = settings.viscosity;
-				_advectionSpeed = settings.advectionSpeed;
+				_forceDir = _settings.forceDir;
+				_forcePosition = _settings.forcePosition;
+				_viscosity = _settings.viscosity;
+				_advectionSpeed = _settings.advectionSpeed;
+				_center = _settings.fluidCenter;
+				_size = _settings.fluidSize;
 			}
 
 			// execute each frame in render event
@@ -79,16 +93,21 @@ namespace Post_Process_Effect.Render_Feature {
 						cmd.SetComputeTextureParam( _computeFluid, 8, Pressure, _pressure );
 						cmd.SetComputeTextureParam( _computeFluid, 8, Velocity1, _vel1 );
 						cmd.SetComputeTextureParam( _computeFluid, 8, Velocity2, _vel2 );
+						cmd.SetComputeTextureParam( _computeFluid, 8, Density, _density );
 						cmd.DispatchCompute( _computeFluid, 8, 64 / 8, 64 / 8, 64 / 8 );
 						_isInitialized = true;
 					}
-					
+
 					// parameters
-					cmd.SetComputeVectorParam(  _computeFluid, "_TexDim", new Vector3( 64, 64, 64 ) );
+					cmd.SetComputeVectorParam( _computeFluid, "_TexDim", new Vector3( 64, 64, 64 ) );
 					cmd.SetComputeFloatParam( _computeFluid, Dt, Time.deltaTime );
 					cmd.SetComputeFloatParam( _computeFluid, Viscosity, _viscosity );
 					cmd.SetComputeFloatParam( _computeFluid, AdvectionSpeed, _advectionSpeed );
 					cmd.SetComputeVectorParam( _computeFluid, ForcePos, _forcePosition );
+					cmd.SetComputeVectorParam( _computeFluid, ForceDir, _forceDir );
+					cmd.SetComputeVectorParam( _computeFluid, "_BlockSpherePos", _settings.sphereCenter );
+					cmd.SetComputeFloatParam( _computeFluid, "_BlockSphereRadius", _settings.sphereRadius );
+
 
 					// 0 Advection
 					cmd.SetComputeTextureParam( _computeFluid, 0, Velocity1, _vel1 );
@@ -100,7 +119,7 @@ namespace Post_Process_Effect.Render_Feature {
 					cmd.SetComputeTextureParam( _computeFluid, 1, Velocity2, _vel2 );
 					cmd.SetComputeTextureParam( _computeFluid, 2, Velocity1, _pressure );
 					cmd.SetComputeTextureParam( _computeFluid, 2, Velocity2, _pressure );
-					for( int i = 0; i < settings.viscosityIterations; i++ ) {
+					for( int i = 0; i < _settings.viscosityIterations; i++ ) {
 						cmd.DispatchCompute( _computeFluid, 1, 64 / 8, 64 / 8, 64 / 8 );
 						cmd.DispatchCompute( _computeFluid, 2, 64 / 8, 64 / 8, 64 / 8 );
 					}
@@ -117,7 +136,7 @@ namespace Post_Process_Effect.Render_Feature {
 					// Pressure : Jacobi Iteration
 					cmd.SetComputeTextureParam( _computeFluid, 5, Pressure, _pressure );
 					cmd.SetComputeTextureParam( _computeFluid, 6, Pressure, _pressure );
-					for( int i = 0; i < settings.pressureIterations; i++ ) {
+					for( int i = 0; i < _settings.pressureIterations; i++ ) {
 						cmd.DispatchCompute( _computeFluid, 5, 64 / 8, 64 / 8, 64 / 8 );
 						cmd.DispatchCompute( _computeFluid, 6, 64 / 8, 64 / 8, 64 / 8 );
 					}
@@ -127,14 +146,21 @@ namespace Post_Process_Effect.Render_Feature {
 					cmd.SetComputeTextureParam( _computeFluid, 7, Velocity1, _vel1 );
 					cmd.SetComputeTextureParam( _computeFluid, 7, Velocity2, _vel2 );
 					cmd.DispatchCompute( _computeFluid, 7, 64 / 8, 64 / 8, 64 / 8 );
-					
-					
+
+					// 9 density
+					cmd.SetComputeTextureParam( _computeFluid, 9, Velocity1, _vel1 );
+					cmd.SetComputeTextureParam( _computeFluid, 9, Density, _density );
+					cmd.DispatchCompute( _computeFluid, 9, 64 / 8, 64 / 8, 64 / 8 );
+
 					// Draw
-					cmd.SetGlobalVector("_FluidCenter", _center);
-					cmd.SetGlobalVector("_FluidSize", _size);
+					cmd.SetComputeVectorParam( _computeFluid, "_GasColor", new Vector4( _settings.gasColor.r, _settings.gasColor.g, _settings.gasColor.b, _settings.gasColor.a ) );
+					cmd.SetGlobalVector( "_FluidCenter", _center );
+					cmd.SetGlobalFloat( "_FluidSize", _size );
+					cmd.SetGlobalTexture( "_GasVelocity", _density );
+					cmd.SetGlobalFloat( "_DensityMultiply", _settings.fluidDensityMultiply );
+					Blitter.BlitCameraTexture( cmd, _cameraDepth, _cameraColor, _fluidSample, 0 );
 				}
-				
-				cmd.SetGlobalTexture( "_GasVelocity", _vel1 );
+
 				context.ExecuteCommandBuffer( cmd );
 				cmd.Clear();
 				CommandBufferPool.Release( cmd );
@@ -155,13 +181,15 @@ namespace Post_Process_Effect.Render_Feature {
 		readonly static int Viscosity = Shader.PropertyToID( "_Viscosity" );
 		readonly static int AdvectionSpeed = Shader.PropertyToID( "_AdvectionSpeed" );
 		readonly static int ForcePos = Shader.PropertyToID( "_ForcePos" );
+		readonly static int Density = Shader.PropertyToID( "_Density" );
+		readonly static int ForceDir = Shader.PropertyToID( "_ForceDir" );
 
 		// run when create render feature
 		public override void Create() {
 			// initialize CustomRenderPass
 			_gasPass = new CustomRenderPass( settings ){
 				// render volume light before postprocess
-				renderPassEvent = RenderPassEvent.AfterRenderingTransparents,
+				renderPassEvent = RenderPassEvent.BeforeRenderingTransparents,
 			};
 		}
 
