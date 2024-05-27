@@ -20,6 +20,7 @@ float3 _TexDim;
 float _Dt;
 float _AdvectionSpeed;
 float _Viscosity;
+float _Gravity;
 float3 _ForcePos;
 float3 _ForceDir;
 float4 _GasColor;
@@ -122,7 +123,7 @@ void Diffusion2(uint3 id : SV_DispatchThreadID)
 void Force(uint3 id : SV_DispatchThreadID)
 {
     float4 vel = _Velocity2.Load(id);
-    vel += float4(0, -0.98, 0, 0) * _Dt *0.01;
+    vel += float4(0, -_Gravity, 0, 0) * _Dt *0.01;
     vel += float4(_ForceDir, 1) * exp(-length(float3(id) - _ForcePos) * 2) * 1;
     _Velocity2[id] = vel;
 }

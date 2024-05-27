@@ -10,7 +10,7 @@ using UnityEngine.Serialization;
 
 namespace Post_Process_Effect.Render_Feature {
 	public class Gas : ScriptableRendererFeature {
-		[Serializable]
+		[System.Serializable]
 		public class Settings {
 			[Header( "Fluid" )]
 			public float viscosity = 0.1f;
@@ -19,6 +19,8 @@ namespace Post_Process_Effect.Render_Feature {
 			public Vector3 forceDir = new Vector3( 0, 1, 0 );
 			public int viscosityIterations = 10;
 			public int pressureIterations = 10;
+			[Range(0,10)]
+			public float gravity = 10f;
 
 			[Header( "Render" )]
 			public Vector3 fluidCenter = new Vector3( -83, 255, -44.7f );
@@ -124,7 +126,9 @@ namespace Post_Process_Effect.Render_Feature {
 						cmd.DispatchCompute( _computeFluid, 2, 64 / 8, 64 / 8, 64 / 8 );
 					}
 
+					
 					// 3 Force
+					cmd.SetComputeFloatParam( _computeFluid, "_Gravity", _settings.gravity );
 					cmd.SetComputeTextureParam( _computeFluid, 3, Velocity2, _vel2 );
 					cmd.DispatchCompute( _computeFluid, 3, 64 / 8, 64 / 8, 64 / 8 );
 

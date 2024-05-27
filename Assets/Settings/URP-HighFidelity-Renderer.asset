@@ -20,9 +20,10 @@ MonoBehaviour:
     forceDir: {x: 0.26, y: 1, z: 0}
     viscosityIterations: 0
     pressureIterations: 11
+    gravity: 10
     fluidCenter: {x: -74.4, y: 264.28, z: -50.2}
     fluidSize: 113.21
-    fluidDensityMultiply: 1
+    fluidDensityMultiply: 0.54
     gasColor: {r: 1, g: 1, b: 1, a: 1}
     sphereCenter: {x: 32, y: 32, z: 32}
     sphereRadius: 0
